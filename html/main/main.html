@@ -22,14 +22,15 @@
 <title>평생교육이용권</title>
 <link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
-<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
-<!-- Splide CSS 추가 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/main.css" />
+<link rel="stylesheet" href="../../assets/css/splide.min.css">
 <script src="../../assets/js/jquery-3.7.1.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
+<script src="../../assets/js/splide.min.js"></script>
+<script src="../../assets/js/splide-extension-grid.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/slimselect.css">
+<script src="../../assets/js/slimselect.js"></script>
 <script src="../../assets/js/common.js"></script>
-
 </head>
 <body>
 
@@ -118,523 +119,524 @@
 	<!-- //header -->	
 
 	<!-- content -->
-	<div id="content" class="main_content">
-		<div class="container">
-			<div class="main_top">
-				<div class="mt_left">
-					<div class="mt_area">
-						<div class="main_title">
-							<h3>지역 바로가기</h3>
-						</div>
-						<div class="area_select">
-							<div class="tit">주민등록등본 지역을 선택해주세요</div>
-							<div class="select">
-								<select name="" id="" class="size_lg wid_pc_27 wid_mb_100">
-									<option value="">지자체 선택</option>
-									<option value="seoul" title="서울특별시">서울특별시</option>
-									<option value="busan" title="부산광역시">부산광역시</option>
-									<option value="daegu" title="대구광역시">대구광역시</option>
-									<option value="incheon" title="인천광역시">인천광역시</option>
-									<option value="gwangju" title="광주광역시">광주광역시</option>
-									<option value="daejeon" title="대전광역시">대전광역시</option>
-									<option value="ulsan" title="울산광역시">울산광역시</option>
-									<option value="sejong" title="세종특별자치시">세종특별자치시</option>
-									<option value="gyeonggi" title="경기도">경기도</option>
-									<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
-									<option value="chungbuk" title="충청북도">충청북도</option>
-									<option value="chungnam" title="충청남도">충청남도</option>
-									<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
-									<option value="jeonnam" title="전라남도">전라남도</option>
-									<option value="gyeongbuk" title="경상북도">경상북도</option>
-									<option value="gyeongnam" title="경상남도">경상남도</option>
-									<option value="jeju" title="제주특별자치도">제주특별자치도</option>
-								</select>
+	<div class="main_content">
+		<div id="content">
+			<div class="container">
+				<div class="main_top">
+					<div class="mt_left">
+						<div class="mt_area">
+							<div class="main_title">
+								<h3>지역 바로가기</h3>
+							</div>
+							<div class="area_select">
+								<div class="tit">주민등록등본 지역을 선택해주세요</div>
+								<div class="select">
+									<select name="" id="" class="wid_pc_27 wid_mb_100 no_line">
+										<option value="" disabled selected hidden>지자체 선택</option>
+										<option value="seoul" title="서울특별시">서울특별시</option>
+										<option value="busan" title="부산광역시">부산광역시</option>
+										<option value="daegu" title="대구광역시">대구광역시</option>
+										<option value="incheon" title="인천광역시">인천광역시</option>
+										<option value="gwangju" title="광주광역시">광주광역시</option>
+										<option value="daejeon" title="대전광역시">대전광역시</option>
+										<option value="ulsan" title="울산광역시">울산광역시</option>
+										<option value="sejong" title="세종특별자치시">세종특별자치시</option>
+										<option value="gyeonggi" title="경기도">경기도</option>
+										<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
+										<option value="chungbuk" title="충청북도">충청북도</option>
+										<option value="chungnam" title="충청남도">충청남도</option>
+										<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
+										<option value="jeonnam" title="전라남도">전라남도</option>
+										<option value="gyeongbuk" title="경상북도">경상북도</option>
+										<option value="gyeongnam" title="경상남도">경상남도</option>
+										<option value="jeju" title="제주특별자치도">제주특별자치도</option>
+									</select>
+								</div>
+							</div>
+							<div class="area_map">
+								<div class="region_list">
+									<a href="javascript:;" class="region_title" data-target="seoul" style="left:21%;bottom:75.5%;">서울</a>
+									<a href="javascript:;" class="region_title" data-target="busan" style="left:59%;bottom:27%;">부산</a>
+									<a href="javascript:;" class="region_title" data-target="daegu" style="left:55%;bottom:43.5%;">대구</a>
+									<a href="javascript:;" class="region_title" data-target="incheon" style="left:9.5%;bottom:69.5%;">인천</a>
+									<a href="javascript:;" class="region_title" data-target="gwangju" style="left:18%;bottom:29%;">광주</a>
+									<a href="javascript:;" class="region_title" data-target="daejeon" style="left:29%;bottom:49%;">대전</a>
+									<a href="javascript:;" class="region_title" data-target="ulsan" style="left:68%;bottom:35%;">울산</a>
+									<a href="javascript:;" class="region_title" data-target="sejong" style="left:26%;bottom:56%;">세종</a>
+									<a href="javascript:;" class="region_title" data-target="gyeonggi" style="left:27%;bottom:68%;">경기</a>
+									<a href="javascript:;" class="region_title" data-target="gangwon" style="left:48%;bottom:78%;">강원</a>
+									<a href="javascript:;" class="region_title" data-target="chungbuk" style="left:38%;bottom:61.5%;">충북</a>
+									<a href="javascript:;" class="region_title" data-target="chungnam" style="left:14%;bottom:51%;">충남</a>
+									<a href="javascript:;" class="region_title" data-target="jeonbuk" style="left:25%;bottom:39%;">전북</a>
+									<a href="javascript:;" class="region_title" data-target="jeonnam" style="left:12%;bottom:18.5%;">전남</a>
+									<a href="javascript:;" class="region_title" data-target="gyeongbuk" style="left:58%;bottom:55%;">경북</a>
+									<a href="javascript:;" class="region_title" data-target="gyeongnam" style="left:44%;bottom:32%;">경남</a>
+									<a href="javascript:;" class="region_title" data-target="jeju" style="left:20%;bottom:4.5%;">제주</a>
+								</div>
+								<div id="kr-map" class="kr-map"></div>
 							</div>
 						</div>
-						<div class="area_map">
-							<div class="region_list">
-								<a href="javascript:;" class="region_title" data-target="seoul" style="left:21%;bottom:75.5%;">서울</a>
-								<a href="javascript:;" class="region_title" data-target="busan" style="left:59%;bottom:27%;">부산</a>
-								<a href="javascript:;" class="region_title" data-target="daegu" style="left:55%;bottom:43.5%;">대구</a>
-								<a href="javascript:;" class="region_title" data-target="incheon" style="left:9.5%;bottom:69.5%;">인천</a>
-								<a href="javascript:;" class="region_title" data-target="gwangju" style="left:18%;bottom:29%;">광주</a>
-								<a href="javascript:;" class="region_title" data-target="daejeon" style="left:29%;bottom:49%;">대전</a>
-								<a href="javascript:;" class="region_title" data-target="ulsan" style="left:68%;bottom:35%;">울산</a>
-								<a href="javascript:;" class="region_title" data-target="sejong" style="left:26%;bottom:56%;">세종</a>
-								<a href="javascript:;" class="region_title" data-target="gyeonggi" style="left:27%;bottom:68%;">경기</a>
-								<a href="javascript:;" class="region_title" data-target="gangwon" style="left:48%;bottom:78%;">강원</a>
-								<a href="javascript:;" class="region_title" data-target="chungbuk" style="left:38%;bottom:61.5%;">충북</a>
-								<a href="javascript:;" class="region_title" data-target="chungnam" style="left:14%;bottom:51%;">충남</a>
-								<a href="javascript:;" class="region_title" data-target="jeonbuk" style="left:25%;bottom:39%;">전북</a>
-								<a href="javascript:;" class="region_title" data-target="jeonnam" style="left:12%;bottom:18.5%;">전남</a>
-								<a href="javascript:;" class="region_title" data-target="gyeongbuk" style="left:58%;bottom:55%;">경북</a>
-								<a href="javascript:;" class="region_title" data-target="gyeongnam" style="left:44%;bottom:32%;">경남</a>
-								<a href="javascript:;" class="region_title" data-target="jeju" style="left:20%;bottom:4.5%;">제주</a>
-							</div>
-							<div id="kr-map" class="kr-map"></div>
-						</div>
-					</div>
 
-					<div class="mt_links">
-						<div class="item use">
-							<a href="javascript:;">
-								<span class="text">평생교육 <br/>이용권이란?</span>
-								<span class="icon">
-									<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M61.8867 12.4727H8.34231C5.83733 12.4727 3.80664 14.5033 3.80664 17.0083V52.9918C3.80664 55.4967 5.83733 57.5274 8.34231 57.5274H61.8867C64.3917 57.5274 66.4224 55.4967 66.4224 52.9918V17.0083C66.4224 14.5033 64.3917 12.4727 61.8867 12.4727Z" fill="white"/> <path d="M61.8867 59H8.34227C5.02888 59 2.33398 56.3051 2.33398 52.9917V17.0083C2.33398 13.6949 5.02888 11 8.34227 11H61.8793C65.1927 11 67.8876 13.6949 67.8876 17.0083V52.9917C67.8876 56.3051 65.1927 59 61.8793 59H61.8867ZM8.34227 13.9452C6.64876 13.9452 5.27922 15.3221 5.27922 17.0083V52.9917C5.27922 54.6852 6.65612 56.0548 8.34227 56.0548H61.8793C63.5728 56.0548 64.9424 54.6779 64.9424 52.9917V17.0083C64.9424 15.3148 63.5655 13.9452 61.8793 13.9452H8.34227Z" fill="#0E2B5E"/> <path d="M66.4224 20.9404H3.80664V29.0398H66.4224V20.9404Z" fill="#53B2D2"/> <path d="M66.4223 30.5124H3.8066C2.99666 30.5124 2.33398 29.8497 2.33398 29.0398V20.9404C2.33398 20.1305 2.99666 19.4678 3.8066 19.4678H66.4223C67.2323 19.4678 67.895 20.1305 67.895 20.9404V29.0398C67.895 29.8497 67.2323 30.5124 66.4223 30.5124ZM5.27922 27.5672H64.9497V22.413H5.27922V27.5672Z" fill="#0E2B5E"/> <path d="M25.0201 40.9895H11.8075C11.1883 40.9895 10.6816 40.3462 10.6816 39.56C10.6816 38.7737 11.1883 38.1304 11.8075 38.1304H25.0201C25.6393 38.1304 26.146 38.7737 26.146 39.56C26.146 40.3462 25.6393 40.9895 25.0201 40.9895Z" fill="#B5BEC8"/> <path d="M28.8901 48.2937H12.1114C11.325 48.2937 10.6816 47.6504 10.6816 46.8642C10.6816 46.0779 11.325 45.4346 12.1114 45.4346H28.8901C29.6765 45.4346 30.3199 46.0779 30.3199 46.8642C30.3199 47.6504 29.6765 48.2937 28.8901 48.2937Z" fill="#B5BEC8"/> <path d="M53.6693 37.0869C52.1529 37.0869 50.6929 37.6424 49.5448 38.6521C50.2231 39.4416 50.7241 40.3694 51.0106 41.3537C51.6344 40.5156 52.6109 40.0224 53.6693 40.0224C55.5036 40.0224 56.9947 41.5136 56.9947 43.3458C56.9947 45.1781 55.5036 46.6712 53.6693 46.6712C51.8351 46.6712 50.4317 45.2834 50.3479 43.5076L50.3323 43.3595C50.3323 41.7026 49.6949 40.1491 48.5371 38.9679C48.0907 38.5157 47.5898 38.1375 47.0498 37.8432C46.9017 37.7613 46.7379 37.6834 46.5469 37.6015L46.5138 37.5859C46.3481 37.5157 46.1746 37.4514 45.9719 37.3871L45.89 37.3598C45.7536 37.3189 45.6016 37.2799 45.4164 37.239L45.3696 37.2273C45.356 37.2234 45.3443 37.2195 45.3345 37.2175C45.1747 37.1844 45.0207 37.1629 44.8355 37.1415L44.7692 37.1317C44.7478 37.1278 44.7303 37.1239 44.7108 37.122C44.5002 37.1006 44.2858 37.0908 44.0734 37.0908C40.6213 37.0869 37.8125 39.8938 37.8125 43.3458C37.8125 46.7979 40.6213 49.6048 44.0714 49.6048C45.5879 49.6048 47.0479 49.0492 48.194 48.0395C47.5176 47.2501 47.0147 46.3223 46.7282 45.3379C46.1045 46.178 45.1298 46.6712 44.0714 46.6712C42.2372 46.6712 40.7461 45.1781 40.7461 43.3458C40.7461 41.5136 42.2372 40.0224 44.0714 40.0224C45.9056 40.0224 47.313 41.4122 47.3929 43.1918L47.4085 43.3341C47.4085 44.9929 48.0498 46.5503 49.2095 47.7335C49.652 48.1818 50.151 48.558 50.689 48.8524C50.8605 48.9459 51.0399 49.0317 51.227 49.1116C51.4063 49.1876 51.5876 49.2539 51.7825 49.3163C51.9501 49.3689 52.1139 49.4118 52.3302 49.4605L52.4102 49.48C52.5797 49.5151 52.7493 49.5385 52.9092 49.558L53.032 49.5775C53.2425 49.5989 53.4569 49.6087 53.6693 49.6087C57.1214 49.6087 59.9283 46.7998 59.9283 43.3497C59.9283 39.8996 57.1214 37.0869 53.6693 37.0869Z" fill="#1D2088"/> </svg> 
-								</span>
-							</a>
-						</div>
-						<div class="item files">
-							<a href="javascript:;">
-								<span class="text">자료실</span>
-								<span class="icon">
-									<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M54.6665 10.2339H15.5879V41.0849H54.6665V10.2339Z" fill="white"/> <path d="M54.6676 42.3181H15.589C14.9106 42.3181 14.3555 41.763 14.3555 41.0845V10.2335C14.3555 9.5551 14.9106 9 15.589 9H54.6676C55.3461 9 55.9012 9.5551 55.9012 10.2335V41.0845C55.9012 41.763 55.3461 42.3181 54.6676 42.3181ZM16.8226 39.851H53.4341V11.4671H16.8226V39.851Z" fill="#0E2B5E"/> <path d="M31.5236 26.3435L23.2958 18.1157H8.90039V59.7664H61.3506V26.3435H31.5236Z" fill="#76B7FF"/> <path d="M61.3517 61.0001H8.90151C8.22306 61.0001 7.66797 60.445 7.66797 59.7666V18.1159C7.66797 17.4374 8.22306 16.8823 8.90151 16.8823H23.297C23.6238 16.8823 23.9384 17.0118 24.1666 17.2462L32.0304 25.1101H61.3456C62.024 25.1101 62.5791 25.6652 62.5791 26.3436V59.7666C62.5791 60.445 62.024 61.0001 61.3456 61.0001H61.3517ZM10.1351 58.533H60.1182V27.5772H31.5247C31.1978 27.5772 30.8832 27.4476 30.655 27.2133L22.7912 19.3494H10.1351V58.533Z" fill="#0E2B5E"/> <path d="M54.8372 53.6355H15.4132C14.7348 53.6355 14.1797 53.0805 14.1797 52.402C14.1797 51.7236 14.7348 51.1685 15.4132 51.1685H54.8372C55.5157 51.1685 56.0708 51.7236 56.0708 52.402C56.0708 53.0805 55.5157 53.6355 54.8372 53.6355Z" fill="#0E2B5E"/> </svg> 
-								</span>
-							</a>
-						</div>
-						<div class="item faq">
-							<a href="javascript:;">
-								<span class="text">자주하는 <br/>질문</span>
-								<span class="icon">
-									<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M43.321 23.8389C54.5384 23.8389 63.6368 31.8048 63.6368 41.6315C63.6368 46.8693 61.0543 51.5774 56.9355 54.8353C57.0414 56.9675 57.8162 59.9937 60.9616 62.0928C60.9616 62.0928 54.0682 64.7415 48.8105 58.762C47.0623 59.1924 45.2281 59.4242 43.321 59.4242C32.1035 59.4242 23.0117 51.4582 23.0117 41.6315C23.0117 31.8048 32.1035 23.8389 43.321 23.8389Z" fill="#9FACFA"/> <path d="M57.2925 64C54.8689 64 51.4189 63.3245 48.3662 60.2189C46.7107 60.5699 45.0222 60.7487 43.327 60.7487C31.3944 60.7487 21.6934 52.1735 21.6934 41.6317C21.6934 31.0898 31.401 22.5146 43.327 22.5146C55.2529 22.5146 64.9672 31.0898 64.9672 41.6317C64.9672 46.8364 62.5569 51.8225 58.3189 55.4182C58.5308 57.1928 59.3254 59.4045 61.7026 60.9937C62.1132 61.2718 62.3383 61.7486 62.2854 62.2386C62.2324 62.7286 61.9079 63.1524 61.4444 63.3312C61.3715 63.3577 59.6697 64 57.2925 64ZM48.8099 57.4312C49.1873 57.4312 49.5515 57.5901 49.8031 57.8815C51.8294 60.1792 54.3457 61.3446 57.2858 61.3446C57.564 61.3446 57.8288 61.3314 58.0805 61.3181C56.2462 59.2058 55.7032 56.769 55.6105 54.895C55.5907 54.4646 55.7761 54.0541 56.1138 53.7892C60.0538 50.6704 62.3118 46.2404 62.3118 41.625C62.3118 32.5466 53.7961 25.1567 43.3203 25.1567C32.8446 25.1567 24.3355 32.5466 24.3355 41.625C24.3355 50.7035 32.8512 58.0934 43.3203 58.0934C45.0619 58.0934 46.8034 57.8815 48.492 57.4709C48.598 57.4444 48.7039 57.4312 48.8099 57.4312Z" fill="#0E2B5E"/> <path d="M31.1099 7.32422C17.9722 7.32422 7.32422 16.6543 7.32422 28.1563C7.32422 34.288 10.3504 39.8039 15.1645 43.6181C15.0387 46.1145 14.1315 49.6571 10.4497 52.1138C10.4497 52.1138 18.5218 55.2128 24.6801 48.2136C26.7263 48.7168 28.8784 48.9883 31.1099 48.9883C44.2477 48.9883 54.8956 39.6583 54.8956 28.1563C54.8956 16.6543 44.2411 7.32422 31.1099 7.32422Z" fill="white"/> <path d="M14.7541 54.1203C12.0126 54.1203 10.0592 53.3787 9.97311 53.3522C9.50958 53.1734 9.18511 52.7562 9.13214 52.2596C9.07916 51.7696 9.30431 51.2862 9.71486 51.0147C12.6219 49.0745 13.5622 46.353 13.7939 44.2076C8.83416 40.0358 6 34.2219 6 28.1564C6 15.9393 17.2638 6 31.1101 6C44.9564 6 56.2202 15.9393 56.2202 28.1564C56.2202 40.3736 44.9564 50.3128 31.1101 50.3128C29.1037 50.3128 27.0972 50.1009 25.1305 49.6771C21.5945 53.3323 17.5684 54.1203 14.7541 54.1203ZM13.3503 51.3988C13.7807 51.4451 14.2508 51.4782 14.7541 51.4782C18.2637 51.4782 21.27 50.0877 23.687 47.3463C24.0115 46.9754 24.5147 46.8165 24.9981 46.9357C26.9979 47.4257 29.0507 47.6707 31.1101 47.6707C43.493 47.6707 53.5714 38.9168 53.5714 28.163C53.5714 17.4093 43.493 8.6487 31.1101 8.6487C18.7272 8.6487 8.64874 17.4027 8.64874 28.1564C8.64874 33.626 11.324 38.8837 15.9924 42.5786C16.3301 42.8435 16.5155 43.254 16.4956 43.6844C16.3831 45.9358 15.7076 48.8958 13.3569 51.3988H13.3503Z" fill="#0E2B5E"/> <path d="M38.8854 21.5413H23.3439C22.6155 21.5413 22.0195 20.9453 22.0195 20.2169C22.0195 19.4885 22.6155 18.8926 23.3439 18.8926H38.8854C39.6138 18.8926 40.2098 19.4885 40.2098 20.2169C40.2098 20.9453 39.6138 21.5413 38.8854 21.5413Z" fill="#B5BEC8"/> <path d="M42.7832 29.4739H19.4279C18.6995 29.4739 18.1035 28.8779 18.1035 28.1495C18.1035 27.4212 18.6995 26.8252 19.4279 26.8252H42.7832C43.5116 26.8252 44.1076 27.4212 44.1076 28.1495C44.1076 28.8779 43.5116 29.4739 42.7832 29.4739Z" fill="#B5BEC8"/> <path d="M38.8854 37.4138H23.3439C22.6155 37.4138 22.0195 36.8179 22.0195 36.0895C22.0195 35.3611 22.6155 34.7651 23.3439 34.7651H38.8854C39.6138 34.7651 40.2098 35.3611 40.2098 36.0895C40.2098 36.8179 39.6138 37.4138 38.8854 37.4138Z" fill="#B5BEC8"/> </svg> 
-								</span>
-							</a>
+						<div class="mt_links">
+							<div class="item use">
+								<a href="javascript:;">
+									<span class="text">평생교육 <br/>이용권이란?</span>
+									<span class="icon">
+										<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M61.8867 12.4727H8.34231C5.83733 12.4727 3.80664 14.5033 3.80664 17.0083V52.9918C3.80664 55.4967 5.83733 57.5274 8.34231 57.5274H61.8867C64.3917 57.5274 66.4224 55.4967 66.4224 52.9918V17.0083C66.4224 14.5033 64.3917 12.4727 61.8867 12.4727Z" fill="white"/> <path d="M61.8867 59H8.34227C5.02888 59 2.33398 56.3051 2.33398 52.9917V17.0083C2.33398 13.6949 5.02888 11 8.34227 11H61.8793C65.1927 11 67.8876 13.6949 67.8876 17.0083V52.9917C67.8876 56.3051 65.1927 59 61.8793 59H61.8867ZM8.34227 13.9452C6.64876 13.9452 5.27922 15.3221 5.27922 17.0083V52.9917C5.27922 54.6852 6.65612 56.0548 8.34227 56.0548H61.8793C63.5728 56.0548 64.9424 54.6779 64.9424 52.9917V17.0083C64.9424 15.3148 63.5655 13.9452 61.8793 13.9452H8.34227Z" fill="#0E2B5E"/> <path d="M66.4224 20.9404H3.80664V29.0398H66.4224V20.9404Z" fill="#53B2D2"/> <path d="M66.4223 30.5124H3.8066C2.99666 30.5124 2.33398 29.8497 2.33398 29.0398V20.9404C2.33398 20.1305 2.99666 19.4678 3.8066 19.4678H66.4223C67.2323 19.4678 67.895 20.1305 67.895 20.9404V29.0398C67.895 29.8497 67.2323 30.5124 66.4223 30.5124ZM5.27922 27.5672H64.9497V22.413H5.27922V27.5672Z" fill="#0E2B5E"/> <path d="M25.0201 40.9895H11.8075C11.1883 40.9895 10.6816 40.3462 10.6816 39.56C10.6816 38.7737 11.1883 38.1304 11.8075 38.1304H25.0201C25.6393 38.1304 26.146 38.7737 26.146 39.56C26.146 40.3462 25.6393 40.9895 25.0201 40.9895Z" fill="#B5BEC8"/> <path d="M28.8901 48.2937H12.1114C11.325 48.2937 10.6816 47.6504 10.6816 46.8642C10.6816 46.0779 11.325 45.4346 12.1114 45.4346H28.8901C29.6765 45.4346 30.3199 46.0779 30.3199 46.8642C30.3199 47.6504 29.6765 48.2937 28.8901 48.2937Z" fill="#B5BEC8"/> <path d="M53.6693 37.0869C52.1529 37.0869 50.6929 37.6424 49.5448 38.6521C50.2231 39.4416 50.7241 40.3694 51.0106 41.3537C51.6344 40.5156 52.6109 40.0224 53.6693 40.0224C55.5036 40.0224 56.9947 41.5136 56.9947 43.3458C56.9947 45.1781 55.5036 46.6712 53.6693 46.6712C51.8351 46.6712 50.4317 45.2834 50.3479 43.5076L50.3323 43.3595C50.3323 41.7026 49.6949 40.1491 48.5371 38.9679C48.0907 38.5157 47.5898 38.1375 47.0498 37.8432C46.9017 37.7613 46.7379 37.6834 46.5469 37.6015L46.5138 37.5859C46.3481 37.5157 46.1746 37.4514 45.9719 37.3871L45.89 37.3598C45.7536 37.3189 45.6016 37.2799 45.4164 37.239L45.3696 37.2273C45.356 37.2234 45.3443 37.2195 45.3345 37.2175C45.1747 37.1844 45.0207 37.1629 44.8355 37.1415L44.7692 37.1317C44.7478 37.1278 44.7303 37.1239 44.7108 37.122C44.5002 37.1006 44.2858 37.0908 44.0734 37.0908C40.6213 37.0869 37.8125 39.8938 37.8125 43.3458C37.8125 46.7979 40.6213 49.6048 44.0714 49.6048C45.5879 49.6048 47.0479 49.0492 48.194 48.0395C47.5176 47.2501 47.0147 46.3223 46.7282 45.3379C46.1045 46.178 45.1298 46.6712 44.0714 46.6712C42.2372 46.6712 40.7461 45.1781 40.7461 43.3458C40.7461 41.5136 42.2372 40.0224 44.0714 40.0224C45.9056 40.0224 47.313 41.4122 47.3929 43.1918L47.4085 43.3341C47.4085 44.9929 48.0498 46.5503 49.2095 47.7335C49.652 48.1818 50.151 48.558 50.689 48.8524C50.8605 48.9459 51.0399 49.0317 51.227 49.1116C51.4063 49.1876 51.5876 49.2539 51.7825 49.3163C51.9501 49.3689 52.1139 49.4118 52.3302 49.4605L52.4102 49.48C52.5797 49.5151 52.7493 49.5385 52.9092 49.558L53.032 49.5775C53.2425 49.5989 53.4569 49.6087 53.6693 49.6087C57.1214 49.6087 59.9283 46.7998 59.9283 43.3497C59.9283 39.8996 57.1214 37.0869 53.6693 37.0869Z" fill="#1D2088"/> </svg> 
+									</span>
+								</a>
+							</div>
+							<div class="item files">
+								<a href="javascript:;">
+									<span class="text">자료실</span>
+									<span class="icon">
+										<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M54.6665 10.2339H15.5879V41.0849H54.6665V10.2339Z" fill="white"/> <path d="M54.6676 42.3181H15.589C14.9106 42.3181 14.3555 41.763 14.3555 41.0845V10.2335C14.3555 9.5551 14.9106 9 15.589 9H54.6676C55.3461 9 55.9012 9.5551 55.9012 10.2335V41.0845C55.9012 41.763 55.3461 42.3181 54.6676 42.3181ZM16.8226 39.851H53.4341V11.4671H16.8226V39.851Z" fill="#0E2B5E"/> <path d="M31.5236 26.3435L23.2958 18.1157H8.90039V59.7664H61.3506V26.3435H31.5236Z" fill="#76B7FF"/> <path d="M61.3517 61.0001H8.90151C8.22306 61.0001 7.66797 60.445 7.66797 59.7666V18.1159C7.66797 17.4374 8.22306 16.8823 8.90151 16.8823H23.297C23.6238 16.8823 23.9384 17.0118 24.1666 17.2462L32.0304 25.1101H61.3456C62.024 25.1101 62.5791 25.6652 62.5791 26.3436V59.7666C62.5791 60.445 62.024 61.0001 61.3456 61.0001H61.3517ZM10.1351 58.533H60.1182V27.5772H31.5247C31.1978 27.5772 30.8832 27.4476 30.655 27.2133L22.7912 19.3494H10.1351V58.533Z" fill="#0E2B5E"/> <path d="M54.8372 53.6355H15.4132C14.7348 53.6355 14.1797 53.0805 14.1797 52.402C14.1797 51.7236 14.7348 51.1685 15.4132 51.1685H54.8372C55.5157 51.1685 56.0708 51.7236 56.0708 52.402C56.0708 53.0805 55.5157 53.6355 54.8372 53.6355Z" fill="#0E2B5E"/> </svg> 
+									</span>
+								</a>
+							</div>
+							<div class="item faq">
+								<a href="javascript:;">
+									<span class="text">자주하는 <br/>질문</span>
+									<span class="icon">
+										<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M43.321 23.8389C54.5384 23.8389 63.6368 31.8048 63.6368 41.6315C63.6368 46.8693 61.0543 51.5774 56.9355 54.8353C57.0414 56.9675 57.8162 59.9937 60.9616 62.0928C60.9616 62.0928 54.0682 64.7415 48.8105 58.762C47.0623 59.1924 45.2281 59.4242 43.321 59.4242C32.1035 59.4242 23.0117 51.4582 23.0117 41.6315C23.0117 31.8048 32.1035 23.8389 43.321 23.8389Z" fill="#9FACFA"/> <path d="M57.2925 64C54.8689 64 51.4189 63.3245 48.3662 60.2189C46.7107 60.5699 45.0222 60.7487 43.327 60.7487C31.3944 60.7487 21.6934 52.1735 21.6934 41.6317C21.6934 31.0898 31.401 22.5146 43.327 22.5146C55.2529 22.5146 64.9672 31.0898 64.9672 41.6317C64.9672 46.8364 62.5569 51.8225 58.3189 55.4182C58.5308 57.1928 59.3254 59.4045 61.7026 60.9937C62.1132 61.2718 62.3383 61.7486 62.2854 62.2386C62.2324 62.7286 61.9079 63.1524 61.4444 63.3312C61.3715 63.3577 59.6697 64 57.2925 64ZM48.8099 57.4312C49.1873 57.4312 49.5515 57.5901 49.8031 57.8815C51.8294 60.1792 54.3457 61.3446 57.2858 61.3446C57.564 61.3446 57.8288 61.3314 58.0805 61.3181C56.2462 59.2058 55.7032 56.769 55.6105 54.895C55.5907 54.4646 55.7761 54.0541 56.1138 53.7892C60.0538 50.6704 62.3118 46.2404 62.3118 41.625C62.3118 32.5466 53.7961 25.1567 43.3203 25.1567C32.8446 25.1567 24.3355 32.5466 24.3355 41.625C24.3355 50.7035 32.8512 58.0934 43.3203 58.0934C45.0619 58.0934 46.8034 57.8815 48.492 57.4709C48.598 57.4444 48.7039 57.4312 48.8099 57.4312Z" fill="#0E2B5E"/> <path d="M31.1099 7.32422C17.9722 7.32422 7.32422 16.6543 7.32422 28.1563C7.32422 34.288 10.3504 39.8039 15.1645 43.6181C15.0387 46.1145 14.1315 49.6571 10.4497 52.1138C10.4497 52.1138 18.5218 55.2128 24.6801 48.2136C26.7263 48.7168 28.8784 48.9883 31.1099 48.9883C44.2477 48.9883 54.8956 39.6583 54.8956 28.1563C54.8956 16.6543 44.2411 7.32422 31.1099 7.32422Z" fill="white"/> <path d="M14.7541 54.1203C12.0126 54.1203 10.0592 53.3787 9.97311 53.3522C9.50958 53.1734 9.18511 52.7562 9.13214 52.2596C9.07916 51.7696 9.30431 51.2862 9.71486 51.0147C12.6219 49.0745 13.5622 46.353 13.7939 44.2076C8.83416 40.0358 6 34.2219 6 28.1564C6 15.9393 17.2638 6 31.1101 6C44.9564 6 56.2202 15.9393 56.2202 28.1564C56.2202 40.3736 44.9564 50.3128 31.1101 50.3128C29.1037 50.3128 27.0972 50.1009 25.1305 49.6771C21.5945 53.3323 17.5684 54.1203 14.7541 54.1203ZM13.3503 51.3988C13.7807 51.4451 14.2508 51.4782 14.7541 51.4782C18.2637 51.4782 21.27 50.0877 23.687 47.3463C24.0115 46.9754 24.5147 46.8165 24.9981 46.9357C26.9979 47.4257 29.0507 47.6707 31.1101 47.6707C43.493 47.6707 53.5714 38.9168 53.5714 28.163C53.5714 17.4093 43.493 8.6487 31.1101 8.6487C18.7272 8.6487 8.64874 17.4027 8.64874 28.1564C8.64874 33.626 11.324 38.8837 15.9924 42.5786C16.3301 42.8435 16.5155 43.254 16.4956 43.6844C16.3831 45.9358 15.7076 48.8958 13.3569 51.3988H13.3503Z" fill="#0E2B5E"/> <path d="M38.8854 21.5413H23.3439C22.6155 21.5413 22.0195 20.9453 22.0195 20.2169C22.0195 19.4885 22.6155 18.8926 23.3439 18.8926H38.8854C39.6138 18.8926 40.2098 19.4885 40.2098 20.2169C40.2098 20.9453 39.6138 21.5413 38.8854 21.5413Z" fill="#B5BEC8"/> <path d="M42.7832 29.4739H19.4279C18.6995 29.4739 18.1035 28.8779 18.1035 28.1495C18.1035 27.4212 18.6995 26.8252 19.4279 26.8252H42.7832C43.5116 26.8252 44.1076 27.4212 44.1076 28.1495C44.1076 28.8779 43.5116 29.4739 42.7832 29.4739Z" fill="#B5BEC8"/> <path d="M38.8854 37.4138H23.3439C22.6155 37.4138 22.0195 36.8179 22.0195 36.0895C22.0195 35.3611 22.6155 34.7651 23.3439 34.7651H38.8854C39.6138 34.7651 40.2098 35.3611 40.2098 36.0895C40.2098 36.8179 39.6138 37.4138 38.8854 37.4138Z" fill="#B5BEC8"/> </svg> 
+									</span>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="mt_right">
-					<div class="mt_search">
-						<div class="main_title">
-							<h3>통합검색</h3>
-						</div>
-						<div class="mt_sform">
-							<form action="">
-								<input id="mt_sform_input" type="text" placeholder="검색어를 입력하여 필요한 정보를 확인해보세요.">
-								<button type="submit">검색</button>
-							</form>
-						</div>
-						<div class="mt_skeywords">
-							<div class="tit">추천검색어</div>
-							<div class="skeyword_slide_wrap">
-								<div class="splide skeywords_splide">
-									<div class="splide__track">
-										<ul class="splide__list">
-											<li class="splide__slide">
-												<a href="javascript:;" class="keyword">스포츠상품권</a>
-											</li>
-											<li class="splide__slide">
-												<a href="javascript:;" class="keyword">평생교육이용권</a>
-											</li>
-											<li class="splide__slide">
-												<a href="javascript:;" class="keyword">알림소통</a>
-											</li>
-											<li class="splide__slide">
-												<a href="javascript:;" class="keyword">스포츠상품권</a>
-											</li>
-											<li class="splide__slide">
-												<a href="javascript:;" class="keyword">평생교육이용권</a>
-											</li>
-										</ul>
+					<div class="mt_right">
+						<div class="mt_search">
+							<div class="main_title">
+								<h3>통합검색</h3>
+							</div>
+							<div class="mt_sform">
+								<form action="">
+									<input id="mt_sform_input" type="text" placeholder="검색어를 입력하여 필요한 정보를 확인해보세요.">
+									<button type="submit">검색</button>
+								</form>
+							</div>
+							<div class="mt_skeywords">
+								<div class="tit">추천검색어</div>
+								<div class="skeyword_slide_wrap">
+									<div class="splide skeywords_splide">
+										<div class="splide__track">
+											<ul class="splide__list">
+												<li class="splide__slide">
+													<a href="javascript:;" class="keyword">스포츠상품권</a>
+												</li>
+												<li class="splide__slide">
+													<a href="javascript:;" class="keyword">평생교육이용권</a>
+												</li>
+												<li class="splide__slide">
+													<a href="javascript:;" class="keyword">알림소통</a>
+												</li>
+												<li class="splide__slide">
+													<a href="javascript:;" class="keyword">스포츠상품권</a>
+												</li>
+												<li class="splide__slide">
+													<a href="javascript:;" class="keyword">평생교육이용권</a>
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="mt_notice">
-						<div class="main_title">
-							<h3>공지사항</h3>
-							<div class="main_splide_arrow white">
-								<button class="splide__arrow--prev">이전</button>
-								<button class="splide__arrow--next">다음</button>
-								<button type="button" class="btn_more">더 보기</button>
+						<div class="mt_notice">
+							<div class="main_title">
+								<h3>공지사항</h3>
+								<div class="main_splide_arrow white">
+									<button class="splide__arrow--prev">이전</button>
+									<button class="splide__arrow--next">다음</button>
+									<button type="button" class="btn_more">더 보기</button>
+								</div>
 							</div>
-						</div>
-						<div class="splide notice_splide">
-							<div class="splide__track">
-								<ul class="splide__list">
-									<li class="splide__slide">
-										<a href="javascript:;" class="notice_card">
-											<div class="category"><span class="new">N</span><strong style="color:#2E6FE4">공지</strong></div>
-											<div class="subject">스포츠 바우처 '어르신 스포츠 상품권' 신청 안내 (9.5~ 예산 소진 시까지)</div>
-											<div class="date">2025-09-24</div>
-										</a>
-									</li>
-									<li class="splide__slide">
-										<a href="javascript:;" class="notice_card">
-											<div class="category"><strong style="color:#0D99BF">신청·접수</strong></div>
-											<div class="subject">평생교육이용권 신청접수 관련 안내</div>
-											<div class="date">2025-09-24</div>
-										</a>
-									</li>
-									<li class="splide__slide">
-										<a href="javascript:;" class="notice_card">
-											<div class="category"><span class="new">N</span><strong style="color:#2E6FE4">공지</strong></div>
-											<div class="subject">스포츠 바우처 '어르신 스포츠 상품권' 신청 안내 (9.5~ 예산 소진 시까지)</div>
-											<div class="date">2025-09-24</div>
-										</a>
-									</li>
-									<li class="splide__slide">
-										<a href="javascript:;" class="notice_card">
-											<div class="category"><strong style="color:#0D99BF">신청·접수</strong></div>
-											<div class="subject">평생교육이용권 신청접수 관련 안내</div>
-											<div class="date">2025-09-24</div>
-										</a>
-									</li>
-									<li class="splide__slide">
-										<a href="javascript:;" class="notice_card">
-											<div class="category"><span class="new">N</span><strong style="color:#2E6FE4">공지</strong></div>
-											<div class="subject">스포츠 바우처 '어르신 스포츠 상품권' 신청 안내 (9.5~ 예산 소진 시까지)</div>
-											<div class="date">2025-09-24</div>
-										</a>
-									</li>
-									<li class="splide__slide">
-										<a href="javascript:;" class="notice_card">
-											<div class="category"><strong style="color:#0D99BF">신청·접수</strong></div>
-											<div class="subject">평생교육이용권 신청접수 관련 안내</div>
-											<div class="date">2025-09-24</div>
-										</a>
-									</li>
-								</ul>
+							<div class="splide notice_splide">
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<a href="javascript:;" class="notice_card">
+												<div class="category"><span class="new">N</span><strong style="color:#2E6FE4">공지</strong></div>
+												<div class="subject">스포츠 바우처 '어르신 스포츠 상품권' 신청 안내 (9.5~ 예산 소진 시까지)</div>
+												<div class="date">2025-09-24</div>
+											</a>
+										</li>
+										<li class="splide__slide">
+											<a href="javascript:;" class="notice_card">
+												<div class="category"><strong style="color:#0D99BF">신청·접수</strong></div>
+												<div class="subject">평생교육이용권 신청접수 관련 안내</div>
+												<div class="date">2025-09-24</div>
+											</a>
+										</li>
+										<li class="splide__slide">
+											<a href="javascript:;" class="notice_card">
+												<div class="category"><strong style="color:#274E94">사용기관</strong></div>
+												<div class="subject">스포츠 바우처 '어르신 스포츠 상품권' 신청 안내 (9.5~ 예산 소진 시까지)</div>
+												<div class="date">2025-09-24</div>
+											</a>
+										</li>
+										<li class="splide__slide">
+											<a href="javascript:;" class="notice_card">
+												<div class="category"><strong style="color:#299E83">시스템</strong></div>
+												<div class="subject">평생교육이용권 신청접수 관련 안내</div>
+												<div class="date">2025-09-24</div>
+											</a>
+										</li>
+										<li class="splide__slide">
+											<a href="javascript:;" class="notice_card">
+												<div class="category"><span class="new">N</span><strong style="color:#2E6FE4">공지</strong></div>
+												<div class="subject">스포츠 바우처 '어르신 스포츠 상품권' 신청 안내 (9.5~ 예산 소진 시까지)</div>
+												<div class="date">2025-09-24</div>
+											</a>
+										</li>
+										<li class="splide__slide">
+											<a href="javascript:;" class="notice_card">
+												<div class="category"><strong style="color:#0D99BF">신청·접수</strong></div>
+												<div class="subject">평생교육이용권 신청접수 관련 안내</div>
+												<div class="date">2025-09-24</div>
+											</a>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		
+			
 
-		<!-- 사업공고 -->
-		<div class="main_section main_announcement_section">
-			<div class="container">
-				<div class="main_title">
-					<h3>사업 공고</h3>
+			<!-- 사업공고 -->
+			<div class="main_section main_announcement_section">
+				<div class="container">
+					<div class="main_title">
+						<h3>사업 공고</h3>
+						<div class="main_splide_arrow">
+							<button class="splide__arrow--prev">이전</button>
+							<button class="splide__arrow--next">다음</button>
+							<button type="button" class="btn_more">더 보기</button>
+						</div>
+					</div>
+					<div class="splide announcement_section_splide">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<a href="javascript:;" class="slide_card">
+										<div class="category"><strong>서울</strong> 2025</div>
+										<div class="subject">서울시 평생교육이용권(2차)</div>
+										<div class="info">
+											<div class="item">
+												<div class="tit">신청기간</div>
+												<div class="cnt">
+													<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">지원금액</div>
+												<div class="cnt">
+													<div><div>350,000원</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">발표일</div>
+												<div class="cnt">
+													<div><div>12.01(월)</div></div>	
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">자격요건</div>
+												<div class="cnt">
+													<div><div>2000.01.01 ~ 2025.12.31 출생한 자</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">소득요건</div>
+												<div class="cnt">
+													<div><div>기초생활수급자, 차상위자</div></div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="splide__slide">
+									<a href="javascript:;" class="slide_card">
+										<div class="category"><strong>경기</strong> 2025</div>
+										<div class="subject">평생교육이용권 신청접수 관련 안내</div>
+										<div class="info">
+											<div class="item">
+												<div class="tit">신청기간</div>
+												<div class="cnt">
+													<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">지원금액</div>
+												<div class="cnt">
+													<div><div>350,000원</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">발표일</div>
+												<div class="cnt">
+													<div><div>12.01(월)</div></div>	
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">자격요건</div>
+												<div class="cnt">
+													<div><div>2000.01.01 ~ 2025.12.31 출생한 자</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">소득요건</div>
+												<div class="cnt">
+													<div><div>기초생활수급자, 차상위자</div></div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="splide__slide">
+									<a href="javascript:;" class="slide_card">
+										<div class="category"><strong>강원</strong> 2025</div>
+										<div class="subject">2025년 강원특별자치도 평생교육이용권 신청 접수 공고</div>
+										<div class="info">
+											<div class="item">
+												<div class="tit">신청기간</div>
+												<div class="cnt">
+													<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">지원금액</div>
+												<div class="cnt">
+													<div><div>350,000원</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">발표일</div>
+												<div class="cnt">
+													<div><div>12.01(월)</div></div>	
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">자격요건</div>
+												<div class="cnt">
+													<div><div>2000.01.01 ~ 2025.12.31 출생한 자</div></div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="tit">소득요건</div>
+												<div class="cnt">
+													<div><div>기초생활수급자, 차상위자</div></div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 평생교육이용권 상담센터 -->
+			<div class="main_section main_consult_section">
+				<div class="container">
+					<div class="main_title">
+						<h3>평생교육이용권 상담센터</h3>
+						<div class="select_area">
+							<select name="" id="consult_select" class="wid_pc_27 wid_mb_100">
+								<option value="" disabled selected hidden>지역 선택</option>
+								<option value="seoul" title="서울특별시">서울특별시</option>
+								<option value="busan" title="부산광역시">부산광역시</option>
+								<option value="daegu" title="대구광역시">대구광역시</option>
+								<option value="incheon" title="인천광역시">인천광역시</option>
+								<option value="gwangju" title="광주광역시">광주광역시</option>
+								<option value="daejeon" title="대전광역시">대전광역시</option>
+								<option value="ulsan" title="울산광역시">울산광역시</option>
+								<option value="sejong" title="세종특별자치시">세종특별자치시</option>
+								<option value="gyeonggi" title="경기도">경기도</option>
+								<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
+								<option value="chungbuk" title="충청북도">충청북도</option>
+								<option value="chungnam" title="충청남도">충청남도</option>
+								<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
+								<option value="jeonnam" title="전라남도">전라남도</option>
+								<option value="gyeongbuk" title="경상북도">경상북도</option>
+								<option value="gyeongnam" title="경상남도">경상남도</option>
+								<option value="jeju" title="제주특별자치도">제주특별자치도</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="splide consult_section_splide consult_list">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<div class="item" data-rel="seoul">
+										<a href="javascript:;">
+										<div class="title">서울특별시 평생교육이용권 상담콜센터</div>
+										<div class="call">1551-4777</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="busan">
+										<a href="javascript:;">
+										<div class="title">부산광역시 바로콜센터</div>
+										<div class="call">051-120</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="daegu">
+										<a href="javascript:;">
+										<div class="title">대구 평생교육이용권 상담센터</div>
+										<div class="call">053-210-5683</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="incheon">
+										<a href="javascript:;">
+										<div class="title">인천 평생교육이용권 상담센터</div>
+										<div class="call">032-722-7220</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="gwangju">
+										<a href="javascript:;">
+										<div class="title">광주광역시 빛고을 콜센터</div>
+										<div class="call">062-120</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="gwangju">
+										<a href="javascript:;">
+										<div class="title">광주 평생교육이용권 상담센터</div>
+										<div class="call">062-600-5247</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="daejeon">
+										<a href="javascript:;">
+										<div class="title">대전광역시 평생교육이용권 상담센터</div>
+										<div class="call">042-250-2700</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="ulsan">
+										<a href="javascript:;">
+										<div class="title">울산 평생교육진흥원 상담센터</div>
+										<div class="call">052-288-7405</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="sejong">
+										<a href="javascript:;">
+										<div class="title">세종 평생교육이용권 상담센터</div>
+										<div class="call">044-120</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="gyeonggi">
+										<a href="javascript:;">
+										<div class="title">경기도 평생교육이용권 상담센터</div>
+										<div class="call">1544-6500</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="chungbuk">
+										<a href="javascript:;">
+										<div class="title">충청북도 평생교육이용권 상담센터</div>
+										<div class="call">1533-0266</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="chungnam">
+										<a href="javascript:;">
+										<div class="title">충남 평생교육이용권 상담센터</div>
+										<div class="call">1551-3599</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="jeonnam">
+										<a href="javascript:;">
+										<div class="title">전라남도 평생교육이용권 상담센터</div>
+										<div class="call">061-285-9473<br/>061-285-9474</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="gyeongbuk">
+										<a href="javascript:;">
+										<div class="title">경상북도 평생교육이용권 상담센터</div>
+										<div class="call">053-850-9601</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="gyeongnam">
+										<a href="javascript:;">
+										<div class="title">경상남도 평생교육이용권 상담센터</div>
+										<div class="call">
+											<div class="sub">평생교육이용권(일반, 장애인)</div>
+											055-239-6188
+										</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="gangwon">
+										<a href="javascript:;">
+										<div class="title">강원 평생교육이용권 상담센터</div>
+										<div class="call">1551-7234</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="jeonbuk">
+										<a href="javascript:;">
+										<div class="title">전북 평생교육이용권 상담센터</div>
+										<div class="call">
+											<div class="sub">평생교육 이용권 전반</div>
+											1899-8301
+										</div>
+										</a>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item" data-rel="">
+										<a href="javascript:;">
+										<div class="title">평생교육이용권 중앙 상담콜센터</div>
+										<div class="call">1600-3005</div>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<div class="main_splide_arrow">
 						<button class="splide__arrow--prev">이전</button>
+						<div class="page">
+							<div class="current">1</div>
+							-
+							<div class="total">3</div>
+						</div>
 						<button class="splide__arrow--next">다음</button>
-						<button type="button" class="btn_more">더 보기</button>
-					</div>
-				</div>
-				<div class="splide announcement_section_splide">
-					<div class="splide__track">
-						<ul class="splide__list">
-							<li class="splide__slide">
-								<a href="javascript:;" class="slide_card">
-									<div class="category"><strong>서울</strong> 2025</div>
-									<div class="subject">서울시 평생교육이용권(2차)</div>
-									<div class="info">
-										<div class="item">
-											<div class="tit">신청기간</div>
-											<div class="cnt">
-												<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">지원금액</div>
-											<div class="cnt">
-												<div><div>350,000원</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">발표일</div>
-											<div class="cnt">
-												<div><div>12.01(월)</div></div>	
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">자격요건</div>
-											<div class="cnt">
-												<div><div>2000.01.01 ~ 2025.12.31 출생한 자</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">소득요건</div>
-											<div class="cnt">
-												<div><div>기초생활수급자, 차상위자</div></div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="splide__slide">
-								<a href="javascript:;" class="slide_card">
-									<div class="category"><strong>경기</strong> 2025</div>
-									<div class="subject">평생교육이용권 신청접수 관련 안내</div>
-									<div class="info">
-										<div class="item">
-											<div class="tit">신청기간</div>
-											<div class="cnt">
-												<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">지원금액</div>
-											<div class="cnt">
-												<div><div>350,000원</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">발표일</div>
-											<div class="cnt">
-												<div><div>12.01(월)</div></div>	
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">자격요건</div>
-											<div class="cnt">
-												<div><div>2000.01.01 ~ 2025.12.31 출생한 자</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">소득요건</div>
-											<div class="cnt">
-												<div><div>기초생활수급자, 차상위자</div></div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="splide__slide">
-								<a href="javascript:;" class="slide_card">
-									<div class="category"><strong>강원</strong> 2025</div>
-									<div class="subject">2025년 강원특별자치도 평생교육이용권 신청 접수 공고</div>
-									<div class="info">
-										<div class="item">
-											<div class="tit">신청기간</div>
-											<div class="cnt">
-												<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">지원금액</div>
-											<div class="cnt">
-												<div><div>350,000원</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">발표일</div>
-											<div class="cnt">
-												<div><div>12.01(월)</div></div>	
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">자격요건</div>
-											<div class="cnt">
-												<div><div>2000.01.01 ~ 2025.12.31 출생한 자</div></div>
-											</div>
-										</div>
-										<div class="item">
-											<div class="tit">소득요건</div>
-											<div class="cnt">
-												<div><div>기초생활수급자, 차상위자</div></div>
-											</div>
-										</div>
-									</div>
-								</a>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- 평생교육이용권 상담센터 -->
-		<div class="main_section main_consult_section">
-			<div class="container">
-				<div class="main_title">
-					<h3>평생교육이용권 상담센터</h3>
-					<div class="select_area">
-						<select name="" id="" class="size_lg wid_pc_27 wid_mb_100">
-							<option value="">지역 선택</option>
-							<option value="seoul" title="서울특별시">서울특별시</option>
-							<option value="busan" title="부산광역시">부산광역시</option>
-							<option value="daegu" title="대구광역시">대구광역시</option>
-							<option value="incheon" title="인천광역시">인천광역시</option>
-							<option value="gwangju" title="광주광역시">광주광역시</option>
-							<option value="daejeon" title="대전광역시">대전광역시</option>
-							<option value="ulsan" title="울산광역시">울산광역시</option>
-							<option value="sejong" title="세종특별자치시">세종특별자치시</option>
-							<option value="gyeonggi" title="경기도">경기도</option>
-							<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
-							<option value="chungbuk" title="충청북도">충청북도</option>
-							<option value="chungnam" title="충청남도">충청남도</option>
-							<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
-							<option value="jeonnam" title="전라남도">전라남도</option>
-							<option value="gyeongbuk" title="경상북도">경상북도</option>
-							<option value="gyeongnam" title="경상남도">경상남도</option>
-							<option value="jeju" title="제주특별자치도">제주특별자치도</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="splide consult_section_splide consult_list">
-					<div class="splide__track">
-						<ul class="splide__list">
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">서울특별시 평생교육이용권 상담콜센터</div>
-									<div class="call">1551-4777</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">부산광역시 바로콜센터</div>
-									<div class="call">051-120</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">대구 평생교육이용권 상담센터</div>
-									<div class="call">053-210-5683</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">인천 평생교육이용권 상담센터</div>
-									<div class="call">032-722-7220</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">광주광역시 빛고을 콜센터</div>
-									<div class="call">062-120</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">광주 평생교육이용권 상담센터</div>
-									<div class="call">062-600-5247</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">대전광역시 평생교육이용권 상담센터</div>
-									<div class="call">042-250-2700</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">울산 평생교육진흥원 상담센터</div>
-									<div class="call">052-288-7405</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">세종 평생교육이용권 상담센터</div>
-									<div class="call">044-120</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">경기도 평생교육이용권 상담센터</div>
-									<div class="call">1544-6500</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">충청북도 평생교육이용권 상담센터</div>
-									<div class="call">1533-0266</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">충남 평생교육이용권 상담센터</div>
-									<div class="call">1551-3599</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">전라남도 평생교육이용권 상담센터</div>
-									<div class="call">061-285-9473<br/>061-285-9474</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">경상북도 평생교육이용권 상담센터</div>
-									<div class="call">053-850-9601</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">경상남도 평생교육이용권 상담센터</div>
-									<div class="call">
-										<div class="sub">평생교육이용권(일반, 장애인)</div>
-										055-239-6188
-									</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">강원 평생교육이용권 상담센터</div>
-									<div class="call">1551-7234</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">전북 평생교육이용권 상담센터</div>
-									<div class="call">
-										<div class="sub">평생교육 이용권 전반</div>
-										1899-8301
-									</div>
-									</a>
-								</div>
-							</li>
-							<li class="splide__slide">
-								<div class="item">
-									<a href="javascript:;">
-									<div class="title">평생교육이용권 중앙 상담콜센터</div>
-									<div class="call">1600-3005</div>
-									</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="main_splide_arrow">
-					<button class="splide__arrow--prev">이전</button>
-					<div class="page">
-						<div class="current">1</div>
-						-
-						<div class="total">3</div>
-					</div>
-					<button class="splide__arrow--next">다음</button>
-				</div>
-			</div>
-		</div>
-
 	</div>
 	<!-- //content -->
 
@@ -659,13 +661,13 @@
 			<div class="ft_inner">
 				<ul class="ft_links">
 					<li><a href="javascript:;">이용약관</a></li>
-					<li><a href="javascript:;">개인정보처리방침</a></li>
+					<li><a href="javascript:;" class="privacy">개인정보처리방침</a></li>
 				</ul>
 				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
 				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
 				<div class="ft_family">
-					<select name="" id="" class="size_lg wid_pc_27 wid_mb_100">
-						<option value="">관련 사이트</option>
+					<select name="" id="" class="wid_pc_27 wid_mb_100">
+						<option value="" disabled selected hidden>관련 사이트</option>
 						<option value="seoul" title="서울특별시">서울특별시</option>
 						<option value="busan" title="부산광역시">부산광역시</option>
 						<option value="daegu" title="대구광역시">대구광역시</option>
@@ -746,6 +748,7 @@ function announcement_section_slide(){
 	var splide = new Splide('.announcement_section_splide', {
 		perPage: 4,
 		gap: '24px',
+		speed: 800,
 		breakpoints: {
 			1600: {
 			perPage: 3,
@@ -786,126 +789,198 @@ function keywords_slide(){
 keywords_slide()
 
 function notice_slide(){
- 	var notice = new Splide('.notice_splide', {
-		type: 'slide',
-		arrows: false,
-		pagination: false,
-		gap: '24px',
+  var notice = new Splide('.notice_splide', {
+    type: 'slide',
+    arrows: false,
+    pagination: false,
+    gap: '24px',
+    perPage: 1,
+	speed: 800,
+    grid: {
+      rows: 2,
+      cols: 1,
+      gap: { row: '24px', col: '0px' },
+    },
+    breakpoints: {
+      1099: {
+        grid: { rows: 1, cols: 1, gap: { row: '0', col: '0' } },
+        perPage: 1,
+      },
+    },
+  });
 
-		perPage: 1,
-		grid: {
-			rows: 2, 
-			cols: 1,
-			gap: { row: '24px', col: '0px' },
-		},
-		breakpoints: {
-			1099: {
-			grid: { rows: 1, cols: 1, gap: { row: '0', col: '0' } },
-			perPage: 1,
-			},
-		},
-	});
-	var hasGridExt = window.splide && window.splide.Extensions && window.splide.Extensions.Grid;
-	notice.mount(hasGridExt ? window.splide.Extensions : undefined);
-	notice.on('mounted move', function () {
-		setArrowDisabled(notice, '.mt_notice');
-	});
-	setArrowDisabled(notice, '.mt_notice');
+  var hasGridExt = window.splide && window.splide.Extensions && window.splide.Extensions.Grid;
+  notice.mount(hasGridExt ? window.splide.Extensions : undefined);
+
+  var prevBtn = document.querySelector('.mt_notice .splide__arrow--prev');
+  var nextBtn = document.querySelector('.mt_notice .splide__arrow--next');
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function () {
+      notice.go('<');
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function () {
+      notice.go('>');
+    });
+  }
+
+  notice.on('mounted move', function () {
+    setArrowDisabled(notice, '.mt_notice');
+  });
+  setArrowDisabled(notice, '.mt_notice');
 }
 notice_slide()
 
 function consult_section_slide(){
- 	let consultSplide = null;
-	const consultList = document.querySelector('.consult_section_splide .splide__list');
-	let consultSlidesBackup = consultList ? consultList.innerHTML : null;
+  let consultSplide = null;
 
-	function updateConsultPagination(splide) {
-		const section = document.querySelector('.main_consult_section');
-		if (!section) return;
-		const current = section.querySelector('.main_splide_arrow .current');
-		const total = section.querySelector('.main_splide_arrow .total');
-		if (current && total) {
-		current.textContent = splide.index + 1;
-		total.textContent = splide.length;
-		}
-	}
+  const listEl = document.querySelector('.consult_section_splide .splide__list');
+  const selectEl = document.getElementById('consult_select');
+  if (!listEl) return;
+  const ORIGINAL_SLIDES = Array.from(listEl.children).map(li => li.cloneNode(true));
+  const isMobile = () => window.innerWidth <= 1100;
+  let lastIsMobile = isMobile();
+  const debounce = (fn, wait = 150) => {
+    let t;
+    return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
+  };
 
-	function mountConsultSplide() {
-		if (consultSplide || !consultList) return;
+  function resetList() {
+    listEl.innerHTML = '';
+    ORIGINAL_SLIDES.forEach(li => listEl.appendChild(li.cloneNode(true)));
+  }
 
-		// 원본 백업(최초 1회만)
-		if (!consultSlidesBackup) consultSlidesBackup = consultList.innerHTML;
+  function clearActive() {
+    listEl.querySelectorAll('.item.active').forEach(el => el.classList.remove('active'));
+  }
 
-		// Splide 인스턴스 생성
-		consultSplide = new Splide('.consult_list', {
-		perPage: 1,
-		type: 'fade',
-		arrows: false,
-		pagination: false,
-		
-		grid: {
-			rows: 5,
-			cols: 1,
-		},
-		height: 'auto',
-		});
+  function setActiveOnDesktop(regionCode) {
+    clearActive();
+    if (!regionCode) return;
+    listEl.querySelectorAll(`.item[data-rel="${regionCode}"]`).forEach(el => el.classList.add('active'));
+    const first = listEl.querySelector(`.item[data-rel="${regionCode}"]`);
+    if (first) first.scrollIntoView({ block: 'nearest' });
+  }
 
-		const hasGridExt = window.splide && window.splide.Extensions && window.splide.Extensions.Grid;
-		consultSplide.mount(hasGridExt ? window.splide.Extensions : undefined);
+  function buildFilteredSlides(regionCode) {
+    if (!regionCode) { resetList(); return; }
+    const frag = document.createDocumentFragment();
+    ORIGINAL_SLIDES.forEach(src => {
+      const li = src.cloneNode(true);
+      const item = li.querySelector('.item');
+      if (item && item.getAttribute('data-rel') === regionCode) frag.appendChild(li);
+    });
+    listEl.innerHTML = '';
+    listEl.appendChild(frag);
+  }
 
-		consultSplide.on('mounted move', function () {
-		updateConsultPagination(consultSplide);
-		});
-		updateConsultPagination(consultSplide);
+  function destroySplide() {
+    if (consultSplide) {
+      consultSplide.destroy(true);
+      consultSplide = null;
+    }
+  }
 
-		consultSplide.on('mounted move', function () {
-			updateConsultPagination(consultSplide);
-			setArrowDisabled(consultSplide, '.main_consult_section');
-		});
-		updateConsultPagination(consultSplide);
-		setArrowDisabled(consultSplide, '.main_consult_section');
+  function updatePagination(splide) {
+    const section = document.querySelector('.main_consult_section');
+    if (!section || !splide) return;
+    const cur = section.querySelector('.main_splide_arrow .current');
+    const tot = section.querySelector('.main_splide_arrow .total');
+    const totalPages = splide.Components.Controller.getEnd() + 1;
+    if (cur) cur.textContent = (splide.index + 1).toString();
+    if (tot) tot.textContent = totalPages.toString();
+  }
 
+  function setArrowDisabled(splide) {
+    const section = document.querySelector('.main_consult_section');
+    if (!section || !splide) return;
+    const prevBtn = section.querySelector('.main_splide_arrow .splide__arrow--prev');
+    const nextBtn = section.querySelector('.main_splide_arrow .splide__arrow--next');
+    const totalPages = splide.Components.Controller.getEnd() + 1;
+    const currentPage = splide.index;
+    if (prevBtn) prevBtn.classList.toggle('disabled', currentPage === 0);
+    if (nextBtn) nextBtn.classList.toggle('disabled', currentPage >= totalPages - 1);
+  }
 
-		const section = document.querySelector('.main_consult_section');
-		if (section) {
-		const prevBtn = section.querySelector('.main_splide_arrow .splide__arrow--prev');
-		const nextBtn = section.querySelector('.main_splide_arrow .splide__arrow--next');
-		if (prevBtn) prevBtn.onclick = () => consultSplide.go('<');
-		if (nextBtn) nextBtn.onclick = () => consultSplide.go('>');
-		}
-	}
+  function mountSplide() {
+    if (!isMobile()) return;
 
-	function destroyConsultSplide() {
-		if (consultSplide) {
-		consultSplide.destroy();
-		consultSplide = null;
-		}
-		if (consultSlidesBackup && consultList) {
-		consultList.innerHTML = consultSlidesBackup;
-		}
-		const section = document.querySelector('.main_consult_section');
-		if (section) {
-		const current = section.querySelector('.main_splide_arrow .current');
-		const total = section.querySelector('.main_splide_arrow .total');
-		if (current && total) {
-			current.textContent = '1';
-			total.textContent = '1';
-		}
-		}
-	}
+    consultSplide = new Splide('.consult_list', {
+      perPage: 1,
+      type: 'fade',
+      arrows: false,
+      pagination: false,
+      grid: { rows: 5, cols: 1 },
+      height: 'auto',
+    });
 
-	function handleConsultResize() {
-		if (window.innerWidth <= 1100) {
-		destroyConsultSplide();
-		mountConsultSplide();
-		} else {
-		destroyConsultSplide();
-		}
-	}
-	window.addEventListener('resize', handleConsultResize);
-	handleConsultResize();
+    const hasGridExt = window.splide && window.splide.Extensions && window.splide.Extensions.Grid;
+    consultSplide.mount(hasGridExt ? window.splide.Extensions : undefined);
+
+    consultSplide.on('mounted move', () => {
+      updatePagination(consultSplide);
+      setArrowDisabled(consultSplide);
+    });
+    updatePagination(consultSplide);
+    setArrowDisabled(consultSplide);
+
+    const section = document.querySelector('.main_consult_section');
+    if (section) {
+      const prevBtn = section.querySelector('.main_splide_arrow .splide__arrow--prev');
+      const nextBtn = section.querySelector('.main_splide_arrow .splide__arrow--next');
+      if (prevBtn) prevBtn.onclick = () => consultSplide && consultSplide.go('<');
+      if (nextBtn) nextBtn.onclick = () => consultSplide && consultSplide.go('>');
+    }
+  }
+
+  function applyFilter(regionCode) {
+    destroySplide();
+    resetList();
+    if (isMobile()) {
+      buildFilteredSlides(regionCode || '');
+      mountSplide();
+      return;
+    }
+
+    setActiveOnDesktop(regionCode || '');
+    const section = document.querySelector('.main_consult_section');
+    if (section) {
+      const cur = section.querySelector('.main_splide_arrow .current');
+      const tot = section.querySelector('.main_splide_arrow .total');
+      if (cur) cur.textContent = '1';
+      if (tot) tot.textContent = '1';
+    }
+  }
+
+  if (selectEl) {
+    selectEl.addEventListener('change', () => {
+      applyFilter(selectEl.value || '');
+    });
+  }
+
+  const onResize = debounce(() => {
+    const nowIsMobile = isMobile();
+    if (lastIsMobile && !nowIsMobile) {
+      if (selectEl) selectEl.value = '';
+      destroySplide();
+      resetList();
+      clearActive();
+      applyFilter('');
+    }
+    if (!lastIsMobile && nowIsMobile) {
+      applyFilter(selectEl ? (selectEl.value || '') : '');
+    }
+    lastIsMobile = nowIsMobile;
+  }, 150);
+
+  window.addEventListener('resize', onResize);
+
+  applyFilter(selectEl ? (selectEl.value || '') : '');
 }
-consult_section_slide()
+consult_section_slide();
+
 
 document.addEventListener('DOMContentLoaded', async () => {
   const mapHolder = document.getElementById('kr-map');
