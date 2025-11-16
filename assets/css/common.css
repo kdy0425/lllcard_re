@@ -146,7 +146,7 @@ input[type="text"],
 input[type="password"],
 input[type="tel"],
 input[type="email"]{height:56px;border:1px solid #d0d0d0;background-color:#fff;padding-left:24px;color:#2d2d2d;border-radius: 10px;font-size:2rem;}
-textarea{padding:12px;height:400px;min-height:400px;width:100%;min-width:100%;max-width:100%;color:#2d2d2d;border:1px solid #d0d0d0;border-radius:2px;}
+textarea{padding:24px;height:400px;min-height:400px;width:100%;min-width:100%;max-width:100%;color:#2d2d2d;border:1px solid #d0d0d0;border-radius:10px;font-size:2rem;}
 input[type="text"]::placeholder,
 input[type="password"]::placeholder,
 input[type="tel"]::placeholder,
@@ -163,12 +163,14 @@ input.no_line{border:1px solid transparent;}
   input[type="password"],
   input[type="tel"],
   input[type="email"]{font-size:1.8rem;height: 52px;padding-left:20px;}
+  textarea{padding:20px;font-size:1.8rem;}
 }
 @media screen and (max-width: 1100px) {
 	input[type="text"],
 	input[type="password"],
 	input[type="tel"],
 	input[type="email"]{height:48px;padding-left:16px;font-size:1.8rem;border-radius: 5px;}
+  textarea{height:300px;padding:20px 16px;border-radius: 5px;padding:16px;font-size:1.8rem;}
 }
 textarea:read-only{background-color:#f8f8f8;color:#666;}
 
@@ -216,6 +218,7 @@ input[type="radio"]{cursor: pointer;}
   .input_group input[type="password"],
   .input_group input[type="email"],
   .input_group input[type="tel"]{max-width:99999em !important;}
+  .input_group .input_text{margin-left:-2px;margin-right:-2px;}
   .ss-content{max-width:99999em !important;}
 }
 

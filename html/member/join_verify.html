@@ -462,18 +462,21 @@
                                 <legend>검증요청 휴대폰번호 확인 폼</legend>
                                 <div class="form between_sm">
                                     <div class="item" style="width: 200px;">
-                                        <select name="" id="" class="no_line">
+                                        <label for="verify_phone_prefix" class="sound_only">휴대전화 앞자리 선택</label>
+                                        <select name="" id="verify_phone_prefix" class="no_line">
                                             <option value="" disabled selected hidden>선택</option>
                                             <option value="010">010</option>
                                         </select>
                                     </div>
                                     <span class="dash pc">-</span>
                                     <div class="item" style="width: 200px;">
-                                        <input type="text" class="no_line">
+                                        <label for="verify_phone_mid" class="sound_only">휴대전화번호 가운데 자리 입력</label>
+                                        <input type="text" id="verify_phone_mid" class="no_line">
                                     </div>
                                     <span class="dash pc">-</span>
                                     <div class="item" style="width: 200px;">
-                                        <input type="text" class="no_line">
+                                        <label for="verify_phone_last" class="sound_only">휴대전화번호 끝자리 입력</label>
+                                        <input type="text" id="verify_phone_last" class="no_line">
                                     </div>
                                     <div class="btns">
                                         <button type="button" class="js_modal_open" data-target="#request_modal" aria-haspopup="dialog" aria-controls="request-panel" aria-expanded="false">검증요청</button>
@@ -882,7 +885,8 @@
 				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
 				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
 				<div class="ft_family">
-                        <select name="" id="" class="wid_pc_27 wid_mb_100">
+                        <label for="join_verify_family_site" class="sound_only">관련 사이트 선택</label>
+                        <select name="" id="join_verify_family_site" class="wid_pc_27 wid_mb_100">
                             <option value="" disabled selected hidden>관련 사이트</option>
                             <option value="seoul" title="서울특별시">서울특별시</option>
                             <option value="busan" title="부산광역시">부산광역시</option>

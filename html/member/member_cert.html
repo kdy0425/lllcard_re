@@ -124,9 +124,9 @@
                 <div class="page_location">
                     <div class="item"> <a href="javascript:;" class="home">홈으로</a> </div>
                     <div class="item"> <a href="javascript:;">로그인</a> </div>
-                    <div class="item"> <a href="javascript:;">비밀번호 찾기</a> </div>
+                    <div class="item"> <a href="javascript:;">본인인증</a> </div>
                 </div>
-                <h2>비밀번호 찾기</h2>
+                <h2>본인인증</h2>
             </div> 
         </div>
         <div id="content" class="container_md">
@@ -201,7 +201,8 @@
                                     <th scope="row">성명</th>
                                     <td>
                                         <div class="input_group">
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 440px;">
+                                            <label for="member_cert_name" class="sound_only">성명 입력</label>
+                                            <input type="text" id="member_cert_name" class="input" required aria-required="true" style="max-width: 440px;">
                                         </div>
                                     </td>
                                 </tr>
@@ -209,9 +210,11 @@
                                     <th scope="row">주민등록번호</th>
                                     <td>
                                         <div class="input_group">
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 200px;">
+                                            <label for="member_cert_rrn_front" class="sound_only">주민등록번호 앞자리 입력</label>
+                                            <input type="text" id="member_cert_rrn_front" class="input" required aria-required="true" style="max-width: 200px;">
                                             <span class="input_text">-</span>
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 200px;">
+                                            <label for="member_cert_rrn_back" class="sound_only">주민등록번호 뒷자리 입력</label>
+                                            <input type="text" id="member_cert_rrn_back" class="input" required aria-required="true" style="max-width: 200px;">
                                         </div>
                                     </td>
                                 </tr>
@@ -253,7 +256,8 @@
 				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
 				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
 				<div class="ft_family">
-                        <select name="" id="" class="wid_pc_27 wid_mb_100">
+                        <label for="member_cert_family_site" class="sound_only">관련 사이트 선택</label>
+                        <select name="" id="member_cert_family_site" class="wid_pc_27 wid_mb_100">
                             <option value="" disabled selected hidden>관련 사이트</option>
                             <option value="seoul" title="서울특별시">서울특별시</option>
                             <option value="busan" title="부산광역시">부산광역시</option>

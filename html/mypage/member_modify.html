@@ -154,7 +154,8 @@
                                     <th scope="row" rowspan="2">주소 <span class="required">*</span></th>
                                     <td>
                                         <div class="input_group">
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 500px;">
+                                            <label for="member_modify_address" class="sound_only">주소 입력</label>
+                                            <input type="text" id="member_modify_address" class="input" required aria-required="true" style="max-width: 500px;">
                                             <button type="button" class="btn_tb1">주소검색</button>
                                         </div>
                                     </td>
@@ -162,7 +163,8 @@
                                 <tr>
                                     <td>
                                         <div class="input_group">
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 500px;" placeholder="상세 주소 입력">
+                                            <label for="member_modify_address_detail" class="sound_only">상세 주소 입력</label>
+                                            <input type="text" id="member_modify_address_detail" class="input" required aria-required="true" style="max-width: 500px;" placeholder="상세 주소 입력">
                                         </div>
                                     </td>
                                 </tr>
@@ -170,7 +172,8 @@
                                     <th scope="row">전화번호</th>
                                     <td>
                                         <div class="input_group">
-                                            <select name="" id="" style="max-width: 200px;">
+                                            <label for="member_modify_tel_prefix" class="sound_only">전화번호 앞자리 선택</label>
+                                            <select name="" id="member_modify_tel_prefix" style="max-width: 200px;">
                                                 <option value="" disabled selected hidden>선택</option>
                                                 <option value="02">02</option>
                                                 <option value="031">031</option>
@@ -202,9 +205,11 @@
                                                 <option value="060">060</option>
                                             </select>
                                             <span class="input_text pc">-</span>
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 200px;">
+                                            <label for="member_modify_tel_mid" class="sound_only">전화번호 가운데 자리 입력</label>
+                                            <input type="text" id="member_modify_tel_mid" class="input" required aria-required="true" style="max-width: 200px;">
                                             <span class="input_text pc">-</span>
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 200px;">
+                                            <label for="member_modify_tel_last" class="sound_only">전화번호 끝자리 입력</label>
+                                            <input type="text" id="member_modify_tel_last" class="input" required aria-required="true" style="max-width: 200px;">
                                         </div>
                                     </td>
                                 </tr>
@@ -212,7 +217,8 @@
                                     <th scope="row">휴대전화번호 <span class="required">*</span></th>
                                     <td>
                                         <div class="input_group">
-                                            <select name="" id="" style="max-width: 200px;">
+                                            <label for="member_modify_phone_prefix" class="sound_only">휴대전화 앞자리 선택</label>
+                                            <select name="" id="member_modify_phone_prefix" style="max-width: 200px;">
                                                 <option value="" disabled selected hidden>선택</option>
                                                 <option value="010">010</option>
                                                 <option value="011">011</option>
@@ -222,9 +228,11 @@
                                                 <option value="019">019</option>
                                             </select>
                                             <span class="input_text pc">-</span>
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 200px;">
+                                            <label for="member_modify_phone_mid" class="sound_only">휴대전화번호 가운데 자리 입력</label>
+                                            <input type="text" id="member_modify_phone_mid" class="input" required aria-required="true" style="max-width: 200px;">
                                             <span class="input_text pc">-</span>
-                                            <input type="text" class="input" required aria-required="true" style="max-width: 200px;">
+                                            <label for="member_modify_phone_last" class="sound_only">휴대전화번호 끝자리 입력</label>
+                                            <input type="text" id="member_modify_phone_last" class="input" required aria-required="true" style="max-width: 200px;">
                                             <label for="sms_receive_agree" class="checkbox wid_mb_100 mb_mt_8"><input type="checkbox" id="sms_receive_agree"> 문자 서비스 수신동의</label>
                                         </div>
                                     </td>
@@ -233,10 +241,13 @@
                                     <th scope="row">전자우편주소</th>
                                     <td>
                                         <div class="input_group">
-                                            <input type="text" class="input" style="max-width: 200px;">
+                                            <label for="member_modify_email_local" class="sound_only">전자우편 아이디 입력</label>
+                                            <input type="text" id="member_modify_email_local" class="input" style="max-width: 200px;">
                                             <span class="input_text">@</span>
-                                            <input type="text" class="input" style="max-width: 200px;">
-                                            <select name="" id="" style="max-width: 200px;" class="wid_mb_100">
+                                            <label for="member_modify_email_domain" class="sound_only">전자우편 도메인 입력</label>
+                                            <input type="text" id="member_modify_email_domain" class="input" style="max-width: 200px;">
+                                            <label for="member_modify_email_domain_select" class="sound_only">전자우편 도메인 선택</label>
+                                            <select name="" id="member_modify_email_domain_select" style="max-width: 200px;" class="wid_mb_100">
                                                 <option value="direct">직접입력</option>
                                                 <option value="naver.com">naver.com</option>
                                                 <option value="gmail.com">gmail.com</option>
@@ -293,7 +304,8 @@
 				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
 				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
 				<div class="ft_family">
-                        <select name="" id="" class="wid_pc_27 wid_mb_100">
+                        <label for="member_modify_family_site" class="sound_only">관련 사이트 선택</label>
+                        <select name="" id="member_modify_family_site" class="wid_pc_27 wid_mb_100">
                             <option value="" disabled selected hidden>관련 사이트</option>
                             <option value="seoul" title="서울특별시">서울특별시</option>
                             <option value="busan" title="부산광역시">부산광역시</option>

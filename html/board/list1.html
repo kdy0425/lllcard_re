@@ -138,13 +138,15 @@
                         <div class="item">
                             <div class="tit">지역</div>
                             <div class="cnt">
-                                <select name="" id="" class="no_line size_1">
+                                <label for="search_region_sido" class="sound_only">지역 시/도 선택</label>
+                                <select name="" id="search_region_sido" class="no_line size_1">
                                     <option value="">전체</option>
                                     <option value="1">옵션1</option>
                                     <option value="2">옵션2</option>
                                     <option value="3">옵션3</option>
                                 </select>
-                                <select name="" id="" class="no_line size_1">
+                                <label for="search_region_sigungu" class="sound_only">지역 시/군/구 선택</label>
+                                <select name="" id="search_region_sigungu" class="no_line size_1">
                                     <option value="">전체</option>
                                     <option value="1">옵션1</option>
                                     <option value="2">옵션2</option>
@@ -157,15 +159,16 @@
                                 <div class="item">
                                     <div class="tit">사용기관명</div>
                                     <div class="cnt">
-                                        <input type="text" class="no_line size_2">
+                                        <label for="org_name_input" class="sound_only">사용기관명 입력</label>
+                                        <input type="text" id="org_name_input" class="no_line size_2">
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="tit">이용권 유형</div>
                                     <div class="cnt">
                                         <div class="check_list">
-                                            <label class="checkbox"><input type="checkbox">일반/노인</label>
-                                            <label class="checkbox"><input type="checkbox">디지털</label>
+                                            <label for="voucher_type_general" class="checkbox"><input type="checkbox" id="voucher_type_general">일반/노인</label>
+                                            <label for="voucher_type_digital" class="checkbox"><input type="checkbox" id="voucher_type_digital">디지털</label>
                                         </div>
                                     </div>
                                 </div>
@@ -173,10 +176,10 @@
                                     <div class="tit">기관 구분</div>
                                     <div class="cnt">
                                         <div class="check_list">
-                                            <label class="checkbox"><input type="checkbox">온라인 교육기관</label>
-                                            <label class="checkbox"><input type="checkbox">오프라인 교육기관</label>
-                                            <label class="checkbox"><input type="checkbox">온/오프라인 교육기관</label>
-                                            <label class="checkbox"><input type="checkbox">장애인 평생교육시설</label>
+                                            <label for="org_type_online" class="checkbox"><input type="checkbox" id="org_type_online">온라인 교육기관</label>
+                                            <label for="org_type_offline" class="checkbox"><input type="checkbox" id="org_type_offline">오프라인 교육기관</label>
+                                            <label for="org_type_hybrid" class="checkbox"><input type="checkbox" id="org_type_hybrid">온/오프라인 교육기관</label>
+                                            <label for="org_type_disabled" class="checkbox"><input type="checkbox" id="org_type_disabled">장애인 평생교육시설</label>
                                         </div>
                                     </div>
                                 </div>
@@ -184,20 +187,21 @@
                                     <div class="tit">운영 강좌 유형</div>
                                     <div class="cnt">
                                         <div class="check_list">
-                                            <label class="checkbox"><input type="checkbox">문화예술교육</label>
-                                            <label class="checkbox"><input type="checkbox">성인 문해교육</label>
-                                            <label class="checkbox"><input type="checkbox">성인 진로개발역량 향상교육</label>
-                                            <label class="checkbox"><input type="checkbox">시민참여교육</label>
-                                            <label class="checkbox"><input type="checkbox">인문교양교육</label>
-                                            <label class="checkbox"><input type="checkbox">직업능력 향상교육</label>
-                                            <label class="checkbox"><input type="checkbox">학력보완교육</label>
+                                            <label for="course_type_culture" class="checkbox"><input type="checkbox" id="course_type_culture">문화예술교육</label>
+                                            <label for="course_type_literacy" class="checkbox"><input type="checkbox" id="course_type_literacy">성인 문해교육</label>
+                                            <label for="course_type_career" class="checkbox"><input type="checkbox" id="course_type_career">성인 진로개발역량 향상교육</label>
+                                            <label for="course_type_citizen" class="checkbox"><input type="checkbox" id="course_type_citizen">시민참여교육</label>
+                                            <label for="course_type_humanities" class="checkbox"><input type="checkbox" id="course_type_humanities">인문교양교육</label>
+                                            <label for="course_type_vocational" class="checkbox"><input type="checkbox" id="course_type_vocational">직업능력 향상교육</label>
+                                            <label for="course_type_academic" class="checkbox"><input type="checkbox" id="course_type_academic">학력보완교육</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="tit">검색키워드</div>
                                     <div class="cnt">
-                                        <input type="text" class="no_line size_2">
+                                        <label for="org_keyword_input" class="sound_only">검색 키워드 입력</label>
+                                        <input type="text" id="org_keyword_input" class="no_line size_2">
                                     </div>
                                 </div>
                             </div>
@@ -330,226 +334,224 @@
                     <!-- //pc 리스트 -->
                     <!-- mobile 리스트 --> 
                     <div class="list_items mobile">
-                        <div class="list_items mobile">
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">강릉중장비학원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">강원특별자치도 강릉시</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">오프라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">N</div>
-                                </div>
-                                <div class="devides">
-                                <div><a href="javascript:;" class="icon_location">지도보기</a></div>
-                                <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">강릉중장비학원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">강원특별자치도 강릉시</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">오프라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">N</div>
+                            </div>
+                            <div class="devides">
+                            <div><a href="javascript:;" class="icon_location">지도보기</a></div>
+                            <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">필라테스정원반석점평생교육원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">대전광역시 유성구</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">오프라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">N</div>
-                                </div>
-                                <div class="devides">
-                                <div><a href="javascript:;" class="icon_location">지도보기</a></div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">필라테스정원반석점평생교육원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">대전광역시 유성구</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">오프라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">N</div>
+                            </div>
+                            <div class="devides">
+                            <div><a href="javascript:;" class="icon_location">지도보기</a></div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">대구보건대학교부설평생교육원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">대구광역시 북구</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">온/오프라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">N</div>
-                                </div>
-                                <div class="devides">
-                                <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">대구보건대학교부설평생교육원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">대구광역시 북구</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">온/오프라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">N</div>
+                            </div>
+                            <div class="devides">
+                            <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">몸이야필라테스봉선점평생교육원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">광주광역시 남구</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">오프라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">Y</div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">몸이야필라테스봉선점평생교육원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">광주광역시 남구</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">오프라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">Y</div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">한국재난안전정보협회</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">경상남도 창원시</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">온/오프라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">N</div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">한국재난안전정보협회</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">경상남도 창원시</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">온/오프라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">N</div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">신도림위드피아노학원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">서울특별시 영등포구</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">오프라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">N</div>
-                                </div>
-                                <div class="devides">
-                                <div><a href="javascript:;" class="icon_location">지도보기</a></div>
-                                <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">신도림위드피아노학원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">서울특별시 영등포구</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">오프라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">N</div>
+                            </div>
+                            <div class="devides">
+                            <div><a href="javascript:;" class="icon_location">지도보기</a></div>
+                            <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">엔리치필라테스운정점평생교육원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">경기도 파주시</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">오프라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">Y</div>
-                                </div>
-                                <div class="devides">
-                                <div><a href="javascript:;" class="icon_location">지도보기</a></div>
-                                <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">엔리치필라테스운정점평생교육원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">경기도 파주시</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">오프라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">Y</div>
+                            </div>
+                            <div class="devides">
+                            <div><a href="javascript:;" class="icon_location">지도보기</a></div>
+                            <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">바디홀릭기구필라테스수지죽전점평생교육원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">경기도 용인시</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">오프라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">Y</div>
-                                </div>
-                                <div class="devides">
-                                <div><a href="javascript:;" class="icon_location">지도보기</a></div>
-                                <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">바디홀릭기구필라테스수지죽전점평생교육원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">경기도 용인시</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">오프라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">Y</div>
+                            </div>
+                            <div class="devides">
+                            <div><a href="javascript:;" class="icon_location">지도보기</a></div>
+                            <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">중앙미용학원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">전북특별자치도 익산시</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">온라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">Y</div>
-                                </div>
-                                <div class="devides">
-                                <div><a href="javascript:;" class="icon_location">지도보기</a></div>
-                                <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">중앙미용학원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">전북특별자치도 익산시</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">온라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">Y</div>
+                            </div>
+                            <div class="devides">
+                            <div><a href="javascript:;" class="icon_location">지도보기</a></div>
+                            <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
+                            </div>
+                        </div>
 
-                            <a href="javascript:;" class="item_row">
-                                <div class="item">
-                                <div class="tit">사용기관명</div>
-                                <div class="cnt">한라대학교부설평생교육원</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">지역</div>
-                                <div class="cnt">강원특별자치도 원주시</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">기관 구분</div>
-                                <div class="cnt">온라인</div>
-                                </div>
-                                <div class="item">
-                                <div class="tit">디지털 이용권 사용</div>
-                                <div class="cnt">Y</div>
-                                </div>
-                                <div class="devides">
-                                <div><a href="javascript:;" class="icon_location">지도보기</a></div>
-                                <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
-                                </div>
-                            </a>
+                        <div class="item_row">
+                            <div class="item">
+                            <div class="tit">사용기관명</div>
+                            <div class="cnt">한라대학교부설평생교육원</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">지역</div>
+                            <div class="cnt">강원특별자치도 원주시</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">기관 구분</div>
+                            <div class="cnt">온라인</div>
+                            </div>
+                            <div class="item">
+                            <div class="tit">디지털 이용권 사용</div>
+                            <div class="cnt">Y</div>
+                            </div>
+                            <div class="devides">
+                            <div><a href="javascript:;" class="icon_location">지도보기</a></div>
+                            <div><a href="javascript:;" class="icon_homepage">홈페이지</a></div>
+                            </div>
                         </div>
                     </div>
                     <!-- //mobile 리스트 -->
@@ -558,7 +560,8 @@
                 <div class="list_bottom">
                     <div class="list_sort">
                         <div class="select">
-                            <select name="" id="">
+                            <label for="list1_page_size" class="sound_only">목록 보기 갯수 선택</label>
+                            <select name="" id="list1_page_size">
                                 <option value="10">10건 보기</option>
                                 <option value="20">20건 보기</option>
                                 <option value="30">30건 보기</option>
@@ -613,7 +616,8 @@
 				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
 				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
 				<div class="ft_family">
-                        <select name="" id="" class="wid_pc_27 wid_mb_100">
+                        <label for="list1_family_site" class="sound_only">관련 사이트 선택</label>
+                        <select name="" id="list1_family_site" class="wid_pc_27 wid_mb_100">
                             <option value="" disabled selected hidden>관련 사이트</option>
                             <option value="seoul" title="서울특별시">서울특별시</option>
                             <option value="busan" title="부산광역시">부산광역시</option>

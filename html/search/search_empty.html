@@ -135,7 +135,8 @@
                     <form action="">
                         <legend>검색</legend>
                         <div class="item input_search" style="width: 500px;">
-                            <input type="text" placeholder="검색어를 입력하세요." class="no_line">
+                            <label for="integrated_empty_keyword" class="sound_only">통합검색 결과 없음 페이지 검색어 입력</label>
+                            <input type="text" id="integrated_search_keyword" placeholder="검색어를 입력하세요." value="개정" class="no_line">
                             <button type="submit">검색</button>
                         </div>
                         <div id="item_research" class="item input_checkbox">
@@ -149,11 +150,11 @@
             </div>
 
             <div class="search_wrap">
-                <h3 id="search_total"><strong>개정</strong>에 대한 검색결과는 총 <strong>21,831</strong>건 입니다.</h3>
+                <h3 id="search_total"><strong>개정</strong>에 대한 검색결과는 총 <strong> 0 </strong>건 입니다.</h3>
 
                 <div class="count_cates pc">
-                    <div class="item"><button type="button" class="btn">전체<span class="count">0</span></button></div>
-                    <div class="item"><button type="button" class="btn active">공지사항<span class="count">0</span></button></div>
+                    <div class="item"><button type="button" class="btn active">전체<span class="count">0</span></button></div>
+                    <div class="item"><button type="button" class="btn ">공지사항<span class="count">0</span></button></div>
                     <div class="item"><button type="button" class="btn">사업공고<span class="count">0</span></button></div>
                     <div class="item"><button type="button" class="btn">기관정보<span class="count">0</span></button></div>
                     <div class="item"><button type="button" class="btn">강좌정보<span class="count">0</span></button></div>
@@ -163,7 +164,8 @@
                 </div>
 
                 <div class="count_cate mobile">
-                    <select class="wid_pc_27 wid_mb_100 select_blue">
+                    <label for="search_empty_category" class="sound_only">검색 결과 유형 선택</label>
+                    <select id="search_empty_category" class="wid_pc_27 wid_mb_100 select_blue">
                         <option value="전체" selected>전체 0</option>
                         <option value="공지사항">공지사항 0</option>
                         <option value="사업공고">사업공고 0</option>
@@ -217,7 +219,8 @@
 				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
 				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
 				<div class="ft_family">
-                        <select name="" id="" class="wid_pc_27 wid_mb_100">
+                        <label for="search_empty_family_site" class="sound_only">관련 사이트 선택</label>
+                        <select name="" id="search_empty_family_site" class="wid_pc_27 wid_mb_100">
                             <option value="" disabled selected hidden>관련 사이트</option>
                             <option value="seoul" title="서울특별시">서울특별시</option>
                             <option value="busan" title="부산광역시">부산광역시</option>
