@@ -254,9 +254,8 @@ input[type="radio"]{cursor: pointer;}
     .select_submit button{height:48px;border-radius: 5px;min-width:64px;}
 }
 
-::selection { background: #00ADB2; color: #fff; }
 /* 포커스 */
-:focus{outline:#00ADB2 dashed 2px;}
+:focus{outline:#0E2B5E dashed 2px;}
 #skip_to_container a:focus,   
 #nav > li > a:focus,
 .mt_skeywords .keyword:focus,
@@ -276,7 +275,14 @@ form button,
 .consult_list .item a{outline-offset: -2px;}
 .btn_list button:focus,
 .btn_list a:focus{outline-offset: 0;}
-.ss-main:focus{outline:#00ADB2 dashed 2px;}
+.ss-main:focus{outline:#0E2B5E dashed 2px;}
 .file_upload label input:focus + span + .btn,
 .icon_radios .item label input:focus + div,
-.verify_list input[type="checkbox"]:focus + div{outline:#00ADB2 dashed 2px;}
+.verify_list input[type="checkbox"]:focus + div{outline:#0E2B5E dashed 2px;}
+
+.mt_notice *:focus,
+.list_search_row .search_button button:focus,
+.list_search_col .search_button button:focus,
+.count_cates .item .btn:focus,
+.tab_nav li a:focus,
+.btn_list .btn:focus{outline: #00ADB2 dashed 2px;}
