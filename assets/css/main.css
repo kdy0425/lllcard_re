@@ -192,7 +192,7 @@ background: linear-gradient(90deg,#EDF1F5 0%, #EDF1F5 30%, rgba(237, 241, 245, 0
     .notice_card .new{font-size:1.8rem;}
 }
 
-.mt_local_links{border:1px solid #E4E8EF;border-radius: 20px;text-align: center;padding:40px;font-family: 'Paperlogy';}
+.mt_local_links{border:2px solid #E4E8EF;border-radius: 20px;text-align: center;padding:40px;font-family: 'Paperlogy';}
 .mt_local_links h3{font-size:3.8rem;font-weight:700;word-break: keep-all;}
 .mt_local_links h3 span{color:#0E2B5E;}
 .mt_local_links h3 strong{color:#2E6FE4;}
