@@ -19,6 +19,10 @@
 <meta property="og:image" content="" />
 <meta property="og:site_name" content=""/>
 <meta property="og:description" content="" />
+<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
 <title>평생교육이용권</title>
 <link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
@@ -94,8 +98,8 @@
 			</ul>
 			<div class="hd_right">
 				<div class="hd_links">
-					<div class="item"><a href="javascript:;">사용기관 등록</a></div>
-					<div class="item"><a href="javascript:;">사용기관 업무시스템</a></div>
+					<div class="item"><a href="javascript:;"><span>사용기관 등록</span></a></div>
+					<div class="item"><a href="javascript:;"><span>사용기관 업무시스템</span></a></div>
 					<!-- <div class="item"><a href="javascript:;" class="blank" target="_blank">포털 시스템</a></div> -->
 				</div>
 				<div class="hd_btns">
@@ -104,12 +108,85 @@
 							<span class="sound_only">검색</span>
 							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.33115 17.6623C10.9789 17.6623 12.5896 17.1737 13.9597 16.2583C15.3297 15.3428 16.3976 14.0417 17.0281 12.5193C17.6587 10.997 17.8237 9.32191 17.5022 7.70583C17.1808 6.08974 16.3873 4.60527 15.2222 3.44014C14.057 2.27501 12.5726 1.48154 10.9565 1.16008C9.34039 0.838625 7.66528 1.00361 6.14296 1.63417C4.62064 2.26474 3.31949 3.33256 2.40405 4.70261C1.48861 6.07267 1 7.68341 1 9.33115C1 11.5407 1.87774 13.6598 3.44014 15.2222C5.00253 16.7846 7.12159 17.6623 9.33115 17.6623Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M20.9997 20.9992L16.001 16.0005" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
 						</button>
+
+						<div class="header_search">
+							<div class="search_inner">
+								<h3>통합검색</h3>
+								<form action="">
+									<input type="text" placeholder="검색어를 입력하세요.">
+									<button type="button">검색</button>
+								</form>
+								<button type="button" id="btn_search_close">
+									닫기
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14 2L2.25089 14" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M2 2L13.7491 14" stroke="white" stroke-width="2" stroke-linecap="round"/> </svg> 
+								</button>
+							</div>
+						</div>
+						<span class="search_bg"></span>
 					</div>
 					<div class="item">
-						<button type="button">
-							<span class="sound_only">전체메뉴</span>
+						<button type="button" id="nav_all_open">
+							<span class="sound_only">전체메뉴 열기</span>
 							<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 1H19" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M1 9H19" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M1 17H19" stroke="white" stroke-width="2" stroke-linecap="round"/> </svg> 
 						</button>
+						<button type="button" id="nav_all_close" style="display: none;">
+							<span class="sound_only">전체메뉴 닫기</span>
+							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M16 2.14648L2.29307 15.8534" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M2 2.14648L15.7069 15.8534" stroke="white" stroke-width="2" stroke-linecap="round"/> </svg> 
+						</button>
+
+						<div class="nav_all">
+							<div class="all_inner">
+								<div class="banner">
+									<div class="title">
+										<strong>평생교육이용권</strong>은 <br/>
+										국가와 지자체가 <br class="tablet_hidden"/>
+										제공하는 이용권입니다.
+									</div>
+								</div>
+								<ul>
+									<li><a href="javascript:;">사업안내</a>
+										<ul>
+											<li><a href="javascript:;">사용기관안내</a></li>
+											<li><a href="javascript:;">사용기관 로그인 및 등록신청</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:;">사용안내</a>
+										<ul>
+											<li><a href="javascript:;">평생교육이용권 신청</a></li>
+											<li><a href="javascript:;">이용자 이벤트</a></li>
+											<li><a href="javascript:;">선정포기 신청</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:;">평생교육이용권</a>
+										<ul>
+											<li><a href="javascript:;">평생교육이용권 신청</a></li>
+											<li><a href="javascript:;">이용자 이벤트</a></li>
+											<li><a href="javascript:;">선정포기 신청</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:;">알림·소통</a>
+										<ul>
+											<li><a href="javascript:;">공지사항</a></li>
+											<li><a href="javascript:;">자료실</a></li>
+											<li><a href="javascript:;">자주하는 질문</a></li>
+											<li><a href="javascript:;">온라인 상담</a></li>
+										</ul>
+									</li>
+									<li><a href="javascript:;">마이페이지</a>
+										<ul>
+											<li><a href="javascript:;">Ai맞춤서비스</a></li>
+											<li><a href="javascript:;">개인정보수정</a></li>
+											<li><a href="javascript:;">평생교육이용권 신청내역</a></li>
+											<li><a href="javascript:;">이용권 선정 결과</a></li>
+										</ul>
+									</li>
+								</ul>
+								<div class="links">
+									<div class="item"><a href="javascript:;">사용기관 등록</a></div>
+									<div class="item"><a href="javascript:;">사용기관 업무시스템</a></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -127,30 +204,33 @@
 							<div class="main_title">
 								<h3>지역 바로가기</h3>
 							</div>
-                                                        <div class="area_select">
-                                                                <div class="tit">주민등록등본 지역을 선택해주세요</div>
-                                                                <div class="select">
-                                                                        <label for="main_region_select" class="sound_only">지역 바로가기 선택</label>
-                                                                        <select name="" id="main_region_select" class="wid_pc_27 wid_mb_100 no_line">
-										<option value="" disabled selected hidden>지자체 선택</option>
-										<option value="seoul" title="서울특별시">서울특별시</option>
-										<option value="busan" title="부산광역시">부산광역시</option>
-										<option value="daegu" title="대구광역시">대구광역시</option>
-										<option value="incheon" title="인천광역시">인천광역시</option>
-										<option value="gwangju" title="광주광역시">광주광역시</option>
-										<option value="daejeon" title="대전광역시">대전광역시</option>
-										<option value="ulsan" title="울산광역시">울산광역시</option>
-										<option value="sejong" title="세종특별자치시">세종특별자치시</option>
-										<option value="gyeonggi" title="경기도">경기도</option>
-										<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
-										<option value="chungbuk" title="충청북도">충청북도</option>
-										<option value="chungnam" title="충청남도">충청남도</option>
-										<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
-										<option value="jeonnam" title="전라남도">전라남도</option>
-										<option value="gyeongbuk" title="경상북도">경상북도</option>
-										<option value="gyeongnam" title="경상남도">경상남도</option>
-										<option value="jeju" title="제주특별자치도">제주특별자치도</option>
+							<div class="area_select">
+								<div class="tit">주민등록등본 지역을 선택해주세요</div>
+								<div class="select">
+									<label for="main_region_select" class="sound_only">지역 바로가기 선택</label>
+									<select name="" id="main_region_select" class="wid_mb_100 no_line">
+									<option value="" disabled selected hidden>지자체 선택</option>
+									<option value="seoul" title="서울특별시">서울특별시</option>
+									<option value="busan" title="부산광역시">부산광역시</option>
+									<option value="daegu" title="대구광역시">대구광역시</option>
+									<option value="incheon" title="인천광역시">인천광역시</option>
+									<option value="gwangju" title="광주광역시">광주광역시</option>
+									<option value="daejeon" title="대전광역시">대전광역시</option>
+									<option value="ulsan" title="울산광역시">울산광역시</option>
+									<option value="sejong" title="세종특별자치시">세종특별자치시</option>
+									<option value="gyeonggi" title="경기도">경기도</option>
+									<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
+									<option value="chungbuk" title="충청북도">충청북도</option>
+									<option value="chungnam" title="충청남도">충청남도</option>
+									<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
+									<option value="jeonnam" title="전라남도">전라남도</option>
+									<option value="gyeongbuk" title="경상북도">경상북도</option>
+									<option value="gyeongnam" title="경상남도">경상남도</option>
+									<option value="jeju" title="제주특별자치도">제주특별자치도</option>
 									</select>
+									<div class="select_submit">
+										<button type="button">선택</button>
+									</div>
 								</div>
 							</div>
 							<div class="area_map">
@@ -180,7 +260,7 @@
 						<div class="mt_links">
 							<div class="item use">
 								<a href="javascript:;">
-									<span class="text">평생교육 <br/>이용권이란?</span>
+									<span class="text">평생교육<br/>이용권이란?</span>
 									<span class="icon">
 										<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M61.8867 12.4727H8.34231C5.83733 12.4727 3.80664 14.5033 3.80664 17.0083V52.9918C3.80664 55.4967 5.83733 57.5274 8.34231 57.5274H61.8867C64.3917 57.5274 66.4224 55.4967 66.4224 52.9918V17.0083C66.4224 14.5033 64.3917 12.4727 61.8867 12.4727Z" fill="white"/> <path d="M61.8867 59H8.34227C5.02888 59 2.33398 56.3051 2.33398 52.9917V17.0083C2.33398 13.6949 5.02888 11 8.34227 11H61.8793C65.1927 11 67.8876 13.6949 67.8876 17.0083V52.9917C67.8876 56.3051 65.1927 59 61.8793 59H61.8867ZM8.34227 13.9452C6.64876 13.9452 5.27922 15.3221 5.27922 17.0083V52.9917C5.27922 54.6852 6.65612 56.0548 8.34227 56.0548H61.8793C63.5728 56.0548 64.9424 54.6779 64.9424 52.9917V17.0083C64.9424 15.3148 63.5655 13.9452 61.8793 13.9452H8.34227Z" fill="#0E2B5E"/> <path d="M66.4224 20.9404H3.80664V29.0398H66.4224V20.9404Z" fill="#53B2D2"/> <path d="M66.4223 30.5124H3.8066C2.99666 30.5124 2.33398 29.8497 2.33398 29.0398V20.9404C2.33398 20.1305 2.99666 19.4678 3.8066 19.4678H66.4223C67.2323 19.4678 67.895 20.1305 67.895 20.9404V29.0398C67.895 29.8497 67.2323 30.5124 66.4223 30.5124ZM5.27922 27.5672H64.9497V22.413H5.27922V27.5672Z" fill="#0E2B5E"/> <path d="M25.0201 40.9895H11.8075C11.1883 40.9895 10.6816 40.3462 10.6816 39.56C10.6816 38.7737 11.1883 38.1304 11.8075 38.1304H25.0201C25.6393 38.1304 26.146 38.7737 26.146 39.56C26.146 40.3462 25.6393 40.9895 25.0201 40.9895Z" fill="#B5BEC8"/> <path d="M28.8901 48.2937H12.1114C11.325 48.2937 10.6816 47.6504 10.6816 46.8642C10.6816 46.0779 11.325 45.4346 12.1114 45.4346H28.8901C29.6765 45.4346 30.3199 46.0779 30.3199 46.8642C30.3199 47.6504 29.6765 48.2937 28.8901 48.2937Z" fill="#B5BEC8"/> <path d="M53.6693 37.0869C52.1529 37.0869 50.6929 37.6424 49.5448 38.6521C50.2231 39.4416 50.7241 40.3694 51.0106 41.3537C51.6344 40.5156 52.6109 40.0224 53.6693 40.0224C55.5036 40.0224 56.9947 41.5136 56.9947 43.3458C56.9947 45.1781 55.5036 46.6712 53.6693 46.6712C51.8351 46.6712 50.4317 45.2834 50.3479 43.5076L50.3323 43.3595C50.3323 41.7026 49.6949 40.1491 48.5371 38.9679C48.0907 38.5157 47.5898 38.1375 47.0498 37.8432C46.9017 37.7613 46.7379 37.6834 46.5469 37.6015L46.5138 37.5859C46.3481 37.5157 46.1746 37.4514 45.9719 37.3871L45.89 37.3598C45.7536 37.3189 45.6016 37.2799 45.4164 37.239L45.3696 37.2273C45.356 37.2234 45.3443 37.2195 45.3345 37.2175C45.1747 37.1844 45.0207 37.1629 44.8355 37.1415L44.7692 37.1317C44.7478 37.1278 44.7303 37.1239 44.7108 37.122C44.5002 37.1006 44.2858 37.0908 44.0734 37.0908C40.6213 37.0869 37.8125 39.8938 37.8125 43.3458C37.8125 46.7979 40.6213 49.6048 44.0714 49.6048C45.5879 49.6048 47.0479 49.0492 48.194 48.0395C47.5176 47.2501 47.0147 46.3223 46.7282 45.3379C46.1045 46.178 45.1298 46.6712 44.0714 46.6712C42.2372 46.6712 40.7461 45.1781 40.7461 43.3458C40.7461 41.5136 42.2372 40.0224 44.0714 40.0224C45.9056 40.0224 47.313 41.4122 47.3929 43.1918L47.4085 43.3341C47.4085 44.9929 48.0498 46.5503 49.2095 47.7335C49.652 48.1818 50.151 48.558 50.689 48.8524C50.8605 48.9459 51.0399 49.0317 51.227 49.1116C51.4063 49.1876 51.5876 49.2539 51.7825 49.3163C51.9501 49.3689 52.1139 49.4118 52.3302 49.4605L52.4102 49.48C52.5797 49.5151 52.7493 49.5385 52.9092 49.558L53.032 49.5775C53.2425 49.5989 53.4569 49.6087 53.6693 49.6087C57.1214 49.6087 59.9283 46.7998 59.9283 43.3497C59.9283 39.8996 57.1214 37.0869 53.6693 37.0869Z" fill="#1D2088"/> </svg> 
 									</span>
@@ -211,8 +291,8 @@
 							</div>
 							<div class="mt_sform">
 								<form action="">
-                                                                    <label for="mt_sform_input" class="sound_only">검색어 입력</label>
-                                                                    <input id="mt_sform_input" type="text" placeholder="검색어를 입력하여 필요한 정보를 확인해보세요.">
+									<label for="mt_sform_input" class="sound_only">검색어 입력</label>
+									<input id="mt_sform_input" type="text" placeholder="검색어를 입력하여 필요한 정보를 확인해보세요.">
 									<button type="submit">검색</button>
 								</form>
 							</div>
@@ -446,28 +526,31 @@
 				<div class="container">
 					<div class="main_title">
 						<h3>평생교육이용권 상담센터</h3>
-                                                <div class="select_area">
-                                                        <label for="consult_select" class="sound_only">상담센터 지역 선택</label>
-                                                        <select name="" id="consult_select" class="wid_pc_27 wid_mb_100">
-								<option value="" disabled selected hidden>지역 선택</option>
-								<option value="seoul" title="서울특별시">서울특별시</option>
-								<option value="busan" title="부산광역시">부산광역시</option>
-								<option value="daegu" title="대구광역시">대구광역시</option>
-								<option value="incheon" title="인천광역시">인천광역시</option>
-								<option value="gwangju" title="광주광역시">광주광역시</option>
-								<option value="daejeon" title="대전광역시">대전광역시</option>
-								<option value="ulsan" title="울산광역시">울산광역시</option>
-								<option value="sejong" title="세종특별자치시">세종특별자치시</option>
-								<option value="gyeonggi" title="경기도">경기도</option>
-								<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
-								<option value="chungbuk" title="충청북도">충청북도</option>
-								<option value="chungnam" title="충청남도">충청남도</option>
-								<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
-								<option value="jeonnam" title="전라남도">전라남도</option>
-								<option value="gyeongbuk" title="경상북도">경상북도</option>
-								<option value="gyeongnam" title="경상남도">경상남도</option>
-								<option value="jeju" title="제주특별자치도">제주특별자치도</option>
+						<div class="select_area">
+							<label for="consult_select" class="sound_only">상담센터 지역 선택</label>
+							<select name="" id="consult_select" class="wid_mb_100">
+							<option value="" disabled selected hidden>지역 선택</option>
+							<option value="seoul" title="서울특별시">서울특별시</option>
+							<option value="busan" title="부산광역시">부산광역시</option>
+							<option value="daegu" title="대구광역시">대구광역시</option>
+							<option value="incheon" title="인천광역시">인천광역시</option>
+							<option value="gwangju" title="광주광역시">광주광역시</option>
+							<option value="daejeon" title="대전광역시">대전광역시</option>
+							<option value="ulsan" title="울산광역시">울산광역시</option>
+							<option value="sejong" title="세종특별자치시">세종특별자치시</option>
+							<option value="gyeonggi" title="경기도">경기도</option>
+							<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
+							<option value="chungbuk" title="충청북도">충청북도</option>
+							<option value="chungnam" title="충청남도">충청남도</option>
+							<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
+							<option value="jeonnam" title="전라남도">전라남도</option>
+							<option value="gyeongbuk" title="경상북도">경상북도</option>
+							<option value="gyeongnam" title="경상남도">경상남도</option>
+							<option value="jeju" title="제주특별자치도">제주특별자치도</option>
 							</select>
+							<div id="consult_select_btn" class="select_submit">
+								<button type="button">선택</button>
+							</div>
 						</div>
 					</div>
 
@@ -667,34 +750,38 @@
 				</ul>
 				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
 				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
-                                <div class="ft_family">
-                                        <label for="main_family_site" class="sound_only">관련 사이트 선택</label>
-                                        <select name="" id="main_family_site" class="wid_pc_27 wid_mb_100">
-						<option value="" disabled selected hidden>관련 사이트</option>
-						<option value="seoul" title="서울특별시">서울특별시</option>
-						<option value="busan" title="부산광역시">부산광역시</option>
-						<option value="daegu" title="대구광역시">대구광역시</option>
-						<option value="incheon" title="인천광역시">인천광역시</option>
-						<option value="gwangju" title="광주광역시">광주광역시</option>
-						<option value="daejeon" title="대전광역시">대전광역시</option>
-						<option value="ulsan" title="울산광역시">울산광역시</option>
-						<option value="sejong" title="세종특별자치시">세종특별자치시</option>
-						<option value="gyeonggi" title="경기도">경기도</option>
-						<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
-						<option value="chungbuk" title="충청북도">충청북도</option>
-						<option value="chungnam" title="충청남도">충청남도</option>
-						<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
-						<option value="jeonnam" title="전라남도">전라남도</option>
-						<option value="gyeongbuk" title="경상북도">경상북도</option>
-						<option value="gyeongnam" title="경상남도">경상남도</option>
-                                                <option value="jeju" title="제주특별자치도">제주특별자치도</option>
-                                        </select>
+					<div class="ft_family">
+					<label for="main_family_site" class="sound_only">관련 사이트 선택</label>
+					<select name="" id="main_family_site" class="wid_mb_100">
+					<option value="" disabled selected hidden>관련 사이트</option>
+					<option value="seoul" title="서울특별시">서울특별시</option>
+					<option value="busan" title="부산광역시">부산광역시</option>
+					<option value="daegu" title="대구광역시">대구광역시</option>
+					<option value="incheon" title="인천광역시">인천광역시</option>
+					<option value="gwangju" title="광주광역시">광주광역시</option>
+					<option value="daejeon" title="대전광역시">대전광역시</option>
+					<option value="ulsan" title="울산광역시">울산광역시</option>
+					<option value="sejong" title="세종특별자치시">세종특별자치시</option>
+					<option value="gyeonggi" title="경기도">경기도</option>
+					<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
+					<option value="chungbuk" title="충청북도">충청북도</option>
+					<option value="chungnam" title="충청남도">충청남도</option>
+					<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
+					<option value="jeonnam" title="전라남도">전라남도</option>
+					<option value="gyeongbuk" title="경상북도">경상북도</option>
+					<option value="gyeongnam" title="경상남도">경상남도</option>
+					<option value="jeju" title="제주특별자치도">제주특별자치도</option>
+					</select>
+					<div class="select_submit">
+						<button type="button">이동</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
+<script src="../../assets/js/common.js"></script>
 <script>
 function setArrowDisabled(splide, sectionSelector) {
   const section = document.querySelector(sectionSelector);
@@ -836,15 +923,18 @@ function notice_slide(){
 }
 notice_slide()
 
-function consult_section_slide(){
+function consult_section_slide(){ 
   let consultSplide = null;
 
   const listEl = document.querySelector('.consult_section_splide .splide__list');
   const selectEl = document.getElementById('consult_select');
+  const selectBtn = document.querySelector('#consult_select_btn button'); // 🔹 선택 버튼
   if (!listEl) return;
+
   const ORIGINAL_SLIDES = Array.from(listEl.children).map(li => li.cloneNode(true));
   const isMobile = () => window.innerWidth <= 1100;
   let lastIsMobile = isMobile();
+
   const debounce = (fn, wait = 150) => {
     let t;
     return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
@@ -868,12 +958,17 @@ function consult_section_slide(){
   }
 
   function buildFilteredSlides(regionCode) {
-    if (!regionCode) { resetList(); return; }
+    if (!regionCode) { 
+      resetList(); 
+      return; 
+    }
     const frag = document.createDocumentFragment();
     ORIGINAL_SLIDES.forEach(src => {
       const li = src.cloneNode(true);
       const item = li.querySelector('.item');
-      if (item && item.getAttribute('data-rel') === regionCode) frag.appendChild(li);
+      if (item && item.getAttribute('data-rel') === regionCode) {
+        frag.appendChild(li);
+      }
     });
     listEl.innerHTML = '';
     listEl.appendChild(frag);
@@ -941,12 +1036,15 @@ function consult_section_slide(){
   function applyFilter(regionCode) {
     destroySplide();
     resetList();
+
+    // 모바일
     if (isMobile()) {
       buildFilteredSlides(regionCode || '');
       mountSplide();
       return;
     }
 
+    // PC
     setActiveOnDesktop(regionCode || '');
     const section = document.querySelector('.main_consult_section');
     if (section) {
@@ -957,9 +1055,18 @@ function consult_section_slide(){
     }
   }
 
-  if (selectEl) {
-    selectEl.addEventListener('change', () => {
-      applyFilter(selectEl.value || '');
+  if (selectEl && selectBtn) {
+    const handleApply = () => {
+      const value = selectEl.value || '';
+      applyFilter(value);
+    };
+
+    selectBtn.addEventListener('click', handleApply);
+
+    selectEl.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') {
+        handleApply();
+      }
     });
   }
 
@@ -982,7 +1089,9 @@ function consult_section_slide(){
 
   applyFilter(selectEl ? (selectEl.value || '') : '');
 }
+
 consult_section_slide();
+
 
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -1035,7 +1144,5 @@ function updatePlaceholder() {
 window.addEventListener('resize', updatePlaceholder);
 document.addEventListener('DOMContentLoaded', updatePlaceholder);
 </script>
-
-<script src="../../assets/js/common.js"></script>
 </body>
 </html>

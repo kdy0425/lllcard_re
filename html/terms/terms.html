@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,viewport-fit:cover">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<!-- Summary -->
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<title>평생교육이용권</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" href="../../assets/css/splide.min.css">
+<script src="../../assets/js/jquery-3.7.1.js"></script>
+<script src="../../assets/js/splide.min.js"></script>
+<script src="../../assets/js/splide-extension-grid.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/slimselect.css">
+<script src="../../assets/js/slimselect.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">평생교육이용권</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="header_inner">
+			<div class="hd_left">
+				<!-- <div id="logo_local">
+                    <style>
+                        /* 
+                        로컬 로고 pc, mobile height 지정.
+                        CMS에서 로고 등록할 때 pc, mobile 높이 값 칼럼 지정 -> DB에 저장하고 아래 css에 뿌려야 할 듯 합니다.
+                         */
+                        #logo_local img{max-height: 28px;}
+                        @media screen and (max-width: 1100px) {
+                            #logo_local img{max-height:20px;}
+                        }
+                    </style>
+				    <img src="../../assets/images/content/logo_local_seoul.png" alt="서울특별시" />
+                </div> -->
+				<div id="logo">
+				    <a href="javascript:;"><img src="../../assets/images/common/logo.png" alt="평생교육이용권" /></a>
+				</div>
+			</div>
+			<ul id="nav">
+				<li>
+					<a href="javascript:;">사업안내</a>
+					<ul>
+						<li><a href="javascript:;">사업안내1-1</a></li>
+						<li><a href="javascript:;">사업안내1-2</a></li>
+						<li><a href="javascript:;">사업안내1-3</a></li>
+						<li><a href="javascript:;">사업안내1-4</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">사용안내</a>
+					<ul>
+						<li><a href="javascript:;">사용안내1-1</a></li>
+						<li><a href="javascript:;">사용안내1-2</a></li>
+						<li><a href="javascript:;">사용안내1-3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="active">알림·소통</a>
+					<ul>
+						<li><a href="javascript:;">알림·소통1-1</a></li>
+						<li><a href="javascript:;">알림·소통1-2</a></li>
+						<li><a href="javascript:;">알림·소통1-3</a></li>
+						<li><a href="javascript:;">알림·소통1-4</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="hd_right">
+				<div class="hd_links">
+					<div class="item"><a href="javascript:;">사용기관 등록</a></div>
+					<div class="item"><a href="javascript:;">사용기관 업무시스템</a></div>
+					<!-- <div class="item"><a href="javascript:;" class="blank" target="_blank">포털 시스템</a></div> -->
+				</div>
+				<div class="hd_btns">
+					<div class="item">
+						<button type="button">
+							<span class="sound_only">검색</span>
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.33115 17.6623C10.9789 17.6623 12.5896 17.1737 13.9597 16.2583C15.3297 15.3428 16.3976 14.0417 17.0281 12.5193C17.6587 10.997 17.8237 9.32191 17.5022 7.70583C17.1808 6.08974 16.3873 4.60527 15.2222 3.44014C14.057 2.27501 12.5726 1.48154 10.9565 1.16008C9.34039 0.838625 7.66528 1.00361 6.14296 1.63417C4.62064 2.26474 3.31949 3.33256 2.40405 4.70261C1.48861 6.07267 1 7.68341 1 9.33115C1 11.5407 1.87774 13.6598 3.44014 15.2222C5.00253 16.7846 7.12159 17.6623 9.33115 17.6623Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M20.9997 20.9992L16.001 16.0005" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+						</button>
+					</div>
+					<div class="item">
+						<button type="button">
+							<span class="sound_only">전체메뉴</span>
+							<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 1H19" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M1 9H19" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M1 17H19" stroke="white" stroke-width="2" stroke-linecap="round"/> </svg> 
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div class="sub_content">
+        <div class="container_md">
+            <div class="sub_top">
+                <div class="page_location">
+                    <div class="item"> <a href="javascript:;" class="home">홈으로</a> </div>
+                    <div class="item"> <a href="javascript:;">이용약관</a> </div>
+                </div>
+                <h2>이용약관</h2>
+            </div>
+        </div>
+        <div id="content" class="container_md">
+
+            <div class="terms_page">
+                <!-- 제 1조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 1조 (목적)</h3>
+                    </div>
+                    <p>
+                    이 약관은 국가평생교육진흥원(이하 'NILE')이 운영하는 평생교육이용권 사용기관 업무시스템(이하 ‘당 사이트’)이 제공하는 모든 이용자 정보 서비스(이하 '서비스')를 이용하는 고객(이하 ‘이용자’)과 ‘당 사이트’가 ‘서비스’의 이용에 관한 사항을 전기통신사업법 및 동법 시행령, '개인정보처리방침'에서 정하는 바를 준수하고 약정하는 것을 그 목적으로 합니다.
+                    </p>
+                </div>
+
+                <!-- 제 2조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 2조 (약관의 효력과 변경)</h3>
+                    </div>
+                    <p>이 약관은 "이 약관에 동의하십니까?"라는 물음에 '이용자'가 "동의" 버튼을 클릭함으로써 효력이 발생됩니다.</p>
+                    <p>'당 사이트'는 이 약관을 임의로 변경할 수 있으며, 변경된 약관은 적용일 전 7일간 '이용자'에게 공지되고 적용일에 효력이 발생됩니다.</p>
+                    <p>'이용자'는 변경된 약관에 동의하지 않을 경우, '서비스' 이용을 중단하고 탈퇴할 수 있습니다. 약관이 변경된 이후에도 계속적으로 '서비스'를 이용하는 경우에는 '이용자'가 약관의 변경 사항에 동의한 것으로 봅니다.</p>
+                </div>
+
+                <!-- 제 3조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 3조 (약관 외 준칙)</h3>
+                    </div>
+                    <p>‘서비스’ 이용과 관련하여 소송이 제기될 경우 ‘NILE’의 소재지를 관할하는 법원 또는 대한민국의 민사소송법에 따른 법원을 관할법원으로 합니다. 본 약관의 해석과 적용 및 본 약관과 관련한 분쟁의 해결에는 대한민국법이 적용됩니다.</p>
+                </div>
+
+                <!-- 제 4조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 4조 (이용계약)</h3>
+                    </div>
+                    <p>'서비스' 이용은 '당 사이트'가 허락하고 '이용자'가 약관 내용에 대해 동의하면 됩니다.</p>
+                </div>
+
+                <!-- 제 5조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 5조 (이용신청)</h3>
+                    </div>
+                    <p>본 서비스를 이용하기 위해서는 '당 사이트'가 정한 소정의 양식에 이용자 정보를 기록해야 합니다.</p>
+                    <p>가입신청 양식에 기재된 이용자 정보는 실제 데이터로 간주됩니다. 실제 정보를 입력하지 않은 이용자는 법적인 보호를 받을 수 없습니다.</p>
+                </div>
+
+                <!-- 제 6조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 6조 (이용신청의 승낙)</h3>
+                    </div>
+                    <p>'당 사이트'는 '이용자'가 모든 사항을 정확히 기재하여 신청할 경우 '서비스' 이용을 승낙합니다. 단, 아래의 경우는 예외로 합니다.</p>
+                    <ol class="ol_num">
+                        <li><span class="num">① </span> 실명이 아닌 경우</li>
+                        <li><span class="num">② </span> 평생교육이용권 신청서의 내용을 허위로 기재하였거나 신청하였을 경우</li>
+                        <li><span class="num">③ </span> 사회의 안녕 질서 또는 미풍양속을 저해할 목적으로 신청한 경우</li>
+                        <li><span class="num">④ </span> 다른 사람의 '당 사이트' 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 하였을 경우</li>
+                        <li><span class="num">⑤ </span> '당 사이트'를 이용하여 법령과 본 약관이 금지하는 행위를 하는 경우</li>
+                        <li><span class="num">⑥ </span> 기타 '당 사이트'가 정한 평생교육이용권 신청 요건이 미비할 경우</li>
+                    </ol>
+                    <p>이용자가 입력하는 정보는 아래와 같습니다. 아래의 정보 외에 '당 사이트'는 '이용자'에게 추가 정보의 입력을 요구할 수 있습니다.</p>
+                    <p>필수 : 이름(국문, 영문), 우편번호, 주소, 휴대전화번호, 전자우편주소</p>
+                </div>
+
+                <!-- 제 7조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 7조 (계약 사항의 변경 및 정보 보유/이용기간)</h3>
+                    </div>
+                    <p>'이용자'는 '서비스' 이용 신청 시 기재한 사항이 변경되었을 경우, 온라인으로 수정을 해야 합니다.</p>
+                    <p>'이용자'로 등록하는 순간부터 '당 사이트'는 '이용자'의 정보를 보유 및 이용할 수 있습니다.</p>
+                    <p>'이용자'이 탈퇴하는 순간부터 '당 사이트'는 '이용자'의 정보를 이용할 수 없습니다.</p>
+                </div>
+
+                <!-- 제 8조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 8조 (쿠키에 의한 개인정보 수집)</h3>
+                    </div>
+                    <p>'당 사이트'는 사용자마다 특화된 서비스를 제공하기 위해 이용자 개인용 컴퓨터에 쿠키를 전송합니다.</p>
+                    <p>이용자가 한 번의 로그인으로 편리하게 이용하기 위해서는 쿠키 수신을 허용해야 합니다.</p>
+                    <p>쿠키는 '당 사이트'를 방문하는 이용자의 특성을 파악하기 위해 사용됩니다.</p>
+                    <p>이용자는 웹브라우저에 있는 옵션기능을 조정하여 쿠키를 선택적으로 받아들일 수 있습니다. 쿠키 수신을 거부할 경우 로그인이 필요한 서비스를 이용할 수 없습니다.</p>
+                </div>
+
+                <!-- 제 9조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 9조 (계약해지)</h3>
+                    </div>
+                    <ol class="ol_num">
+                        <li><span class="num">① </span> '이용자'는 온라인을 통해 개인정보처리에 관한 불만사항을 개진할 수 있습니다.</li>
+                        <li><span class="num">② </span> '이용자'가 '서비스' 이용 계약을 해지 하고자 할 때는 본인 확인이 가능하도록 이름, 아이디, 생년월일, 연락 가능한 전화번호를 기재하여 평생교육이용권을 사용하기 위한 사용기관으로써 신청한 해당 지역 지방자치단체 또는 'NILE'에 개인정보 삭제 신청을 요청 할 수 있습니다.\
+                            <p style="">단, 평생교육이용권의 신청자 또는 이용자는 신청 및 이용 시점의 당해년도 사업이 종료되는 일자(당해년도 다음 해의 4월 30일) 이전에는 평생교육이용권 개인정보 삭제는 불가합니다.</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- 제 10조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 10조 (자격상실)</h3>
+                    </div>
+                    <p>다음 각 항의 사유에 해당하는 경우 '당 사이트'는 사전 통보 없이 이용계약을 해지하거나 기간을 정하여 서비스 이용을 중지할 수 있습니다.</p>
+                    <ol class="ol_num">
+                        <li><span class="num">① </span> 제6조 제2항의 '기본정보'를 누락시킨 경우</li>
+                        <li><span class="num">② </span> 가입 신청 시 허위 내용으로 등록한 경우</li>
+                        <li><span class="num">③ </span> 타인의 아이디와 비밀번호를 도용한 경우</li>
+                        <li><span class="num">④ </span> 다른 회원 또는 제3자의 지적재산권을 침해하는 경우</li>
+                        <li><span class="num">⑤ </span> 사회의 안녕과 질서, 미풍양속을 해치는 행위를 하는 경우</li>
+                        <li><span class="num">⑥ </span> '신용정보의 이용 및 보호에 관한 법률'에 따른 PC통신 및 인터넷 서비스의 신용불량자로 등록되는 경우</li>
+                        <li><span class="num">⑦ </span> 타인의 명예를 손상시키거나 불이익을 주는 행위를 한 경우</li>
+                    </ol>
+                </div>
+
+                <!-- 제 11조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 11조 ('당 사이트'의 의무)</h3>
+                    </div>
+                    <p>'당 사이트'와 제휴를 맺은 사이트를 편리하게 이용할 수 있도록 하기 위해 '당 사이트'는 '이용자'의 정보를 제휴 사이트들과 공유할 수 있으며, 공유를 위해 '당 사이트'는 '이용자'의 컴퓨터에 쿠키를 전송할 수 있습니다.</p>
+                    <p>'당 사이트'는 '서비스' 제공으로 알게 된 '이용자'의 신상정보를 본인의 승낙 없이 제3자에게 누설, 배포하지 않습니다. 단, 다음 각 호에 해당하는 경우에는 예외로 합니다.</p>
+                    <ol class="ol_num">
+                        <li><span class="num">① </span> 금융실명거래 및 비밀보장에 관한 법률, 신용정보의 이용 및 보호에 관한 법률, 전기통신기본법, 전기통신사업법, 지방세법, 소비자보호법, 한국은행법, 형사소송법 등 법령에 특별한 규정이 있는 경우</li>
+                        <li><span class="num">② </span> 통계작성·학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우</li>
+                    </ol>
+                    <p>'당 사이트'는 '이용자'의 전체 또는 일부 정보를 업무와 관련된 통계 자료로 사용할 수 있습니다.</p>
+                    <p>'당 사이트'는 '서비스'가 계속적이고 안정적으로 운영될 수 있도록 노력하며, 부득이한 이유로 '서비스'가 중단되면 지체 없이 이를 수리·복구하는 데 최선을 다해 노력합니다. 단, 천재지변, 비상사태, 시스템 정기점검 및 필요한 경우에는 그 서비스를 일시 중단하거나 중지할 수 있습니다.</p>
+                </div>
+
+                <!-- 제 12조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 12조 ('이용자' 정보 사용에 대한 동의)</h3>
+                    </div>
+                    <p>‘NILE’은 ‘당 사이트’ 이외에 각종 사이트를 운영하고 있는 바, ‘NILE’이 운영하는 메인 사이트 및 각종 서브 사이트의 서비스 제공을 목적으로 이용자의 정보를 수집하며, 수집된 이용자의 정보를 사용할 수 있습니다. 또한 평생교육이용권 서비스와 관련된 연구, 만족도 조사 등 각종 이벤트 참가를 위하여 귀하가 제공하는 정보 등을 통하여 귀하에 관한 정보를 수집합니다.</p>
+                    <p>'당 사이트'는 양질의 서비스를 위해 여러 교육 관련 유관 단체 및 비즈니스 사업자와 제휴를 맺어 이용자 정보를 공유할 수 있습니다. 그럴 경우 '당 사이트'는 본 조에 제휴업체 및 목적, 내용을 약관에 밝혀 '이용자'의 동의를 받은 뒤 제휴업체에 제공합니다.</p>
+                    <p>본 조의 규정에 의한 '이용자'의 동의는 본 약관 및 이용자 가입정보 입력화면에서 제공하는 정보서비스 이용신청 버튼을 클릭함으로써 그 효력을 발생합니다.</p>
+                </div>
+
+                <!-- 제 13조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 13조 (이용자의 의무)</h3>
+                    </div>
+                    <p>이용자의 개인정보의 관리에 대한 책임은 '이용자'에게 있습니다.</p>
+                    <p>'이용자'는 게시물에 등록된 데이터를 이용한 영업활동을 할 수 없습니다.</p>
+                    <p>'이용자'는 '당 사이트'가 보내는 공지 메일을 수신해야 합니다.</p>
+                </div>
+
+                <!-- 제 14조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 14조 (이용자의 게시물)</h3>
+                    </div>
+                    <p>게시물이라 함은 '당 사이트'의 각종 게시판에 이용자가 올린 글 전체를 포함합니다.</p>
+                    <p>이용자가 게시하는 정보 및 질문과 대답 등으로 인해 발생하는 손실이나 문제는 전적으로 이용자 개인의 판단에 따른 책임이며, '당 사이트'의 고의가 아닌 한 '당 사이트'는 이에 대하여 책임지지 않습니다.</p>
+                    <p>이용자의 게시물로 인하여 제3자의 '당 사이트'에 대한 청구, 소송, 기타 일체의 분쟁이 발생한 경우 이용자는 해결에 소요되는 비용을 부담하고 '당 사이트'를 위하여 분쟁을 처리하여야 하며, '당 사이트'가 제3자에게 배상하거나 '당 사이트'에 손해가 발생한 경우 이용자는 '당 사이트'에 배상하여야 합니다.</p>
+                    <p>‘당 사이트’는 '이용자'의 게시물이 다음 각 항에 해당되는 경우에는 사전통지 없이 삭제합니다. 그러나 '당 사이트'가 게시물을 검사 또는 검열할 의무를 부담하는 것은 아닙니다.</p>
+                    <ol class="ol_num">
+                        <li><span class="num">① </span> 제3자를 비방하거나 중상 모략하여 명예를 손상시키는 경우</li>
+                        <li><span class="num">② </span> 공공질서, 미풍양속에 저해되는 내용인 경우</li>
+                        <li><span class="num">③ </span> '당 사이트'의 저작권, 제3자의 저작권 등 기타 권리를 침해하는 내용인 경우</li>
+                        <li><span class="num">④ </span> '당 사이트'에서 규정한 게시기간을 초과한 경우</li>
+                        <li><span class="num">⑤ </span> 상업성이 있는 게시물이나 돈벌이 광고, 행운의 편지 등을 게시한 경우</li>
+                        <li><span class="num">⑥ </span> 사이트의 개설취지에 맞지 않을 경우</li>
+                        <li><span class="num">⑦ </span> 기타 관계 법령을 위반한다고 판단되는 경우</li>
+                    </ol>
+                </div>
+
+                <!-- 제 15조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 15조 (정보의 제공)</h3>
+                    </div>
+                    <p>'당 사이트'는 '이용자'에게 필요한 정보나 광고를 전자메일이나 서신우편 등의 방법으로 전달할 수 있으며, '이용자'는 이를 원하지 않을 경우 가입신청 메뉴와 개인정보 수정 메뉴에서 정보 수신 거부를 할 수 있습니다. 단, 정보 수신을 거부한 '이용자'에게도 제13조 제5항의 '당 사이트' 공지 메일을 보낼 수 있습니다.</p>
+                </div>
+
+                <!-- 제 16조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 16조 (책임)</h3>
+                    </div>
+                    <p>'당 사이트'는 '서비스' 이용과 관련하여 '당 사이트'의 고의 또는 중과실이 없는 한 '이용자'에게 발생한 어떠한 손해에 대해서도 책임을 지지 않습니다.</p>
+                    <p>'당 사이트'는 '서비스' 이용과 관련한 정보, 제품, 서비스, 소프트웨어, 그래픽, 음성, 동영상의 적합성, 정확성, 시의성, 신빙성에 관한 보증 또는 담보책임을 부담하지 않습니다.</p>
+                </div>
+
+                <!-- 제 17조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 17조 (면책)</h3>
+                    </div>
+                    <p>'NILE'이 천재지변 또는 불가피한 사정으로 '서비스'를 중단할 경우, '이용자'에게 발생되는 문제에 대해 책임을 지지 않습니다.</p>
+                </div>
+
+                <!-- 제 18조 -->
+                <div class="section">
+                    <div class="title_box">
+                        <h3 class="circle_title">제 18조 (관할법원)</h3>
+                    </div>
+                    <p>'서비스' 이용과 관련하여 소송이 제기될 경우 'NILE'의 소재지를 관할하는 법원 또는 대한민국의 민사소송법에 따른 법원을 관할법원으로 합니다. 본 약관의 해석과 적용 및 본 약관과 관련한 분쟁의 해결에는 대한민국법이 적용됩니다.</p>
+                </div>
+            </div>
+
+        </div>
+	</div>
+	<!-- //content -->
+
+	<div id="footer">
+		<div class="ft_top">
+			<div class="ft_inner">
+				<div class="ft_cs">
+					<h3>평생교육이용권 중앙콜센터</h3>
+					<span class="call">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.1279 6.44035C14.968 6.60425 15.74 7.01511 16.3453 7.62033C16.9505 8.22556 17.3613 8.99761 17.5252 9.83769M14.1279 3C15.8733 3.19389 17.5008 3.97549 18.7433 5.21645C19.9859 6.45741 20.7695 8.08398 20.9656 9.82909M20.1055 16.6926V19.2728C20.1065 19.5124 20.0574 19.7495 19.9615 19.969C19.8655 20.1884 19.7247 20.3854 19.5482 20.5474C19.3717 20.7093 19.1633 20.8326 18.9364 20.9093C18.7095 20.9861 18.4691 21.0146 18.2305 20.993C15.5839 20.7054 13.0416 19.8011 10.808 18.3526C8.72985 17.032 6.96797 15.2701 5.64745 13.192C4.19388 10.9482 3.2893 8.3936 3.00698 5.73508C2.98549 5.49723 3.01375 5.25752 3.08998 5.0312C3.16621 4.80488 3.28872 4.59691 3.44972 4.42054C3.61073 4.24416 3.80669 4.10324 4.02514 4.00675C4.24359 3.91026 4.47974 3.86031 4.71855 3.86009H7.29881C7.71622 3.85598 8.12088 4.00379 8.43736 4.27597C8.75385 4.54815 8.96057 4.92612 9.01899 5.33944C9.12789 6.16518 9.32987 6.97595 9.62105 7.75628C9.73677 8.06413 9.76181 8.39869 9.69322 8.72034C9.62462 9.04198 9.46526 9.33722 9.23401 9.57106L8.1417 10.6634C9.36608 12.8166 11.149 14.5995 13.3022 15.8239L14.3945 14.7316C14.6284 14.5003 14.9236 14.341 15.2453 14.2724C15.5669 14.2038 15.9015 14.2288 16.2093 14.3445C16.9896 14.6357 17.8004 14.8377 18.6262 14.9466C19.044 15.0055 19.4255 15.216 19.6983 15.5379C19.971 15.8598 20.116 16.2708 20.1055 16.6926Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+						1600-3005
+					</span>
+					<ul class="cs_info">
+						<li>평일 09:00 ~ 18:00 운영<br/> (점심시간 12:00 ~ 13:00 제외)</li>
+						<li>※ 주말 및 공휴일 휴무</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="ft_bottom">
+			<div class="ft_inner">
+				<ul class="ft_links">
+					<li><a href="javascript:;">이용약관</a></li>
+					<li><a href="javascript:;" class="privacy">개인정보처리방침</a></li>
+				</ul>
+				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
+				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
+					<div class="ft_family">
+					<label for="main_family_site" class="sound_only">관련 사이트 선택</label>
+					<select name="" id="main_family_site" class="wid_mb_100">
+					<option value="" disabled selected hidden>관련 사이트</option>
+					<option value="seoul" title="서울특별시">서울특별시</option>
+					<option value="busan" title="부산광역시">부산광역시</option>
+					<option value="daegu" title="대구광역시">대구광역시</option>
+					<option value="incheon" title="인천광역시">인천광역시</option>
+					<option value="gwangju" title="광주광역시">광주광역시</option>
+					<option value="daejeon" title="대전광역시">대전광역시</option>
+					<option value="ulsan" title="울산광역시">울산광역시</option>
+					<option value="sejong" title="세종특별자치시">세종특별자치시</option>
+					<option value="gyeonggi" title="경기도">경기도</option>
+					<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
+					<option value="chungbuk" title="충청북도">충청북도</option>
+					<option value="chungnam" title="충청남도">충청남도</option>
+					<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
+					<option value="jeonnam" title="전라남도">전라남도</option>
+					<option value="gyeongbuk" title="경상북도">경상북도</option>
+					<option value="gyeongnam" title="경상남도">경상남도</option>
+					<option value="jeju" title="제주특별자치도">제주특별자치도</option>
+					</select>
+					<div class="select_submit">
+						<button type="button">이동</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>
