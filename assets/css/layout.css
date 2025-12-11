@@ -25,13 +25,13 @@ transition: opacity 0.3s cubic-bezier(.4,0,.2,1), transform 0.3s cubic-bezier(.4
 #nav > li > ul > li > a {color:#555;font-size:2.4rem;font-weight: 500;padding:0 32px;}
 #nav > li > ul > li > a:hover{color:#2E6FE3;font-weight: 600;text-decoration: underline;}
 #nav > li:hover > a{color:#2E6FE3;font-weight:600;}
-#nav:hover > li > ul{display: flex;
+#nav:hover > li > ul,#nav > li:focus-within > ul{display: flex;
 visibility: visible;
 opacity:1;
 transform: translateY(0);
 }
-#nav > li:hover > ul{z-index: 10;}
-#nav > li:hover > ul > li{opacity: 1;}
+#nav > li:hover > ul,#nav > li:focus-within > ul{z-index: 10;}
+#nav > li:hover > ul > li,#nav > li:focus-within > ul > li{opacity: 1;}
 #nav.nav_hide{visibility: hidden; opacity:0; }
 
 #header .hd_right {margin-left:auto;display: flex;align-items: center;gap:8px;}
