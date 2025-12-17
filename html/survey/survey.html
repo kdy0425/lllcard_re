@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,viewport-fit:cover">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<!-- Summary -->
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<title>평생교육이용권</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" href="../../assets/css/splide.min.css">
+<link href="../../assets/css/pikaday.css" rel="stylesheet"/>
+<script src="../../assets/js/jquery-3.7.1.js"></script>
+<script src="../../assets/js/splide.min.js"></script>
+<script src="../../assets/js/splide-extension-grid.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/slimselect.css">
+<script src="../../assets/js/slimselect.js"></script>
+<script src="../../assets/js/pikaday.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">평생교육이용권</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="header_inner">
+			<div class="hd_left">
+				<!-- <div id="logo_local">
+                    <style>
+                        /* 
+                        로컬 로고 pc, mobile height 지정.
+                        CMS에서 로고 등록할 때 pc, mobile 높이 값 칼럼 지정 -> DB에 저장하고 아래 css에 뿌려야 할 듯 합니다.
+                         */
+                        #logo_local img{max-height: 28px;}
+                        @media screen and (max-width: 1100px) {
+                            #logo_local img{max-height:20px;}
+                        }
+                    </style>
+				    <img src="../../assets/images/content/logo_local_seoul.png" alt="서울특별시" />
+                </div> -->
+				<div id="logo">
+				    <a href="javascript:;"><img src="../../assets/images/common/logo.png" alt="평생교육이용권" /></a>
+				</div>
+			</div>
+			<ul id="nav">
+				<li>
+					<a href="javascript:;">사업안내</a>
+					<ul>
+						<li><a href="javascript:;">사업안내1-1</a></li>
+						<li><a href="javascript:;">사업안내1-2</a></li>
+						<li><a href="javascript:;">사업안내1-3</a></li>
+						<li><a href="javascript:;">사업안내1-4</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="active">사용안내</a>
+					<ul>
+						<li><a href="javascript:;">사용안내1-1</a></li>
+						<li><a href="javascript:;">사용안내1-2</a></li>
+						<li><a href="javascript:;">사용안내1-3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">알림·소통</a>
+					<ul>
+						<li><a href="javascript:;">알림·소통1-1</a></li>
+						<li><a href="javascript:;">알림·소통1-2</a></li>
+						<li><a href="javascript:;">알림·소통1-3</a></li>
+						<li><a href="javascript:;">알림·소통1-4</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="hd_right">
+				<div class="hd_links">
+					<div class="item"><a href="javascript:;">사용기관 등록</a></div>
+					<div class="item"><a href="javascript:;">사용기관 업무시스템</a></div>
+					<!-- <div class="item"><a href="javascript:;" class="blank" target="_blank">포털 시스템</a></div> -->
+				</div>
+				<div class="hd_btns">
+					<div class="item">
+						<button type="button">
+							<span class="sound_only">검색</span>
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.33115 17.6623C10.9789 17.6623 12.5896 17.1737 13.9597 16.2583C15.3297 15.3428 16.3976 14.0417 17.0281 12.5193C17.6587 10.997 17.8237 9.32191 17.5022 7.70583C17.1808 6.08974 16.3873 4.60527 15.2222 3.44014C14.057 2.27501 12.5726 1.48154 10.9565 1.16008C9.34039 0.838625 7.66528 1.00361 6.14296 1.63417C4.62064 2.26474 3.31949 3.33256 2.40405 4.70261C1.48861 6.07267 1 7.68341 1 9.33115C1 11.5407 1.87774 13.6598 3.44014 15.2222C5.00253 16.7846 7.12159 17.6623 9.33115 17.6623Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M20.9997 20.9992L16.001 16.0005" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+						</button>
+					</div>
+					<div class="item">
+						<button type="button">
+							<span class="sound_only">전체메뉴</span>
+							<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 1H19" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M1 9H19" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M1 17H19" stroke="white" stroke-width="2" stroke-linecap="round"/> </svg> 
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div class="sub_content">
+        <div class="container_md">
+            <div class="sub_top">
+                <div class="page_location">
+                    <div class="item"> <a href="javascript:;" class="home">홈으로</a> </div>
+                    <div class="item"> <a href="javascript:;">소득재산 조사</a> </div>
+                </div>
+                <h2>소득재산 조사</h2>
+            </div> 
+        </div>
+        <div id="content" class="container_md">
+            <button class="js_modal_open" type="button" 
+            data-target="#survey_modal" aria-haspopup="dialog" aria-controls="study_plan-panel" aria-expanded="false"
+            >
+            소득-재산 조사 참여
+            </button>
+
+            <button class="js_modal_open" type="button" 
+            data-target="#low_income_modal" aria-haspopup="dialog" aria-controls="study_plan-panel" aria-expanded="false"
+            >
+            평생교육바우처 기타 저소득층 신청자 대상 소득-재산 조사
+            </button>
+        </div>
+	</div> 
+	<!-- //content -->
+
+
+    <!-- 소득-재산 조사 참여 -->
+    <div
+        id="survey_modal"
+        class="popup_wrap modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="survey_title"
+        aria-describedby="survey_desc"
+        hidden
+    >
+        <div class="modal__backdrop popup_bg" data-close="true"></div>
+        <div class="modal__dialog popup_box" role="document" style="max-width:1400px;">
+            <div class="popup_inner scroll_body">
+                <header class="modal__header popup_header">
+                    <h2 id="survey_title" class="popup_title">소득-재산 조사 참여</h2>
+                    <button type="button" class="js_close_modal popup_close" aria-label="팝업 닫기">닫기</button>
+                </header>
+
+                <div id="survey_desc" class="modal__body popup_body" tabindex="0">
+
+                    <div class="popup_section_margin">
+                        <div class="title_color_form">
+                            <p><strong>아래 표에 주민등록본 상의 세대원이 표기됩니다.</strong><br/> 이 중 소득-재산 조사 대상은 직계존속(부,모), 배우자로 해당 구성원에 대해 관계 선택 후,<br class="pc"/> 휴대폰이나 이메일 작성 후 전송하기를 완료 하면 소득-재산 조사 동의 전자서명을 진행할 수 있도록 메세지가 전송됩니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="popup_section_margin">
+                        <table class="table_list list_mobile_form">
+                            <caption>신청자 정보</caption>
+                            <colgroup>
+                                <col style="width:6.25%">
+                                <col style="width:16.25%">
+                                <col style="width:13.4375%">
+                                <col style="width:18.75%">
+                                <col style="width:31.875%">
+                                <col style="width:13.4375%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>대상</th>
+                                    <th>관계</th>
+                                    <th>이름</th>
+                                    <th>주민등록번호</th>
+                                    <th>인증 방법</th>
+                                    <th>개인정보 동의</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="check_td"><label for="chk_target_1" class="checkbox single"><input type="checkbox" id="chk_target_1" name="chk_target"></label></td>
+                                    <td data-label="관계">
+                                        <div class="input_group">
+                                            <select name="relation_1" id="relation_1">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td data-label="이름">
+                                        홍길동
+                                    </td>
+                                    <td data-label="주민등록번호">
+                                        970123-9******
+                                    </td>
+                                    <td data-label="인증 방법">
+                                        <div class="check_list">
+                                            <label for="auth_method_phone_1" class="checkbox">
+                                                <input type="radio" name="auth_method_1" checked="" id="auth_method_phone_1" value="1" checked>휴대전화번호
+                                            </label>
+                                            <label for="auth_method_email_1" class="checkbox">
+                                                <input type="radio" name="auth_method_1" id="auth_method_email_1" value="2">이메일
+                                            </label>
+                                        </div>
+                                        <div class="input_group">
+                                            <input type="text" id="auth_val_1" name="auth_val_1" placeholder="‘-’ 없이 숫자로만 입력">
+                                            <input type="text" id="auth_val_1_2" name="auth_val_1_2" placeholder="이메일 주소 입력" style="display: none;">
+                                        </div>
+                                    </td>
+                                    <td data-label="개인정보 동의">
+                                        미동의
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="check_td"><label for="chk_target_2" class="checkbox single"><input type="checkbox" id="chk_target_2" name="chk_target"></label></td>
+                                    <td data-label="관계">
+                                        본인
+                                    </td>
+                                    <td data-label="이름">
+                                        홍길동
+                                    </td>
+                                    <td data-label="주민등록번호">
+                                        970123-9******
+                                    </td>
+                                    <td></td>
+                                    <td data-label="개인정보 동의">
+                                        동의완료
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="check_td"><label for="chk_target_3" class="checkbox single"><input type="checkbox" id="chk_target_3" name="chk_target"></label></td>
+                                    <td data-label="관계">
+                                        <div class="input_group">
+                                            <select name="relation_3" id="relation_3">
+                                                <option value="">선택</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td data-label="이름">
+                                        홍길동
+                                    </td>
+                                    <td data-label="주민등록번호">
+                                        970123-9******
+                                    </td>
+                                    <td data-label="인증 방법">
+                                        <div class="check_list">
+                                            <label for="auth_method_phone_3" class="checkbox">
+                                                <input type="radio" name="auth_method_3" checked="" id="auth_method_phone_3" value="1" checked>휴대전화번호
+                                            </label>
+                                            <label for="auth_method_email_3" class="checkbox">
+                                                <input type="radio" name="auth_method_3" id="auth_method_email_3" value="2">이메일
+                                            </label>
+                                        </div>
+                                        <div class="input_group">
+                                            <input type="text" id="auth_val_3" name="auth_val_3" placeholder="‘-’ 없이 숫자로만 입력">
+                                            <input type="text" id="auth_val_3_2" name="auth_val_3_2" placeholder="이메일 주소 입력" style="display: none;">
+                                        </div>
+                                    </td>
+                                    <td data-label="개인정보 동의">
+                                        미동의
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="popup_section">
+                        <div class="text_card">
+                            <ul class="dot_ul">
+                                <li>신청서 작성하기를 미완료 할 경우, 향후 다시 바우처 신청시, 약관동의→본인인증→ 자격검증 이후 미완료된 화면부터 재 작성이 가능합니다.</li>
+                                <li>신청 완료 이후, [홈페이지 회원가입 후 로그인-신청내역]에서 가구원 동의결과를 확인할 수 있습니다.</li>
+                                <li>신청서 제출 완료 시, 소득-재산조사 참여 대상 가족원에게 동의서가 전송됩니다.</li>
+                                <li>모든 가구원 정보제공 동의는 신청기간 내 완료되어야 하며, 미동의시 가구원 소득-재산 조사가 이루어지지 않아 대상자 자격검증이 불가합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <footer class="modal__footer popup_footer">
+                        <div class="btn_list">
+                            <button type="button" onclick="closeModal()" class="btn btn_confirm">
+                                저장
+                            </button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 평생교육바우처 기타 저소득층 신청자 대상 소득-재산 조사 -->
+    <div
+        id="low_income_modal"
+        class="popup_wrap modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="low_income_title"
+        aria-describedby="low_income_desc"
+        hidden
+    >
+        <div class="modal__backdrop popup_bg" data-close="true"></div>
+        <div class="modal__dialog popup_box" role="document" style="max-width:1200px;">
+            <div class="popup_inner scroll_body">
+                <header class="modal__header popup_header">
+                    <h2 id="low_income_title" class="popup_title">평생교육바우처 기타 저소득층 신청자 대상 소득-재산 조사</h2>
+                    <button type="button" class="js_close_modal popup_close" aria-label="팝업 닫기">닫기</button>
+                </header>
+
+                <div id="low_income_desc" class="modal__body popup_body" tabindex="0">
+                    <div class="terms_content">
+                        <div class="terms_section">
+                            <div class="terms_bg_card">
+                                <div class="tit">[소득-재산 조사 안내]</div>
+                                <p>국민건강보험공단 건강보험료 부과체계 개편으로, 기준중위 65% 이하 가구원 신청자의 소득 수준 확인이 어려워짐에 따라 보건복지부 한국사회보장정보원시스템 연계를 통한 소득-재산 조사 실시</p>
+                            </div>
+                        </div>
+
+                        <div class="terms_section">
+                            <h3 class="terms_ctitle">【개인정보 수집 · 이용 및 제공 동의서(소득재산 조사 대상자용)】</h3>
+                        </div>
+
+                        <div class="terms_section">
+                            <h3 class="mobile_lg">개인정보 수집·이용 동의(필수)</h3>
+                            <table class="table_default table_mobile_label table_mobile_line">
+                                <caption>개인정보 수집·이용 동의(필수) 내용</caption>
+                                <colgroup>
+                                    <col style="width:33.333%">
+                                    <col style="width:16.6665%">
+                                    <col style="width:16.6665%">
+                                    <col style="width:33.333%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th colspan="2">수집·이용 목적</th>
+                                        <th>보유기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="항목" class="align_top">
+                                            <div class="cnt">성명, 주민등록번호, 집주소, 대상유형, 결과통지방법, 카드번호, 핸드폰(연락처), 전자우편 주소, 문자메시지 또는 전자우편 수신동의 여부, 소득인정액, 소득·재산의 합계액 (상시근로소득, 사업소득, 재산소득, 공적이전소득, 일반재산, 자동차)</div>
+                                        </td>
+                                        <td data-label="수집·이용 목적" class="align_top" colspan="2">
+                                            <div class="cnt">
+                                                <ul class="dot">
+                                                    <li>평생교육이용권 발급 및 사업 운영 사무</li>
+                                                    <li>평생교육이용권 발급 자격 확인을 위한 소득-재산조사</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                         <td data-label="보유기간">
+                                            <div class="cnt">5년</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <div class="cnt">※ 위의 개인정보 수집 · 이용에 대한 동의를 거부할 권리가 있으며, 동의 거부 시 평생교육이용권 신청 · 선정 · 지급에 제한을 받을 수 있습니다.</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">필수항목에 대한 개인정보 수집, 이용에 동의 하십니까?</th>
+                                        <td colspan="3" data-label="필수항목에 대한 개인정보 수집, 이용에 동의 하십니까?" class="text_center">
+                                            <div class="cnt">
+                                                <div class="check_list">
+                                                    <label for="" class="checkbox">
+                                                        <input type="radio" name="" checked="" id="" value="1">예
+                                                    </label> 
+                                                    <label for="" class="checkbox">
+                                                        <input type="radio" name="" id="" value="2">아니오
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="terms_section">
+                            <table class="table_default table_mobile_label table_mobile_line">
+                                <caption>소득-재산 조사 상세 안내</caption>
+                                <thead>
+                                    <tr>
+                                        <th>소득-재산 조사 상세 안내</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="소득-재산 조사 상세 안내">
+                                            <div class="cnt">
+                                                <ol class="ol_num">
+                                                    <li><span class="num">1.</span> 조사 대상자 : 기타 유형 신청자 본인 및 직계 존속, 배우자</li>
+                                                    <li><span class="num">2.</span> 조사방법 : 한국사회보장정보원의 사회보장정보시스템을 통한 조사 대상자 소득인정액 조회</li>
+                                                    <li><span class="num">3.</span> 소득인정액 산출 항목
+                                                        <ul class="dot mobile_gray indent_23">
+                                                            <li>소득 : 상시근로소득 (국민건강보험, 국민연금, 고용보험, 산재보험, 국세 과세정보 등), 소득세법 제16조부터 제22조에 따른 이자소득·사업소득 (임대소득, 기타사업소득 등), 사업자등록정보, 공적이전소득 (국민연금, 사학퇴직연금, 공무원퇴직연금, 군인퇴직연금, 별정우체국연금, 한국고용정보원 실업급여, 근로복지공단 산재보험급여, 근로소득원천징수부, 국세청 소득금액증명원,지방소득세정보 등</li>
+                                                            <li>재산 : 지방세 과세정보 (재산세, 취득세), 지적(토지), 대장, 건축물대장 등에 따른 부동산, 선박, 항공기, 회원권 (골프, 콘도미니엄, 승마, 요트, 종합체육시설), 임차보증금, 자동차 (차적정보, 자동차손배법보조금, 자동차등록원부, 차량취득가액 및 차량기준가액 등)</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><span class="num">4.</span> 소득-재산 조사 결과를 별도 통보하지 않으며, 본 고지내용을 인지하기 이전에 발생한 민감정보를 포함함.</li>
+                                                </ol>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="terms_section">
+                            <h3 class="mobile_lg">개인정보 수집 · 이용 동의(선택)</h3>
+                            <table class="table_default table_mobile_label table_mobile_line">
+                                <caption>개인정보 수집 · 이용 동의(선택) 내용</caption>
+                                <colgroup>
+                                    <col style="width:33.333%">
+                                    <col style="width:16.6665%">
+                                    <col style="width:16.6665%">
+                                    <col style="width:33.333%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th colspan="2">수집·이용 목적</th>
+                                        <th>보유기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="항목" class="align_top">
+                                            <div class="cnt">회원 계정정보(ID, 비밀번호), 암호화된 이용자 확인값(CI), 회원가입동의 여부, 평생학습계좌번호</div>
+                                        </td>
+                                        <td data-label="수집·이용 목적" class="align_top" colspan="2">
+                                            <div class="cnt">
+                                                <ul class="dot">
+                                                    <li>평생학습계좌제 학습계좌 발급 및 학습이력관리</li>
+                                                    <li>평생교육이용권 홈페이지 회원관리</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td data-label="보유기간">
+                                            <div class="cnt">5년, 회원탈퇴 시</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <div class="cnt">※ 위의 개인정보 수집 · 이용에 대한 동의를 거부할 권리가 있으며, 동의 거부 시 평생교육이용권 신청 · 선정 · 지급에는 제한이 없으나 부가서비스 제공은 제한을 받습니다.</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">선택항목에 대한 개인정보 수집·이용에 동의하십니까?</th>
+                                        <td colspan="3" data-label="선택항목에 대한 개인정보 수집·이용에 동의하십니까?" class="text_center">
+                                            <div class="cnt">
+                                                <div class="check_list">
+                                                    <label for="" class="checkbox">
+                                                        <input type="radio" name="" checked="" id="" value="1">예
+                                                    </label> 
+                                                    <label for="" class="checkbox">
+                                                        <input type="radio" name="" id="" value="2">아니오
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="terms_section">
+                            <h3 class="mobile_lg">개인정보 제3자 제공 고지</h3>
+                            <table class="table_default table_mobile_label table_mobile_line">
+                                <caption>개인정보 제3자 제공 고지 내용</caption>
+                                <colgroup>
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>제공받는자</th>
+                                        <th>개인정보 제공목적</th>
+                                        <th>개인정보 제공 항목</th>
+                                        <th>보유기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="제공받는자" class="align_top">
+                                            <div class="cnt">「평생교육법」 제16조의2제3항에 따른 관계 중앙행정기관의 장 및 지방자치단체의 장, 관계 기관 및 단체의 장, 발급위탁금융 기관, 교육부, 한국장학재단, 한국사회보장정보원, 행정안전부(행정정보공동이용센터), NH농협카드</div>
+                                        </td>
+                                        <td data-label="개인정보 제공목적" class="align_top">
+                                            <div class="cnt">
+                                                <ul class="dot">
+                                                    <li>이용자 선정을 위한 정보제공</li>
+                                                    <li>평생교육이용권 발급 자격확인</li>
+                                                    <li>평생교육이용권 한도금액 부여</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td data-label="개인정보 제공항목" class="align_top">
+                                            <div class="cnt">
+                                                신청자 성명, 신청자 주민등록 번호, 가구원 성명, 가구원 주민등록번호, 신청자와의 관계, 평 생교육이용권 선정 여부
+                                            </div>
+                                        </td>
+                                        <td data-label="보유기간">
+                                            <div class="cnt">목적달성시 까지</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="mobile_outside">
+                                            <div class="cnt">※ 개인정보 보호법 제17조제1항제2호에 따라 정보주체의 동의 없이 개인정보를 제3자에게 제공합니다.</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="terms_section">
+                            <h3 class="mobile_lg">평생교육이용권 신청자 주민등록번호 수집 · 이용 고지</h3>
+                            <table class="table_default table_mobile_label table_mobile_line">
+                                <caption>평생교육이용권 신청자 주민등록번호 수집 · 이용 고지 내용</caption>
+                                <colgroup>
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                    <col style="width:25%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>항목</th>
+                                        <th>개인정보 처리목적</th>
+                                        <th>보유기간</th>
+                                        <th>수집근거</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="항목">
+                                            <div class="cnt">주민등록록번호</div>
+                                        </td>
+                                        <td data-label="개인정보 처리목적">
+                                            <div class="cnt">
+                                                평생교육이용권 발급 및 사업 운영 사무
+                                            </div>
+                                        </td>
+                                        <td data-label="보유기간">
+                                            <div class="cnt">5년</div>
+                                        </td>
+                                        <td data-label="수집근거" class="align_top">
+                                            <div class="cnt">
+                                                <ul class="dot">
+                                                    <li>평생교육법 시행령 제77조의 3(고유식별정보의 처리)</li>
+                                                    <li>개인정보보호법 제24조의 2(주민등록번호 처리의 제한)</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="mobile_outside">
+                                            <div class="cnt">※ 개인정보보호법 제24조의2 제1항제1호에 따라 정보주체의 동의 없이 개인정보를 수집 · 이용합니다.</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="terms_section">
+                            <div class="terms_check_sign">
+                                <p>「개인정보보호법」 등 관련 법규에 따라 아래 본인은 위와 같이 개인정보 수집·이용 및 제공에 동의하며, 고지사항을 확인합니다.</p>
+                                <div class="from_sign">
+                                    <div class="from">해당 지자체장 및 국가평생교육진흥원장(귀하)</div>
+                                    <div class="date_sign">
+                                        <div class="date">2025년 12월 16일</div>
+                                        <div class="sign_name">
+                                            <strong>신청인</strong>
+                                            <div class="name">
+                                                <span>이종민</span> <span>(서명)</span>
+                                                <label for="" class="checkbox single"><input type="checkbox"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <footer class="modal__footer popup_footer">
+                        <div class="btn_list">
+                            <button type="button" onclick="closeModal()" class="btn btn_confirm">
+                                확인
+                            </button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 자격검증 폼 리스트 -->
+    <div
+        id="certification_check_modal"
+        class="popup_wrap modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="certification_title_check"
+        aria-describedby="certification_desc_check"
+        hidden
+    >
+        <div class="modal__backdrop popup_bg" data-close="true"></div>
+        <div class="modal__dialog popup_box" role="document">
+            <div class="popup_inner scroll_body">
+                <header class="modal__header popup_header">
+                    <h2 id="certification_title_check" class="popup_title">자격검증</h2>
+                    <button type="button" class="js_close_modal popup_close" aria-label="팝업 닫기">닫기</button>
+                </header>
+
+                <div id="certification_desc_check" class="modal__body popup_body" tabindex="0">
+
+                    <div class="popup_section_margin">
+                        <h3 class="section_title">장애인연금_경증장애수당_장애아동수당수급자확인서</h3>
+                        <table class="table_detail">
+                            <caption>장애인연금 경증장애수당 장애아동수당수급자확인서 정보 입력</caption>
+                            <colgroup>
+                            <col style="width:22.2222%">
+                            <col style="width:27.7778%">
+                            <col style="width:22.2222%">
+                            <col style="width:27.7778%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">신청일자</th>
+                                    <td>
+                                        <div class="td_content">
+                                            2025-12-04
+                                        </div>
+                                    </td>
+                                    <th scope="row">신청인</th>
+                                    <td>
+                                        <div class="td_content">
+                                            이종민
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청인 주민등록번호</th>
+                                    <td>
+                                        <div class="td_content">
+                                            971217-1******
+                                        </div>
+                                    </td>
+                                    <th scope="row">신청인 주소</th>
+                                    <td>
+                                        <div class="td_content">
+                                            서울 강남구 논현동 주소가 2줄이 되면 이렇게 
+                                            3줄이 되면 이렇게
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">대상자와의 관계</th>
+                                    <td>
+                                        <div class="td_content">
+                                            본인
+                                        </div>
+                                    </td>
+                                    <th scope="row">신청인 전화번호</th>
+                                    <td>
+                                        <div class="td_content">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">(장애인, 경증장애,<br class="pc"/> 장애아동) 등록번호 <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="input_group">
+                                            <input type="text" id="" style="max-width: 440px;">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">신청인 등록번호 <span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <div class="input_group">
+                                            <input type="text" id="" style="max-width: 440px;">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_list sm">
+                            <button type="button" class="btn blue">공공마이데이터 자격검증</button>
+                        </div>
+                    </div>
+
+                    <div class="popup_section_margin">
+                        <h3 class="section_title">장애인연금_경증장애수당_장애아동수당수급자확인서</h3>
+                        <table class="table_list table_mobile_between">
+                            <caption>장애인연금 경증장애수당 장애아동수당수급자확인서 목록</caption>
+                            <colgroup>
+                            <col style="width:25%">
+                            <col style="width:25%">
+                            <col style="width:25%">
+                            <col style="width:25%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">성명</th>
+                                    <th scope="col">주민등록번호</th>
+                                    <th scope="col">장애등급</th>
+                                    <th scope="col">자격여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="성명">홍길동</td>
+                                    <td data-label="주민등록번호">971217-1******</td>
+                                    <td data-label="장애등급">123</td>
+                                    <td data-label="자격여부">123</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="성명">홍길동</td>
+                                    <td data-label="주민등록번호">971217-1******</td>
+                                    <td data-label="장애등급">123</td>
+                                    <td data-label="자격여부">123</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="99" class="list_empty">검색된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <footer class="modal__footer popup_footer">
+                        <div class="btn_list">
+                            <button type="button" class="btn btn_confirm" onclick="closePopup()">확인</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<div id="footer">
+		<div class="ft_top">
+			<div class="ft_inner">
+				<div class="ft_cs">
+					<h3>평생교육이용권 중앙콜센터</h3>
+					<span class="call">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.1279 6.44035C14.968 6.60425 15.74 7.01511 16.3453 7.62033C16.9505 8.22556 17.3613 8.99761 17.5252 9.83769M14.1279 3C15.8733 3.19389 17.5008 3.97549 18.7433 5.21645C19.9859 6.45741 20.7695 8.08398 20.9656 9.82909M20.1055 16.6926V19.2728C20.1065 19.5124 20.0574 19.7495 19.9615 19.969C19.8655 20.1884 19.7247 20.3854 19.5482 20.5474C19.3717 20.7093 19.1633 20.8326 18.9364 20.9093C18.7095 20.9861 18.4691 21.0146 18.2305 20.993C15.5839 20.7054 13.0416 19.8011 10.808 18.3526C8.72985 17.032 6.96797 15.2701 5.64745 13.192C4.19388 10.9482 3.2893 8.3936 3.00698 5.73508C2.98549 5.49723 3.01375 5.25752 3.08998 5.0312C3.16621 4.80488 3.28872 4.59691 3.44972 4.42054C3.61073 4.24416 3.80669 4.10324 4.02514 4.00675C4.24359 3.91026 4.47974 3.86031 4.71855 3.86009H7.29881C7.71622 3.85598 8.12088 4.00379 8.43736 4.27597C8.75385 4.54815 8.96057 4.92612 9.01899 5.33944C9.12789 6.16518 9.32987 6.97595 9.62105 7.75628C9.73677 8.06413 9.76181 8.39869 9.69322 8.72034C9.62462 9.04198 9.46526 9.33722 9.23401 9.57106L8.1417 10.6634C9.36608 12.8166 11.149 14.5995 13.3022 15.8239L14.3945 14.7316C14.6284 14.5003 14.9236 14.341 15.2453 14.2724C15.5669 14.2038 15.9015 14.2288 16.2093 14.3445C16.9896 14.6357 17.8004 14.8377 18.6262 14.9466C19.044 15.0055 19.4255 15.216 19.6983 15.5379C19.971 15.8598 20.116 16.2708 20.1055 16.6926Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+						1600-3005
+					</span>
+					<ul class="cs_info">
+						<li>평일 09:00 ~ 18:00 운영<br/> (점심시간 12:00 ~ 13:00 제외)</li>
+						<li>※ 주말 및 공휴일 휴무</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="ft_bottom">
+			<div class="ft_inner">
+				<ul class="ft_links">
+					<li><a href="javascript:;">이용약관</a></li>
+					<li><a href="javascript:;" class="privacy">개인정보처리방침</a></li>
+				</ul>
+				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
+				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
+					<div class="ft_family">
+					<label for="main_family_site" class="sound_only">관련 사이트 선택</label>
+					<select name="" id="main_family_site" class="wid_mb_100">
+					<option value="" disabled selected hidden>관련 사이트</option>
+					<option value="seoul" title="서울특별시">서울특별시</option>
+					<option value="busan" title="부산광역시">부산광역시</option>
+					<option value="daegu" title="대구광역시">대구광역시</option>
+					<option value="incheon" title="인천광역시">인천광역시</option>
+					<option value="gwangju" title="광주광역시">광주광역시</option>
+					<option value="daejeon" title="대전광역시">대전광역시</option>
+					<option value="ulsan" title="울산광역시">울산광역시</option>
+					<option value="sejong" title="세종특별자치시">세종특별자치시</option>
+					<option value="gyeonggi" title="경기도">경기도</option>
+					<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
+					<option value="chungbuk" title="충청북도">충청북도</option>
+					<option value="chungnam" title="충청남도">충청남도</option>
+					<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
+					<option value="jeonnam" title="전라남도">전라남도</option>
+					<option value="gyeongbuk" title="경상북도">경상북도</option>
+					<option value="gyeongnam" title="경상남도">경상남도</option>
+					<option value="jeju" title="제주특별자치도">제주특별자치도</option>
+					</select>
+					<div class="select_submit">
+						<button type="button">이동</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="../../assets/js/common.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const fileInputs = document.querySelectorAll(".file_input");
+
+    fileInputs.forEach((input) => {
+        input.addEventListener("change", function () {
+            const fileNameSpan = this.closest(".file_upload").querySelector(".file_name");
+            const fileName = this.files.length > 0 ? this.files[0].name : "선택된 파일 없음";
+            fileNameSpan.textContent = fileName;
+        });
+    });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const table = document.querySelector('.table_list.list_mobile_form');
+  if (!table) return;
+
+  function toggleAuthInputs(row) {
+    const phoneRadio = row.querySelector('input[type="radio"][name^="auth_method_"][value="1"]');
+    const emailRadio = row.querySelector('input[type="radio"][name^="auth_method_"][value="2"]');
+    const phoneInput = row.querySelector('input[id^="auth_val_"]:not([id$="_2"])');
+    const emailInput = row.querySelector('input[id^="auth_val_"][id$="_2"]');
+
+    if (!phoneInput || !emailInput) return;
+
+    const isEmail = emailRadio && emailRadio.checked;
+
+    phoneInput.style.display = isEmail ? 'none' : '';
+    emailInput.style.display = isEmail ? '' : 'none';
+  }
+
+  table.addEventListener('change', (e) => {
+    const t = e.target;
+    if (!(t instanceof HTMLInputElement)) return;
+    if (t.type !== 'radio') return;
+    if (!t.name.startsWith('auth_method_')) return;
+
+    const row = t.closest('tr');
+    if (row) toggleAuthInputs(row);
+  });
+
+  table.querySelectorAll('tbody tr').forEach(toggleAuthInputs);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,viewport-fit:cover">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<!-- Summary -->
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<title>평생교육이용권</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" href="../../assets/css/splide.min.css">
+<script src="../../assets/js/jquery-3.7.1.js"></script>
+<script src="../../assets/js/splide.min.js"></script>
+<script src="../../assets/js/splide-extension-grid.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/slimselect.css">
+<script src="../../assets/js/slimselect.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="layout">
+	<h1 id="header_h1">평생교육이용권</h1>
+	<div id="skip_to_container">
+		<!-- skip navigation -->
+		<a href="#content">내용 바로가기</a>
+		<a href="#nav">서비스메뉴 바로가기</a>
+	</div>
+	<hr class="hide" />	
+
+	<!-- header -->
+	<div id="header">
+		<div class="header_inner">
+			<div class="hd_left">
+				<!-- <div id="logo_local">
+                    <style>
+                        /* 
+                        로컬 로고 pc, mobile height 지정.
+                        CMS에서 로고 등록할 때 pc, mobile 높이 값 칼럼 지정 -> DB에 저장하고 아래 css에 뿌려야 할 듯 합니다.
+                         */
+                        #logo_local img{max-height: 28px;}
+                        @media screen and (max-width: 1100px) {
+                            #logo_local img{max-height:20px;}
+                        }
+                    </style>
+				    <img src="../../assets/images/content/logo_local_seoul.png" alt="서울특별시" />
+                </div> -->
+				<div id="logo">
+				    <a href="javascript:;"><img src="../../assets/images/common/logo.png" alt="평생교육이용권" /></a>
+				</div>
+			</div>
+			<ul id="nav">
+				<li>
+					<a href="javascript:;">사업안내</a>
+					<ul>
+						<li><a href="javascript:;">사업안내1-1</a></li>
+						<li><a href="javascript:;">사업안내1-2</a></li>
+						<li><a href="javascript:;">사업안내1-3</a></li>
+						<li><a href="javascript:;">사업안내1-4</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="active">사용안내</a>
+					<ul>
+						<li><a href="javascript:;">사용안내1-1</a></li>
+						<li><a href="javascript:;">사용안내1-2</a></li>
+						<li><a href="javascript:;">사용안내1-3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;">알림·소통</a>
+					<ul>
+						<li><a href="javascript:;">알림·소통1-1</a></li>
+						<li><a href="javascript:;">알림·소통1-2</a></li>
+						<li><a href="javascript:;">알림·소통1-3</a></li>
+						<li><a href="javascript:;">알림·소통1-4</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="hd_right">
+				<div class="hd_links">
+					<div class="item"><a href="javascript:;">사용기관 등록</a></div>
+					<div class="item"><a href="javascript:;">사용기관 업무시스템</a></div>
+					<!-- <div class="item"><a href="javascript:;" class="blank" target="_blank">포털 시스템</a></div> -->
+				</div>
+				<div class="hd_btns">
+					<div class="item">
+						<button type="button">
+							<span class="sound_only">검색</span>
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.33115 17.6623C10.9789 17.6623 12.5896 17.1737 13.9597 16.2583C15.3297 15.3428 16.3976 14.0417 17.0281 12.5193C17.6587 10.997 17.8237 9.32191 17.5022 7.70583C17.1808 6.08974 16.3873 4.60527 15.2222 3.44014C14.057 2.27501 12.5726 1.48154 10.9565 1.16008C9.34039 0.838625 7.66528 1.00361 6.14296 1.63417C4.62064 2.26474 3.31949 3.33256 2.40405 4.70261C1.48861 6.07267 1 7.68341 1 9.33115C1 11.5407 1.87774 13.6598 3.44014 15.2222C5.00253 16.7846 7.12159 17.6623 9.33115 17.6623Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M20.9997 20.9992L16.001 16.0005" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> 
+						</button>
+					</div>
+					<div class="item">
+						<button type="button">
+							<span class="sound_only">전체메뉴</span>
+							<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1 1H19" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M1 9H19" stroke="white" stroke-width="2" stroke-linecap="round"/> <path d="M1 17H19" stroke="white" stroke-width="2" stroke-linecap="round"/> </svg> 
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->	
+
+	<!-- content -->
+	<div class="sub_content">
+        <div class="container_md">
+            <div class="sub_top">
+                <div class="page_location">
+                    <div class="item"> <a href="javascript:;" class="home">홈으로</a> </div>
+                    <div class="item"> <a href="javascript:;">평생교육이용권</a> </div>
+                    <div class="item"> <a href="javascript:;">[전국] 수기공모전 신청</a> </div>
+                </div>
+                <h2>[전국] 수기공모전 신청</h2>
+            </div>
+        </div>
+        <div id="content" class="container_md">
+
+            <div class="section">
+                <div class="blue_card_text">
+                    2025년 평생교육이용권 이용자 우수사례 수기공모전<br/> 공모주제 : 주제 테스트1
+                </div>
+            </div>
+             
+            <form action="">
+                <legend>[전국] 수기공모전 신청</legend>
+                <div class="section">
+                    <h3 class="circle_title">신청 정보</h3>
+                    <table class="table_detail">
+                        <caption>신청 정보 입력</caption>
+                        <colgroup>
+                            <col style="width:17.1429%">
+                            <col style="width:32.8571%">
+                            <col style="width:17.1429%">
+                            <col style="width:32.8571%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">신청인</th>
+                                <td> 
+                                    이종민
+                                </td>
+                                <th scope="row">생년월일</th>
+                                <td> 
+                                    1984년 8월 15일
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">휴대전화번호</th>
+                                <td colspan="3">
+                                    <div class="input_group">
+                                        <label for="apply_phone_1" class="sound_only">휴대전화 앞자리 선택</label>
+                                        <select name="apply_phone_1" id="apply_phone_1" style="max-width: 200px;">
+                                            <option value="" disabled selected hidden>선택</option>
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        <span class="input_text pc">-</span>
+                                        <label for="apply_phone_2" class="sound_only">휴대전화번호 가운데 자리 입력</label>
+                                        <input type="text" id="apply_phone_2" name="apply_phone_2" class="input" aria-required="true" style="max-width: 200px;">
+                                        <span class="input_text pc">-</span>
+                                        <label for="apply_phone_3" class="sound_only">휴대전화번호 끝자리 입력</label>
+                                        <input type="text" id="apply_phone_3" name="apply_phone_3" class="input" aria-required="true" style="max-width: 200px;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">전자우편주소</th>
+                                <td colspan="3">
+                                    <div class="input_group">
+                                        <label for="apply_email_id" class="sound_only">전자우편 아이디 입력</label>
+                                        <input type="text" id="apply_email_id" name="apply_email_id" class="input" style="max-width: 200px;">
+                                        <span class="input_text">@</span>
+                                        <label for="apply_email_domain" class="sound_only">전자우편 도메인 입력</label>
+                                        <input type="text" id="apply_email_domain" name="apply_email_domain" class="input" style="max-width: 200px;">
+                                        <label for="apply_email_domain_select" class="sound_only">전자우편 도메인 선택</label>
+                                        <select name="apply_email_domain_select" id="apply_email_domain_select" style="max-width: 200px;" class="wid_mb_100">
+                                            <option value="direct">직접입력</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="kakao.com">kakao.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">성별</th>
+                                <td> 
+                                    남자
+                                </td>
+                                <th scope="row">이용권 유형</th>
+                                <td> 
+                                    일반(지역특화)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주소</th>
+                                <td colspan="3"> 
+                                    (111111)서울특별시 성동구 성수동1가 등본 상세주소
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="section">
+                    <h3 class="circle_title">약관동의</h3>
+                    <div class="terms_checks">
+                        <div class="item">
+                            <label for="agree_copyright">
+                                <input type="checkbox" id="agree_copyright" name="agree_copyright" aria-required="true">
+                                <span>[필수] 저작권 및 작품사용 동의</span>
+                            </label>
+                            <button type="button" class="btn_more js_modal_open" data-target="#modal_copyright" aria-haspopup="dialog" aria-controls="copyright-panel" aria-expanded="false">내용보기</button>
+                        </div>
+                        <div class="item">
+                            <label for="agree_privacy">
+                                <input type="checkbox" id="agree_privacy" name="agree_privacy" aria-required="true">
+                                <span>[필수]개인정보 수집·이용 내역</span>
+                            </label>
+                            <button type="button" class="btn_more js_modal_open" data-target="#modal_privacy" aria-haspopup="dialog" aria-controls="privacy-panel" aria-expanded="false">내용보기</button>
+                        </div>
+                        <div class="item">
+                            <label for="agree_integrity">
+                                <input type="checkbox" id="agree_integrity" name="agree_integrity" aria-required="true">
+                                <span>[필수]청렴서약서</span>
+                            </label>
+                            <button type="button" class="btn_more js_modal_open" data-target="#modal_integrity" aria-haspopup="dialog" aria-controls="integrity-panel" aria-expanded="false">내용보기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn_list">
+                    <button type="submit" class="btn">다음</button>
+                </div>
+            </form>
+
+        </div>
+	</div>
+	<!-- //content -->
+ 
+    <!-- 저작권 및 작품사용 동의 -->
+    <div id="modal_copyright" class="popup_wrap modal" role="dialog" aria-modal="true" aria-labelledby="copyright_title" aria-describedby="copyright_desc" hidden>
+        <div class="modal__backdrop popup_bg" data-close="true"></div>
+        <div class="modal__dialog popup_box" role="document">
+        <div class="popup_inner">
+            <header class="modal__header popup_header">
+                <h2 id="copyright_title" class="popup_title">저작권 및 작품사용 동의</h2>
+                <button type="button" class="js_close_modal popup_close" aria-label="팝업 닫기">닫기</button>
+            </header>
+            <div id="copyright_desc" class="modal__body popup_body popup_line" tabindex="0">
+                <div class="terms_content">
+                    <div class="terms_section">
+                        <h3>다음의 내용을 숙지하였으며, 저작권 및 작품 사용에 대해 동의합니다.</h3>
+                        <ol class="ol_num">
+                            <li>
+                                <span class="num">①</span>
+                                출품작에 대한 저작권은 저작자에게 있으며, 수상작에 대한 복제권, 공연권, 공중송신권, 전시권, 배포권, 대여권 및 2차적 저작물 작성권을 포함한 모든 저작재산권은 국가평생교육진흥원에 귀속됩니다.
+                            </li>
+                            <li>
+                                <span class="num">②</span>
+                                수상작은 추후 교육부 및 국가평생교육진흥원에서 발행하는 홍보물에 게재됩니다.
+                            </li>
+                            <li>
+                                <span class="num">③</span>
+                                타 매체에 게재된 글이나 입상작, 모방작은 공모하실 수 없으며, 출품작은 타 매체에 게재하실 수 없습니다. 이와 관련하여 추후 사실이 확인될 경우 입상이 취소됩니다.
+                            </li>
+                            <li>
+                                <span class="num">④</span>
+                                광역지자체에서 진행한 평생교육이용권 수기 공모전에서 이미 수상한 작품의 경우, 중복 수상 방지를 위해 전국 단위 수기 공모전 심사대상 및 선정에서 제외될 수 있음을 확인하였습니다.
+                            </li>
+                            <li>
+                                <span class="num">⑤</span>
+                                본인은 표절이나 모방 관련 내용을 숙지하였으며 문제가 없음을 확인하였습니다.
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="terms_section">
+                        <p>
+                            위와 같이 「2025년 평생교육이용권 이용자 우수사례 수기공모전」참가를 신청합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer class="modal__footer popup_footer">
+                <div class="btn_list">
+                    <button type="button" class="btn js_close_modal">확인</button>
+                </div>
+            </footer>
+        </div>
+        </div>
+    </div>
+
+    <!-- 개인정보 수집·이용 내역 -->
+    <div id="modal_privacy" class="popup_wrap modal" role="dialog" aria-modal="true" aria-labelledby="privacy_title" aria-describedby="privacy_desc" hidden>
+        <div class="modal__backdrop popup_bg" data-close="true"></div>
+        <div class="modal__dialog popup_box" role="document">
+        <div class="popup_inner">
+            <header class="modal__header popup_header">
+                <h2 id="privacy_title" class="popup_title">평생교육이용권 이용자 우수사례 수기공모전을 위한 개인정보의 수집 · 이용에 관한 동의서</h2>
+                <button type="button" class="js_close_modal popup_close" aria-label="팝업 닫기">닫기</button>
+            </header>
+            <div id="privacy_desc" class="modal__body popup_body popup_line" tabindex="0">
+                <div class="terms_content">
+                    <div class="terms_section">
+                        <div class="terms_card_text">
+                            국가평생교육진흥원은 2025년 평생교육이용권 이용자 우수사례 수기공모 운영 시 개인정보 수집과 관련하여 「개인정보보호법」을 준수하며 아래와 같이 개인정보를 활용합니다.
+                        </div>
+                    </div>
+                    <div class="terms_section">
+                        <table class="table_default table_mobile_label">
+                            <caption>주민등록번호 수집·이용 고지 항목 및 내용</caption>
+                            <colgroup>
+                                <col style="width:33.333%">
+                                <col style="width:33.333%">
+                                <col style="width:33.333%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="row">수집하는 개인정보의 항목</th>
+                                    <th scope="row">개인정보의 수집·이용 목적</th>
+                                    <th scope="row">개인정보의 보유 및 이용기간</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="수집하는 개인정보의 항목">
+                                        <div class="cnt">
+                                        성명, 주소, 생년월일, 휴대전화, 이메일, 활동사진, 성별
+                                        </div>
+                                    </td>
+                                    <td data-label="개인정보의 수집·이용 목적">
+                                        <div class="cnt">
+                                        평생교육이용권 이용자 우수사례 수기 공모 심사 및 시상과 관련한 사항
+                                        </div>
+                                    </td>
+                                    <td data-label="개인정보의 보유 및 이용기간">
+                                        <div class="cnt">
+                                        2026년 2월 28일
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="pc">
+                                    <td colspan="3">
+                                        ※ 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 공모 심사대상에 제한이 있을 수 있습니다.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text_sm mobile">※ 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 공모 심사대상에 제한이 있을 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <footer class="modal__footer popup_footer">
+                <div class="btn_list">
+                    <button type="button" class="btn js_close_modal">확인</button>
+                </div>
+            </footer>
+        </div>
+        </div>
+    </div>
+
+    <!-- 청렴서약서 -->
+    <div id="modal_integrity" class="popup_wrap modal" role="dialog" aria-modal="true" aria-labelledby="integrity_title" aria-describedby="integrity_desc" hidden>
+        <div class="modal__backdrop popup_bg" data-close="true"></div>
+        <div class="modal__dialog popup_box" role="document">
+        <div class="popup_inner">
+            <header class="modal__header popup_header">
+                <h2 id="integrity_title" class="popup_title">청렴서약서</h2>
+                <button type="button" class="js_close_modal popup_close" aria-label="팝업 닫기">닫기</button>
+            </header>
+            <div id="integrity_desc" class="modal__body popup_body popup_line" tabindex="0">
+                <div class="terms_content">
+                    <div class="terms_section">
+                        <h3>응모자(본인)은 「2025년 평생교육이용권 이용자 우수사례 수기공모전」참가에 있어 다음 사항을 서약하며, 서약내용 위배 시 시상 취소 및 부상 반환 등 불이익 조치를 감수하겠습니다.</h3>
+                        <ol class="ol_num">
+                            <li>
+                                <span class="num">1.</span>
+                                공모전 참가에 있어 위조, 변조, 표절 등 타인의 지적재산을 부당하게 도용하는 등의 어떠한 부정행위도 하지 않겠습니다.
+                            </li>
+                            <li>
+                                <span class="num">2.</span>
+                                지나친 허위·과장으로 인한 문제가 발생하지 않도록 진실성 있는 수기를 작성하겠습니다.
+                            </li>
+                            <li>
+                                <span class="num">3.</span>
+                                동일 또는 유사한 학습수기로 다른 공모전에 중복 응모하여 수상한 경력이 없음을 확인합니다.
+                            </li>
+                            <li>
+                                <span class="num">3.</span>
+                                응모작이 제3자의 저작권, 초상권 등 기타 제반 권리를 침해하지 않았음을 보증하며, 타인의 권리를 침해하거나 작품을 위조, 변조, 표절하는등의 부정한 행위를 한 사실이 밝혀지면 시상 취소 및 부상 반환 등 불이익 조치를 감수하고 향후 분쟁 발생 시 모든 민·형사상 책임을 다하겠습니다.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <footer class="modal__footer popup_footer">
+                <div class="btn_list">
+                    <button type="button" class="btn js_close_modal">확인</button>
+                </div>
+            </footer>
+        </div>
+        </div>
+    </div>
+
+	<div id="footer">
+		<div class="ft_top">
+			<div class="ft_inner">
+				<div class="ft_cs">
+					<h3>평생교육이용권 중앙콜센터</h3>
+					<span class="call">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.1279 6.44035C14.968 6.60425 15.74 7.01511 16.3453 7.62033C16.9505 8.22556 17.3613 8.99761 17.5252 9.83769M14.1279 3C15.8733 3.19389 17.5008 3.97549 18.7433 5.21645C19.9859 6.45741 20.7695 8.08398 20.9656 9.82909M20.1055 16.6926V19.2728C20.1065 19.5124 20.0574 19.7495 19.9615 19.969C19.8655 20.1884 19.7247 20.3854 19.5482 20.5474C19.3717 20.7093 19.1633 20.8326 18.9364 20.9093C18.7095 20.9861 18.4691 21.0146 18.2305 20.993C15.5839 20.7054 13.0416 19.8011 10.808 18.3526C8.72985 17.032 6.96797 15.2701 5.64745 13.192C4.19388 10.9482 3.2893 8.3936 3.00698 5.73508C2.98549 5.49723 3.01375 5.25752 3.08998 5.0312C3.16621 4.80488 3.28872 4.59691 3.44972 4.42054C3.61073 4.24416 3.80669 4.10324 4.02514 4.00675C4.24359 3.91026 4.47974 3.86031 4.71855 3.86009H7.29881C7.71622 3.85598 8.12088 4.00379 8.43736 4.27597C8.75385 4.54815 8.96057 4.92612 9.01899 5.33944C9.12789 6.16518 9.32987 6.97595 9.62105 7.75628C9.73677 8.06413 9.76181 8.39869 9.69322 8.72034C9.62462 9.04198 9.46526 9.33722 9.23401 9.57106L8.1417 10.6634C9.36608 12.8166 11.149 14.5995 13.3022 15.8239L14.3945 14.7316C14.6284 14.5003 14.9236 14.341 15.2453 14.2724C15.5669 14.2038 15.9015 14.2288 16.2093 14.3445C16.9896 14.6357 17.8004 14.8377 18.6262 14.9466C19.044 15.0055 19.4255 15.216 19.6983 15.5379C19.971 15.8598 20.116 16.2708 20.1055 16.6926Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+						1600-3005
+					</span>
+					<ul class="cs_info">
+						<li>평일 09:00 ~ 18:00 운영<br/> (점심시간 12:00 ~ 13:00 제외)</li>
+						<li>※ 주말 및 공휴일 휴무</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="ft_bottom">
+			<div class="ft_inner">
+				<ul class="ft_links">
+					<li><a href="javascript:;">이용약관</a></li>
+					<li><a href="javascript:;" class="privacy">개인정보처리방침</a></li>
+				</ul>
+				<div class="ft_info">(07800) K스퀘어 마곡 타워1 4층·5층 및 8층(서울 강서구 마곡중앙로 105-7) 국가평생교육진흥원</div>
+				<div class="ft_copy">COPYRIGHT 2024. NATIONAL INSTITUTE FOR LIFELONG EDUCATION. ALL RIGHTS RESERVED.</div>
+					<div class="ft_family">
+					<label for="main_family_site" class="sound_only">관련 사이트 선택</label>
+					<select name="" id="main_family_site" class="wid_mb_100">
+					<option value="" disabled selected hidden>관련 사이트</option>
+					<option value="seoul" title="서울특별시">서울특별시</option>
+					<option value="busan" title="부산광역시">부산광역시</option>
+					<option value="daegu" title="대구광역시">대구광역시</option>
+					<option value="incheon" title="인천광역시">인천광역시</option>
+					<option value="gwangju" title="광주광역시">광주광역시</option>
+					<option value="daejeon" title="대전광역시">대전광역시</option>
+					<option value="ulsan" title="울산광역시">울산광역시</option>
+					<option value="sejong" title="세종특별자치시">세종특별자치시</option>
+					<option value="gyeonggi" title="경기도">경기도</option>
+					<option value="gangwon" title="강원특별자치도">강원특별자치도</option>
+					<option value="chungbuk" title="충청북도">충청북도</option>
+					<option value="chungnam" title="충청남도">충청남도</option>
+					<option value="jeonbuk" title="전북특별자치도">전북특별자치도</option>
+					<option value="jeonnam" title="전라남도">전라남도</option>
+					<option value="gyeongbuk" title="경상북도">경상북도</option>
+					<option value="gyeongnam" title="경상남도">경상남도</option>
+					<option value="jeju" title="제주특별자치도">제주특별자치도</option>
+					</select>
+					<div class="select_submit">
+						<button type="button">이동</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../../assets/js/common.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const fileUploads = document.querySelectorAll(".file_upload");
+
+    fileUploads.forEach((upload) => {
+        const fileInput = upload.querySelector(".file_input");
+        const fileNameSpan = upload.querySelector(".file_name");
+        const removeBtn = upload.querySelector(".file_remove");
+
+        if (fileInput) {
+            fileInput.addEventListener("change", function () {
+                const fileName = this.files.length > 0 ? this.files[0].name : "선택된 파일 없음";
+                fileNameSpan.textContent = fileName;
+            });
+        }
+
+        if (removeBtn && fileInput) {
+            removeBtn.addEventListener("click", function () {
+                fileInput.value = ""; 
+                fileNameSpan.textContent = "선택된 파일 없음";
+            });
+        }
+    });
+
+    const reasonRadios = document.querySelectorAll('input[name^="exclude_reason_"]');
+
+    reasonRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            const reasonName = this.name;
+            const index = reasonName.split('_').pop(); 
+            const textareaId = `reason_etc_${index}`;
+            const textarea = document.getElementById(textareaId);
+
+            if (textarea) {
+                if (this.value === 'other') {
+                    textarea.removeAttribute('readonly');
+                } else {
+                    textarea.setAttribute('readonly', true);
+                    textarea.value = '';
+                }
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>

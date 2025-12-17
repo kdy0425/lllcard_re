@@ -663,3 +663,27 @@ function alert_popup(type, options) {
     modal.hidden = false;
   }
 }
+
+
+
+//datepicker
+document.addEventListener('DOMContentLoaded', function() {
+	document.querySelectorAll('.datepicker').forEach(function(pickerField) {
+		var picker = new Pikaday({
+			field: pickerField,
+			onSelect: function() {
+				var date = picker.getDate();
+				var year = date.getFullYear();
+				var month = (date.getMonth() + 1).toString().padStart(2, '0');
+				var day = date.getDate().toString().padStart(2, '0');
+				var formattedDate = `${year}-${month}-${day}`;
+				pickerField.value = formattedDate;
+			},
+			showMonthAfterYear : true
+			//firstDay: 1,  // 1-> 시작날짜 월요일 0-> 일요일
+			//minDate: new Date(), //선택 최소날짜
+			//maxDate: new Date(2020, 11, 31), //선택 최대날짜
+			//yearRange: [2000, 2020] //표시년도
+		});
+	});
+});
