@@ -286,6 +286,7 @@ background: linear-gradient(90deg,#EDF1F5 0%, #EDF1F5 30%, rgba(237, 241, 245, 0
 .main_cs_center{background-color: #0E2B5E;border-radius: 20px;padding:40px;color:#fff;display: flex;flex-direction: column;flex:1 1;background-position: right 55px bottom 55px;background-repeat: no-repeat;background-size: auto 124px;background-image: url('../images/content/local_cs_center.png');}
 .main_cs_center .title{color:#6BD5C5;font-size:2.8rem;font-weight: 700;font-family: 'Paperlogy';}
 .main_cs_center .call{font-size:3.8rem;font-weight: 700;display: flex;align-items: center;gap:8px;padding:2px 0;}
+.main_cs_center .call svg{width:24px;height:24px;}
 .main_cs_center .cs_info{font-size:2rem;margin-top:auto;line-height: 1.5;padding-top:8px;}
 .main_cs_center .cs_info li{}
 @media screen and (max-width: 1400px) {
@@ -346,6 +347,7 @@ a.slide_card:hover{border:2px solid #2E6FE4;padding:30px;background-color: #fff;
     .announcement_section_splide{padding:12px 20px 0;}
     .main_notice_section .slide_card{border-radius: 5px;}
     .slide_card .subject{text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal; }
+    .slide_card .date{padding-top:16px;font-size:1.8rem;margin-top:40px;}
 }
 
 .main_consult_section {}
