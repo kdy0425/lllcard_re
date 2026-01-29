@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,viewport-fit:cover">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<!-- Summary -->
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta property="og:title" content=""/>
+<meta property="og:url" content="" />
+<meta property="og:image" content="" />
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content="" />
+<link rel="shortcut icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+<title>평생교육이용권</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" href="../../assets/css/splide.min.css">
+<script src="../../assets/js/jquery-3.7.1.js"></script>
+<script src="../../assets/js/splide.min.js"></script>
+<script src="../../assets/js/splide-extension-grid.min.js"></script>
+<link rel="stylesheet" href="../../assets/css/slimselect.css">
+<script src="../../assets/js/slimselect.js"></script>
+<style>
+    html,body{width:100%;height:100%;}
+</style>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+/* ********************************************************
+ * 쿠키설정
+ ******************************************************** */
+function fnSetCookiePopup( name, value, expiredays ) {
+	  var todayDate = new Date();
+	  todayDate.setDate( todayDate.getDate() + expiredays );
+	  document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+/* ********************************************************
+* 체크버튼 클릭시
+******************************************************** */
+function fnPopupCheck() {
+	fnSetCookiePopup( "POPUP_00000000000075", "done" , 1);
+}
+
+function fnLink(){
+	var link = document.getElementById("link").value;
+	if ( window.opener && !window.opener.closed )
+	window.opener.href = link;
+	window.close();
+}
+
+//닫기
+function fn_close(){
+	window.close();
+}
+
+/* 
+ *2019-08-22 psy
+ *부모창 해당 게시글로 이동
+ */
+function fn_ntce_move(){
+	if('N' == 'I'){
+		opener.fn_board_Move('', '', '');
+		fn_close();
+	}else if('N' == 'E'){
+		window.open('');
+		fn_close();
+	}
+};
+
+$(document).ready(function() {
+	//2020-02-20 psy 수정
+	//img 존재할 때 이미지 태그에 alt, title 속성 추가
+	if(($(".pop_con img").length) > 0){
+		$(".pop_con img").attr("alt","");
+		//$(".pop_con img").attr("alt","asddas");
+		$(".pop_con img").attr("title","asddas");
+	}
+	
+	$(".pop_con").find('img').each(function(index, item){
+		if($(this).width() > 700) {
+			$(this).css('width','100%');			
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+	<div id="popup" title="평생교육바우처 팝업창">
+		<!--- 타이틀 start -->
+		<div class="pop_title">
+			<p class="p_title" title="팝업 타이틀팝업 타이틀">팝업 타이틀팝업 타이틀</p>
+            <button type="button" class="pop_close" onclick="fn_close()"></button>
+		</div>
+     	<!--- //타이틀 end -->
+		<div class="pop_box" onclick="fn_ntce_move()">
+			<div class="pop_box_bg"></div>
+			<!--- content start -->
+			<div class="pop_con">
+               	<p>국가평생교육진흥원 평생교육이용권의 일반팝업 템플릿에 들어가는 내용을 입력합니다.국가평생교육진흥원 평생교육이용권의 일반팝업 템플릿에 들어가는 내용을 입력합니다.국가평생교육진흥원 평생교육이용권의 일반팝업 템플릿에 들어가는 내용을 입력합니다.국가평생교육진흥원 평생교육이용권의 일반팝업 템플릿에 들어가는 내용을 입력합니다.국가평생교육진흥원 평생교육이용권의 일반팝업 템플릿에 들어가는 내용을 입력합니다.국가평생교육진흥원 평생교육이용권의 일반팝업 템플릿에 들어가는 내용을 입력합니다.국가평생교육진흥원 평생교육이용권의 일반팝업 템플릿에 들어가는 내용을 입력합니다.</p>
+            </div>
+        </div>
+        <div class="pop_footer">
+            <label class="checkbox">
+            	<input type="checkbox" name="chkToday" id="chkToday" onclick="fnPopupCheck();">
+        		오늘 하루 이 창을 열지 않기
+       		</label>
+        	<a href="javascript:fn_close();" class="pop_close" style="cursor: pointer;">닫기</a>
+        </div>
+     </div>
+
+</body></html>
