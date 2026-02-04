@@ -225,6 +225,10 @@
 .table_list .list_btns .btn{flex:1 1;min-width:80px;padding:10px;height: 48px;border-radius:10px;font-size:1.8rem;font-weight: 600;font-family: 'Paperlogy';color:#fff;background-color: #2E6FE4;}
 .table_list .list_btns .btn.line{border: 1px solid rgba(94, 116, 142, 0.8);color:#0E2B5E;background-color: #fff;}
 .table_list .list_btns .btn.line:hover{background-color: rgba(0,0,0,.025);}
+.table_list .notice td{background-color: #FAFBFD;}
+.table_list .notice .subject{font-weight: 600;}
+.table_list tbody tr.notice:hover td{background-color: #edeff3;}
+.table_list .icon_notice{display: inline-block;width:32px;height: 32px;text-indent: -999em;overflow: hidden;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.2909 28.4749L6.66406 20.9932V10.4817L17.2909 3V28.4749Z' fill='white' stroke='%230E2B5E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.66557 10.9058H2V20.5691H6.66557V10.9058Z' fill='%2391C4F8' stroke='%230E2B5E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M26.5842 7.57349C28.7708 9.76069 29.9992 12.7268 29.9992 15.8195C29.9992 18.9122 28.7708 21.8783 26.5842 24.0655M22.4668 11.6906C23.5601 12.7842 24.1743 14.2673 24.1743 15.8136C24.1743 17.36 23.5601 18.843 22.4668 19.9366' stroke='%23B5BEC8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
 
 .table_list tbody .text_sub{color:#555;}
 .table_list tbody .text_sub.subject a{color:#555;}
@@ -332,7 +336,9 @@
 
 .list_items{border-top:2px solid #2D2D2D;font-size:1.8rem;}
 .list_items .item_row{border-bottom:1px solid #E0E0E0;padding:20px 16px;}
-
+.list_items .item_row.notice{background-color:#FAFBFD;}
+.list_items .item_row.notice .subject{font-weight:600;}
+    
 .info_dot{display: flex;align-items: center;gap:21px;margin-bottom:8px;font-size:2rem;font-weight: 700;font-family: 'Paperlogy';}
 .info_dot .item{position: relative;}
 .info_dot .item:after{content:"";position: absolute;width:5px;height:5px;border-radius: 50%;background-color: #d0d0d0;right:-13px;top:50%;margin-top:-2px;}
