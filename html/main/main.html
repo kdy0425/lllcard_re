@@ -404,7 +404,7 @@
 					<div class="splide announcement_section_splide">
 						<div class="splide__track">
 							<ul class="splide__list">
-								<li class="splide__slide">
+								<!-- <li class="splide__slide">
 									<a href="javascript:;" class="slide_card">
 										<div class="category"><strong>서울</strong> 2025</div>
 										<div class="subject">서울시 평생교육이용권(2차)</div>
@@ -517,7 +517,7 @@
 											</div>
 										</div>
 									</a>
-								</li>
+								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -826,13 +826,22 @@ function announcement_section_slide(){
 	var splideList = document.querySelector('.announcement_section_splide .splide__list');
 	function fillEmptyCards() {
 	if (!splideList) return;
-	var slides = splideList.querySelectorAll('.splide__slide:not(:has(.empty_card))');
 	var emptyCards = splideList.querySelectorAll('.empty_card');
 	// 빈 카드 모두 삭제
 	emptyCards.forEach(function(card) {
 		var li = card.closest('.splide__slide');
 		if (li) li.remove();
 	});
+
+	// 항목이 하나도 없으면 빈카드 1개 추가
+	var realSlidesCount = splideList.querySelectorAll('.splide__slide').length;
+	if (realSlidesCount === 0) {
+		var one = document.createElement('li');
+		one.className = 'splide__slide';
+		one.innerHTML = '<div class="slide_card empty_card"></div>';
+		splideList.appendChild(one);
+	}
+
 	// 1600px 초과면 부족한 만큼 빈 카드 추가
 	if (window.innerWidth > 1600) {
 		var slidesCount = splideList.querySelectorAll('.splide__slide').length;
