@@ -833,27 +833,43 @@ function announcement_section_slide(){
 		if (li) li.remove();
 	});
 
-	// 항목이 하나도 없으면 빈카드 1개 추가
+	// 디바이스별 perPage 기준으로 빈카드 채움
+	// - 1600px 초과: 4개
+	// - 1100px 이상 ~ 1600px 이하: 3개
+	// - 1099px 이하: 1개(채움 없음)
+	var currentPerPage = (splide && splide.options && typeof splide.options.perPage === 'number')
+		? splide.options.perPage
+		: (window.innerWidth > 1600 ? minSlides : (window.innerWidth >= 1100 ? 3 : 1));
+
 	var realSlidesCount = splideList.querySelectorAll('.splide__slide').length;
+
+	// 항목이 하나도 없으면: 1100 이상에서는 3개/4개, 그 이하는 1개만
 	if (realSlidesCount === 0) {
-		var one = document.createElement('li');
-		one.className = 'splide__slide';
-		one.innerHTML = '<div class="slide_card empty_card"></div>';
-		splideList.appendChild(one);
+		var emptyToAdd = Math.max(1, currentPerPage || 1);
+		for (var e = 0; e < emptyToAdd; e++) {
+			var emptyLi = document.createElement('li');
+			emptyLi.className = 'splide__slide';
+			emptyLi.innerHTML = '<div class="slide_card empty_card"></div>';
+			splideList.appendChild(emptyLi);
+		}
+		if (splide) splide.refresh();
+		return;
 	}
 
-	// 1600px 초과면 부족한 만큼 빈 카드 추가
-	if (window.innerWidth > 1600) {
+	// 항목이 1개 이상이면: perPage(3/4) 기준으로 부족분만 채움 (모바일 perPage=1은 채우지 않음)
+	if (currentPerPage > 1) {
 		var slidesCount = splideList.querySelectorAll('.splide__slide').length;
-		var toAdd = minSlides - slidesCount;
-		for (var i = 0; i < toAdd; i++) {
-		var li = document.createElement('li');
-		li.className = 'splide__slide';
-		li.innerHTML = '<div class="slide_card empty_card"></div>';
-		splideList.appendChild(li);
+		var toAdd = currentPerPage - slidesCount;
+		if (toAdd > 0) {
+			for (var i = 0; i < toAdd; i++) {
+			var li = document.createElement('li');
+			li.className = 'splide__slide';
+			li.innerHTML = '<div class="slide_card empty_card"></div>';
+			splideList.appendChild(li);
+			}
 		}
 	}
-	splide.refresh();
+	if (splide) splide.refresh();
 	}
 
 	var splide = new Splide('.announcement_section_splide', {
@@ -864,7 +880,7 @@ function announcement_section_slide(){
 			1600: {
 			perPage: 3,
 			},
-			1100: {
+			1099: {
 			perPage: 1,
 			},
 		},
