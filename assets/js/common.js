@@ -114,6 +114,8 @@ function lockBackground(modal) {
     }
   }
   document.body.style.overflow = 'hidden';
+  document.body.style.height = '100%';
+  document.documentElement.style.height = '100%';
   const main = document.querySelector('#content');
   if (main && !main.contains(modal)) {
     main.setAttribute('aria-hidden', 'true');
@@ -123,7 +125,8 @@ function lockBackground(modal) {
 
 function unlockBackground() {
   document.body.style.overflow = '';
-
+  document.body.style.height = '';
+  document.documentElement.style.height = '';
   if (modalScrollLocked && htmlElForModal) {
     htmlElForModal.style.paddingRight = modalSavedHtmlPaddingRight;
     modalScrollLocked = false;
