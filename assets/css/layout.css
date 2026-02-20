@@ -203,7 +203,7 @@ transform: translateX(-50%) translateY(0);
 .ft_links li .privacy:hover{color:#021b44;} 
 .ft_info {color:#555;font-size:2rem;margin-top:4px;word-break: keep-all;}
 .ft_copy {color:#555;font-size:2rem;margin-top:4px;word-break: keep-all;}
-.ft_family {position: absolute;right:20px;top:0;display: flex;width: 356px;} 
+.ft_family {position: absolute;right:20px;top:0;display: flex;width: 410px;} 
 .ft_family select {}
 .ft_family option {}
 @media screen and (max-width: 1350px) {
