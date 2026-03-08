@@ -346,6 +346,7 @@
             this.main.arrow.path.setAttribute('d', this.classes.arrowOpen);
             this.main.main.classList.add(this.settings.openPosition === 'up' ? this.classes.openAbove : this.classes.openBelow);
             this.main.main.setAttribute('aria-expanded', 'true');
+            this.content.main.setAttribute('aria-hidden', 'false');
             this.moveContent();
             const selectedOptions = this.store.getSelectedOptions();
             if (selectedOptions.length) {
@@ -360,6 +361,7 @@
             this.main.main.classList.remove(this.classes.openAbove);
             this.main.main.classList.remove(this.classes.openBelow);
             this.main.main.setAttribute('aria-expanded', 'false');
+            this.content.main.setAttribute('aria-hidden', 'true');
             this.content.main.classList.remove(this.classes.openAbove);
             this.content.main.classList.remove(this.classes.openBelow);
             this.main.arrow.path.setAttribute('d', this.classes.arrowClose);
@@ -694,7 +696,10 @@
         }
         contentDiv() {
             const main = document.createElement('div');
+            main.id = this.settings.id + '-listbox';
             main.dataset.id = this.settings.id;
+            main.setAttribute('tabindex', '-1');
+            main.setAttribute('aria-hidden', 'true');
             const search = this.searchDiv();
             main.appendChild(search.main);
             const list = this.listDiv();
@@ -923,6 +928,7 @@
         listDiv() {
             const options = document.createElement('div');
             options.classList.add(this.classes.list);
+            options.setAttribute('role', 'presentation');
             return options;
         }
         renderError(error) {
@@ -1076,6 +1082,7 @@
             optionEl.id = option.id;
             optionEl.classList.add(this.classes.option);
             optionEl.setAttribute('role', 'option');
+            optionEl.setAttribute('tabindex', '-1');
             if (option.class) {
                 option.class.split(' ').forEach((dataClass) => {
                     optionEl.classList.add(dataClass);
@@ -1280,6 +1287,7 @@
         }
         hideUI() {
             this.select.tabIndex = -1;
+            this.select.setAttribute('tabindex', '-1');
             this.select.style.display = 'none';
             this.select.setAttribute('aria-hidden', 'true');
         }

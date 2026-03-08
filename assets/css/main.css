@@ -335,13 +335,11 @@ a.slide_card.blue:hover{border-color: #2E6FE4;}
 .slide_card .new{color:#E86949 !important;font-weight:700;font-size:2rem;}
 .slide_card .subject {margin-top:8px;font-size:2.2rem;font-weight:600;width:100%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .slide_card .date {border-top:1px solid #E0E0E0;padding-top:20px;margin-top:48px;font-size:2rem;color:#717171;}
-.slide_card .info {border-top:1px solid #E0E0E0;padding-top:20px;margin-top:48px;display:table;width:100%;font-size:2rem;}
+.slide_card .info {border-top:1px solid #E0E0E0;padding-top:20px;margin-top:48px;display:table;width:100%;font-size:1.8rem;}
 .slide_card .info .item {display:table-row;}
-.slide_card .info .item .tit {display: table-cell;color:#555;font-weight:600;position: relative;padding-top:4px;padding-left:12px;padding-right:12px;white-space: nowrap;}
-.slide_card .info .item .tit:before{content:"";position: absolute;left:0;top:50%;margin-top:-2px;width:4px;height:4px;background-color: #555;border-radius: 50%;}
+.slide_card .info .item .tit {display: table-cell;color:#555;font-weight:600;position: relative;padding-top:4px;padding-right:12px;white-space: nowrap;}
 .slide_card .info .item .cnt {display: table-cell;padding-top:4px;}
 .slide_card .info .item .cnt > div{display: table;table-layout: fixed;width: 100%;}
-.slide_card .info .item .cnt > div div{width:100%;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .slide_card.empty_card{background-position: center center;background-repeat: no-repeat;background-image: url('../images/common/logo_empty.png');background-size: 106px;border-color:transparent}
 @media screen and (max-width: 1350px) {
     .announcement_section_splide .slide_card{min-height: 260px;}

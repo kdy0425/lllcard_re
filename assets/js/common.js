@@ -1,4 +1,4 @@
-//디자인 셀렉트
+//디자인 셀렉트 (웹접근성: 숨긴 select 비포커스, ss-content aria-hidden·tabindex는 slimselect.js에서 처리. contentLocation은 body 유지해 포지셔닝 정상 동작)
 (function () {
   document.querySelectorAll('select').forEach(function (selectEl) {
     const settings = {

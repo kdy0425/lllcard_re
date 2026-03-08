@@ -54,7 +54,7 @@
 html,body{line-height:1.2;height:100%;}
 .underline{text-decoration: underline !important;text-underline-offset: 4px;}
 
-#popup{border:4px solid #00ADB1;min-width:860px;width:100%;min-height:100%;background-color: #fff;padding:10px;}
+#popup{border:4px solid #00ADB1;min-width:860px;width:100%;min-height:100%;background-color: #fff;padding:10px;display: block;text-decoration: none;}
 #popup_title{padding:12px 0 20px;position: relative;}
 #popup_title .btn_close{position: absolute;right:16px;top:12px;width:30px;height:30px;background-color: #fff;border:0;display: flex;align-items: center;justify-content: center;cursor: pointer;text-indent:-999em;overflow:hidden;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24.1934 6L6.19298 24.0004' stroke='%232D2D2D' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M5.80859 6L23.809 24.0004' stroke='%232D2D2D' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");}
 #popup_title h1{font-family: 'Isamanru';font-size:44px;font-weight:700;color:#333;text-align: center;}
@@ -111,7 +111,7 @@ html,body{line-height:1.2;height:100%;}
 </style>
 </head>
 <body>
-	<div id="popup">
+	<a href="javascript:void(0);" id="popup">
         <div id="popup_title">
             <h1>
                 2024년 <img src="../../assets/images/popup/popup_title_logo.png" alt="평생교육이용권"><br/>
@@ -179,6 +179,6 @@ html,body{line-height:1.2;height:100%;}
                 <img src="../../assets/images/popup/popup_title_logo.png" alt="평생교육이용권">
             </div>
         </div>
-    </div>
+    </a>
 </body>
 </html>
