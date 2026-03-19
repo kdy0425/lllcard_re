@@ -533,22 +533,32 @@
                         <ul class="dot md">
                             <li>이용기관 : 국가평생교육진흥원</li>
                             <li>묶음정보 서비스명 : 평생교육바우처 지원 신청 자격 확인</li>
-                            <li>묶음정보 이용목적
+                            <li>묶음정보 이용목적 : 평생교육이용권 지원 신청 시 대상 자격 판정</li>
+                            <li>제공 유형
                                 <div class="in_cnt">
-                                    <div class="tit">평생교육바우처 지원 신청</div>
                                     <ul class="dot">
-                                        <li>평생교육바우처 신청을 위한 대상 자격 판정</li>
+                                        <li>[ √ ] 일회성 제공</li>
+                                        <li>[ 　] 정기적 제공
+                                            <ul class="dash">
+                                                <li>주기 :<ul class="check_texts">
+                                                        <li>[ √ ] 주 1회 </li>
+                                                        <li>[ 　] 월 1회 </li>
+                                                        <li>[ 　] 분기 1회 </li>
+                                                        <li>[ 　] 기타 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</li>
+                                                    </ul>
+                                                </li>
+                                                <li>종료시점 :<div class="date_texts">
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;년  
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월  
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
-                            <li>제공요청 유형 : 일회성 제공</li>
-                            <li>보관·저장 및 이용 기한 : 5년</li>
-                            <li>정기적 제공 요청 상세
-                                <ul class="dash">
-                                    <li>주기:해당없음</li>
-                                    <li>종료시점:해당없음</li>
-                                </ul>
-                            </li>
+                            <li>보관·저장 및 이용 기한 : 제공일로부터 5년 (업무 근거 법령 등에 따른 보관‧저장 및 이용 기한 제시)</li>
                         </ul>
                     </div>
 
@@ -560,7 +570,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col">연번</th>
-                                    <th scope="col">유기관(보유기관명)</th>
+                                    <th scope="col">보유기관(보유기관명)</th>
                                     <th scope="col">본인정보 명칭(필요 행정정보명)</th>
                                     <th scope="col">상세항목(입력값)</th>
                                 </tr>
@@ -571,7 +581,7 @@
                                     <td data-label="연번">
                                         <div class="cnt">1</div>
                                     </td>
-                                    <td class="align_left" data-label="유기관(보유기관명)">
+                                    <td class="align_left" data-label="보유기관(보유기관명)">
                                         <div class="cnt">행정안전부</div>
                                     </td>
                                     <td class="align_left" data-label="본인정보 명칭(필요 행정정보명)">
@@ -583,25 +593,25 @@
                                                 <li>
                                                     <span class="num">1.</span> 열람대상자정보
                                                     <ul class="dot">
-                                                        <li>성명, 주민등록번호-발급, 행정기관코드, 현주소, 도로명 주소-현재</li>
+                                                        <li>성명, 주민등록번호, 행정기관코드, 현주소, 도로명주소-현재</li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <span class="num">2.</span> 세대주정보
                                                     <ul class="dot">
-                                                        <li>주민등록번호-발급, 성명</li>
+                                                        <li>성명, 주민등록번호</li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <span class="num">3.</span> 세대원정보
                                                     <ul class="dot">
-                                                        <li>성명, 주민등록번호-발급, 세대주관계</li>
+                                                        <li>성명, 주민등록번호, 세대주관계</li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <span class="num">4.</span> 주민번호정정이력
                                                     <ul class="dot">
-                                                        <li>이전주민번호, 이후주민번호, 주민번호정정일자</li>
+                                                        <li>정정이전주민번호, 정정이후주민번호, 주민번호정정일자</li>
                                                     </ul>
                                                 </li>
                                                 <li>
@@ -611,7 +621,7 @@
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <span class="num">6.</span> 현주소-상세지역정보
+                                                    <span class="num">6.</span> 현주소-상세>지역정보
                                                     <ul class="dot">
                                                         <li>지역코드</li>
                                                     </ul>
@@ -626,11 +636,11 @@
                                     <td data-label="연번">
                                         <div class="cnt">2</div>
                                     </td>
-                                    <td class="align_left" data-label="유기관(보유기관명)">
+                                    <td class="align_left" data-label="보유기관(보유기관명)">
                                         <div class="cnt">보건복지부</div>
                                     </td>
                                     <td class="align_left" data-label="본인정보 명칭(필요 행정정보명)">
-                                        <div class="cnt">국민기초생활수급자격 증명서</div>
+                                        <div class="cnt">국민기초생활수급자증명서</div>
                                     </td>
                                     <td class="align_left" data-label="상세항목(입력값)">
                                         <div class="cnt">
@@ -638,20 +648,11 @@
                                                 <li>
                                                     <span class="num">1.</span> 수급자내역 수급자
                                                     <ul class="dot">
-                                                        <li>성명</li>
+                                                        <li>성명, 주민등록번호</li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <span class="num">2.</span> 수급자내역 수급자 주민등록번호
-                                                    <ul class="dot">
-                                                        <li>앞번호, 뒷번호</li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <span class="num">3.</span> 수급자구분
-                                                    <ul class="dot">
-                                                        <li>성명, 주민등록번호-발급, 세대주관계</li>
-                                                    </ul>
+                                                    <span class="num">2.</span> 수급자구분
                                                 </li>
                                             </ol>
                                         </div>
@@ -663,7 +664,7 @@
                                     <td data-label="연번">
                                         <div class="cnt">3</div>
                                     </td>
-                                    <td class="align_left" data-label="유기관(보유기관명)">
+                                    <td class="align_left" data-label="보유기관(보유기관명)">
                                         <div class="cnt">보건복지부</div>
                                     </td>
                                     <td class="align_left" data-label="본인정보 명칭(필요 행정정보명)">
@@ -675,7 +676,7 @@
                                                 <li>
                                                     <span class="num">1.</span> 증명정보
                                                     <ul class="dot">
-                                                        <li>대상자성명, 주민등록번호·외국인등록번호, 세대주와의 관계, 참여구분</li>
+                                                        <li>대상자성명, 주민등록번호(외국인등록번호), 세대주와의관계, 참여구분</li>
                                                     </ul>
                                                 </li>
                                             </ol>
@@ -688,11 +689,11 @@
                                     <td data-label="연번">
                                         <div class="cnt">4</div>
                                     </td>
-                                    <td class="align_left" data-label="유기관(보유기관명)">
+                                    <td class="align_left" data-label="보유기관(보유기관명)">
                                         <div class="cnt">보건복지부</div>
                                     </td>
                                     <td class="align_left" data-label="본인정보 명칭(필요 행정정보명)">
-                                        <div class="cnt">장애인연금(경증)·장애수당·장애아동수급자확인서</div>
+                                        <div class="cnt">장애인연금(경증)장애수당 장애아동수급자확인서</div>
                                     </td>
                                     <td class="align_left" data-label="상세항목(입력값)">
                                         <div class="cnt">
@@ -725,7 +726,7 @@
                                     <td data-label="연번">
                                         <div class="cnt">5</div>
                                     </td>
-                                    <td class="align_left" data-label="유기관(보유기관명)">
+                                    <td class="align_left" data-label="보유기관(보유기관명)">
                                         <div class="cnt">보건복지부</div>
                                     </td>
                                     <td class="align_left" data-label="본인정보 명칭(필요 행정정보명)">
@@ -737,81 +738,25 @@
                                                 <li>
                                                     <span class="num">1.</span> 장애인정보
                                                     <ul class="dot">
-                                                        <li>성명, 주민번호</li>
+                                                        <li>성명, 주민등록번호</li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <span class="num">2.</span> 장애인정보 주민등록번호
-                                                    <ul class="dot">
-                                                        <li>앞번호, 뒷번호</li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <span class="num">3.</span> 장애등록일
+                                                    <span class="num">2.</span> 장애등록일
                                                     <ul class="dot">
                                                         <li>년, 월, 일</li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <span class="num">4.</span> 장애정보
+                                                    <span class="num">3.</span> 장애정보
                                                     <ul class="dot">
                                                         <li>장애등급, 부장애등급, 종합장애등급</li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <span class="num">5.</span> 장애인등록여부
+                                                    <span class="num">4.</span> 장애인등록여부
                                                     <ul class="dot">
                                                         <li>장애인등록여부</li>
-                                                    </ul>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <!-- 6 -->
-                                <tr>
-                                    <td data-label="연번">
-                                        <div class="cnt">6</div>
-                                    </td>
-                                    <td class="align_left" data-label="유기관(보유기관명)">
-                                        <div class="cnt">보건복지부</div>
-                                    </td>
-                                    <td class="align_left" data-label="본인정보 명칭(필요 행정정보명)">
-                                        <div class="cnt">차상위계층확인서</div>
-                                    </td>
-                                    <td class="align_left" data-label="상세항목(입력값)">
-                                        <div class="cnt">
-                                            <ol class="ol_num">
-                                                <li>
-                                                    <span class="num">1.</span> 증명정보
-                                                    <ul class="dot">
-                                                        <li>대상자성명, 대상자생년월일, 세대주와의 관계</li>
-                                                    </ul>
-                                                </li>
-                                            </ol>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                <!-- 7 -->
-                                <tr>
-                                    <td data-label="연번">
-                                        <div class="cnt">7</div>
-                                    </td>
-                                    <td class="align_left" data-label="유기관(보유기관명)">
-                                        <div class="cnt">여성가족부</div>
-                                    </td>
-                                    <td class="align_left" data-label="본인정보 명칭(필요 행정정보명)">
-                                        <div class="cnt">한부모가족증명서</div>
-                                    </td>
-                                    <td class="align_left" data-label="상세항목(입력값)">
-                                        <div class="cnt">
-                                            <ol class="ol_num">
-                                                <li>
-                                                    <span class="num">1.</span> 증명정보
-                                                    <ul class="dot">
-                                                        <li>성명, 등록번호, 세대주와의 관계</li>
                                                     </ul>
                                                 </li>
                                             </ol>
