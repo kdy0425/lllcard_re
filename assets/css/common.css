@@ -115,6 +115,7 @@ html .ss-main.no_line{border:1px solid transparent;}
 html .ss-main .ss-values{max-width: 100%;}
 html .ss-main .ss-values .ss-single{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width:calc(100% - 50px);display: block;}
 html .ss-arrow{display: none !important;}
+html .ss-main.ss-disabled{background-color:#F4F6F9;}
 html .ss-main:focus{box-shadow: none;}
 html .ss-main.ss-open-below,
 html .ss-main.ss-open-above{border:1px solid #2E6FE4;background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 7L7 1L13 7' stroke='%232D2D2D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");}
