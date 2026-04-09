@@ -1728,7 +1728,7 @@ ol .terms_image{margin-left:-28px}
     .ai_map .use_list .list .item .subject strong{}
     .ai_map .use_list .list .item .info{margin-top:8px;}
     .ai_map .use_list .list .item .info .tel{font-size:1.8rem;}
-    .ai_map .use_list .list .item_empty{min-height:215px;background-size: 78px;}
+    .ai_map .use_list .list .item_empty{min-height:223px;background-size: 78px;}
     .ai_map .use_list .list_bottom{display: flex;}
     .ai_map .use_list .list .item.search_empty{height:215px;font-size:1.8rem;gap:16px;}
 }
@@ -1768,7 +1768,11 @@ a.slide_course:hover{outline:2px solid #2E6FE4;box-shadow: 2px 2px 20px rgba(46,
     .title_box .main_splide_arrow{display: none;}
     .course_section_splide{padding-top:12px;}
     .course_section_splide .splide__list{flex-direction: column;transform: none !important;gap:8px;}
+<<<<<<< HEAD
     .slide_course.slide_empty{height:329px;background-size:78px;}
+=======
+    .slide_course.slide_empty{height:304px;background-size:78px;}
+>>>>>>> 2f61ceab3e37418342c850dd16f7fcb79d53537e
     .slide_course{border-radius:10px;}
     .slide_course .course_cnt{padding:20px;}
     .slide_course .course_cnt .subject{font-size:2rem;}
