@@ -53,6 +53,82 @@
 	</div>
 	<hr class="hide" />	
 
+	<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		function getCookie(name) {
+			var m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([.$?*|{}()[\]\\/+^])/g, '\\$1') + '=([^;]*)'));
+			return m ? decodeURIComponent(m[1]) : '';
+		}
+		function setHideUntilEndOfDay(name) {
+			var d = new Date();
+			d.setHours(23, 59, 59, 999);
+			document.cookie = name + '=1; path=/; expires=' + d.toUTCString();
+		}
+		document.querySelectorAll('.popup_wrap').forEach(function (wrap, index) {
+			var cookieName = 'lll_main_' + (wrap.id || 'popup_' + index);
+			if (getCookie(cookieName)) wrap.style.display = 'none';
+			wrap.querySelectorAll('.pop_close').forEach(function (btn) {
+				btn.addEventListener('click', function (e) {
+					e.preventDefault();
+					var cb = wrap.querySelector('.pop_footer input[type="checkbox"]') || wrap.querySelector('input[type="checkbox"]');
+					if (cb && cb.checked) setHideUntilEndOfDay(cookieName);
+					wrap.style.display = 'none';
+				});
+			});
+		});
+	});
+	</script>
+
+	<div id="popup1" class="popup_wrap">
+		<div  class="popup" title="평생교육이용권 팝업창">
+			<!--- 타이틀 start -->
+			<div class="pop_title">
+				<p class="p_title" title="평생교육이용권">평생교육이용권</p>
+				<button type="button" class="pop_close" title="팝업 닫기"></button>
+			</div>
+			<!--- //타이틀 end -->
+			<div class="pop_box">
+				<div class="pop_box_bg"></div>
+				<!--- content start -->
+				<div class="pop_con">
+				<img src="../../assets/images/dummy/board_detail.png" alt="">
+				</div>
+			</div>
+			<div class="pop_footer">
+				<label class="checkbox">
+					<input type="checkbox" name="chkToday1" id="chkToday1">
+					오늘 하루 이 창을 열지 않기
+				</label>
+				<a href="javascript:;" class="pop_close" style="cursor: pointer;">닫기</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup2" class="popup_wrap">
+		<div class="popup" title="평생교육이용권 팝업창">
+			<!--- 타이틀 start -->
+			<div class="pop_title">
+				<p class="p_title" title="평생교육이용권">평생교육이용권</p>
+				<button type="button" class="pop_close" title="팝업 닫기"></button>
+			</div>
+			<!--- //타이틀 end -->
+			<div class="pop_box">
+				<div class="pop_box_bg"></div>
+				<!--- content start -->
+				<div class="pop_con">
+				<img src="../../assets/images/content/result_image_mobile.jpg" alt="">
+				</div>
+			</div>
+			<div class="pop_footer">
+				<label class="checkbox">
+					<input type="checkbox" name="chkToday2" id="chkToday2">
+					오늘 하루 이 창을 열지 않기
+				</label>
+				<a href="javascript:;" class="pop_close" style="cursor: pointer;">닫기</a>
+			</div>
+		</div>
+	</div>
+
 	<!-- header -->
 	<div id="header">
 		<div class="header_inner">
@@ -390,11 +466,11 @@
 			</div>
 			
 
-			<!-- 사업공고 -->
+			<!-- 모집 공고 -->
 			<div class="main_section main_announcement_section">
 				<div class="container">
 					<div class="main_title">
-						<h3>사업 공고</h3>
+						<h3>모집 공고</h3>
 						<div class="main_splide_arrow">
 							<button class="splide__arrow--prev">이전</button>
 							<button class="splide__arrow--next">다음</button>
@@ -412,31 +488,31 @@
 										<div class="subject">서울시 평생교육이용권(2차)</div>
 										<div class="info">
 											<div class="item">
-												<div class="tit">신청기간</div>
+												<div class="tit"><span>신청기간</span></div>
 												<div class="cnt">
 													<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">지원금액</div>
+												<div class="tit"><span>지원금액</span></div>
 												<div class="cnt">
 													<div><div>350,000원</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">발표일</div>
+												<div class="tit"><span>발표일</span></div>
 												<div class="cnt">
 													<div><div>12.01(월)</div></div>	
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">자격요건</div>
+												<div class="tit"><span>자격요건</span></div>
 												<div class="cnt">
 													<div><div>1996.12.31 까지 출생한 자</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">소득요건</div>
+												<div class="tit"><span>소득요건</span></div>
 												<div class="cnt">
 													<div><div>기초생활수급자 차상위자 기타(기준준위소득)</div></div>
 												</div>
@@ -451,31 +527,31 @@
 										<div class="subject">평생교육이용권 신청접수 관련 안내</div>
 										<div class="info">
 											<div class="item">
-												<div class="tit">신청기간</div>
+												<div class="tit"><span>신청기간</span></div>
 												<div class="cnt">
 													<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">지원금액</div>
+												<div class="tit"><span>지원금액</span></div>
 												<div class="cnt">
 													<div><div>350,000원</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">발표일</div>
+												<div class="tit"><span>발표일</span></div>
 												<div class="cnt">
 													<div><div>12.01(월)</div></div>	
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">자격요건</div>
+												<div class="tit"><span>자격요건</span></div>
 												<div class="cnt">
 													<div><div>1996.12.31 까지 출생한 자</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">소득요건</div>
+												<div class="tit"><span>소득요건</span></div>
 												<div class="cnt">
 													<div><div>기초생활수급자 차상위자 기타(기준준위소득)</div></div>
 												</div>
@@ -490,31 +566,31 @@
 										<div class="subject">2025년 강원특별자치도 평생교육이용권 신청 접수 공고</div>
 										<div class="info">
 											<div class="item">
-												<div class="tit">신청기간</div>
+												<div class="tit"><span>신청기간</span></div>
 												<div class="cnt">
 													<div><div>01.22(수) 10시 ~ 12.31(수) 18시</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">지원금액</div>
+												<div class="tit"><span>지원금액</span></div>
 												<div class="cnt">
 													<div><div>350,000원</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">발표일</div>
+												<div class="tit"><span>발표일</span></div>
 												<div class="cnt">
 													<div><div>12.01(월)</div></div>	
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">자격요건</div>
+												<div class="tit"><span>자격요건</span></div>
 												<div class="cnt">
 													<div><div>1996.12.31 까지 출생한 자</div></div>
 												</div>
 											</div>
 											<div class="item">
-												<div class="tit">소득요건</div>
+												<div class="tit"><span>소득요건</span></div>
 												<div class="cnt">
 													<div><div>기초생활수급자 차상위자 기타(기준준위소득)</div></div>
 												</div>
