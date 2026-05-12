@@ -601,7 +601,7 @@ form + .section{margin-top:80px;}
 }
 
 .btn_list{display: flex;align-items: center;justify-content: center;gap:16px;margin-top:80px;}
-.btn_list .btn{border-radius: 10px;color:#fff;height:72px;min-width:214px;padding:0 10px;border:0;font-size:2.4rem;font-weight: 700;display: inline-flex;align-items: center;justify-content: center;background-color: #0E2B5E;font-family: 'Paperlogy';}
+.btn_list .btn{border-radius: 10px;color:#fff;height:72px;min-width:214px;padding:0 25px;border:0;font-size:2.4rem;font-weight: 700;display: inline-flex;align-items: center;justify-content: center;background-color: #0E2B5E;font-family: 'Paperlogy';}
 .btn_list .btn.line{color:#0E2B5E;background-color: #fff;border:2px solid #828C9C;}
 .btn_list .btn:hover{background-color: #08275e;}
 .btn_list .btn.line:hover{background-color: rgba(0,0,0,.025);}
@@ -1388,7 +1388,7 @@ ol .terms_image{margin-left:-28px}
 .ol_num > li + li{margin-top:10px;}
 .ol_num > li .num{position: absolute;left:0;top:0;}
 
-.tab_nav{margin:0 auto;}
+.tab_nav{margin:0 auto 80px;}
 .tab_nav ul{display: flex;justify-content: center;}
 .tab_nav li{flex:1 1;max-width:440px;background-color: #EEF4FA;}
 .tab_nav li:first-child{border-radius:20rem 0 0 20rem;}
@@ -1398,6 +1398,10 @@ ol .terms_image{margin-left:-28px}
 .tab_nav li.active a{background-color: #0E2B5E;color:#fff;}
 .tab_nav li a:hover{text-decoration: underline;}
 .txt_desc_center{font-weight: 500;font-size:2.4rem;text-align: center;word-break: keep-all;}
+@media screen and (max-width: 1100px) {
+    .tab_nav{margin:0 auto 32px;}
+    .tab_nav li a{font-size:1.8rem;padding:11px 0;}
+}
 
 .voucher_type_wrap{position: relative;background-color: #F3F9FE;padding:0 40px 2px 34px;margin-top:100px;border-radius: 20px;}
 .voucher_type_title{top:-60px;text-align: center;padding:40px 0;color:#fff;border-radius: 20px;background-color: #2E6FE4;font-size: 2.8rem;display: flex;justify-content: center;align-items: center;gap:20px;position: relative;}
