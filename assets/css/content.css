@@ -202,13 +202,14 @@
     .terms_ol > li + li{margin-top:6px;}
 }
 
-.popup_box .table_list tbody td{padding:24px;}
+.popup_box .table_list tbody td{padding:12px;}
 .table_list{width: 100%;border-collapse: collapse;border-top:2px solid #2D2D2D;overflow: hidden;}
+.table_list.table_fixed{table-layout: fixed;}
 .table_list caption{}
 .table_list colgroup{}
 .table_list thead{}
 .table_list thead tr{border-bottom:1px solid #E0E0E0;}
-.table_list thead th{height: 96px;vertical-align: middle;font-size:2rem;font-weight:700;text-align: center;padding:24px 5px;background-color: #fff;border-bottom: 1px solid #E0E0E0;}
+.table_list thead th{height: 96px;vertical-align: middle;font-size:2rem;font-weight:700;text-align: center;padding:18px 5px;background-color: #fff;border-bottom: 1px solid #E0E0E0;}
 .table_list tbody{font-size:2.2rem;color:#555;text-align: center;}
 .table_list tbody tr{border-bottom:1px solid #E0E0E0;}
 .table_list tbody tr:hover td{background-color: #F3F9FE;}
@@ -617,6 +618,8 @@ form + .section{margin-top:80px;}
     .btn_list .btn.line{border-width: 1px;}
     .btn_list.sm{margin-top:16px;}
     .btn_list.sm .btn{height: 46px;padding:0 10px;font-size:1.8rem;}
+    .btn_list.mobile_column{flex-direction: column;gap:10px;}
+    .btn_list.mobile_column .btn{width: 100%;flex:none;padding:10px 0;height:auto;min-height:56px;}
 }
 
 .board_detail{border-top:2px solid #2d2d2d;border-bottom:1px solid #E0E0E0;}
@@ -1394,13 +1397,13 @@ ol .terms_image{margin-left:-28px}
 .tab_nav li:first-child{border-radius:20rem 0 0 20rem;}
 .tab_nav li:last-child{border-radius:0 20rem 20rem 0;}
 .tab_nav li.active{}
-.tab_nav li a{display: block;height: 100%;background-color: #EEF4FA;text-align: center;color:#0E2B5E;font-size:2.8rem;font-family: 'Paperlogy';font-weight: 700;border-radius: 20rem;overflow: hidden;padding:20px 0;}
+.tab_nav li a{display: flex;align-items: center;justify-content: center;height: 100%;background-color: #EEF4FA;text-align: center;color:#0E2B5E;font-size:2.8rem;font-family: 'Paperlogy';font-weight: 700;border-radius: 20rem;overflow: hidden;padding:20px 16px;}
 .tab_nav li.active a{background-color: #0E2B5E;color:#fff;}
 .tab_nav li a:hover{text-decoration: underline;}
 .txt_desc_center{font-weight: 500;font-size:2.4rem;text-align: center;word-break: keep-all;}
 @media screen and (max-width: 1100px) {
     .tab_nav{margin:0 auto 32px;}
-    .tab_nav li a{font-size:1.8rem;padding:11px 0;}
+    .tab_nav li a{font-size:1.8rem;padding:11px 16px;}
 }
 
 .voucher_type_wrap{position: relative;background-color: #F3F9FE;padding:0 40px 2px 34px;margin-top:100px;border-radius: 20px;}
