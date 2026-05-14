@@ -613,8 +613,8 @@ form + .section{margin-top:80px;}
 .btn_list.sm{margin-top:24px;}
 .btn_list.sm .btn{height: 56px;padding:0 24px;font-size:2rem;}
 @media screen and (max-width: 1100px) {
-    .btn_list{gap:10px;margin-top:48px;}
-    .btn_list .btn{border-radius: 5px;height:56px;min-width:0;flex:1 1;font-size:2.2rem;}
+    .btn_list{gap:10px;margin-top:48px;flex-direction: column;align-items: stretch;}
+    .btn_list .btn{border-radius: 5px;height:56px;min-width:0;font-size:2.2rem;}
     .btn_list .btn.line{border-width: 1px;}
     .btn_list.sm{margin-top:16px;}
     .btn_list.sm .btn{height: 46px;padding:0 10px;font-size:1.8rem;}
