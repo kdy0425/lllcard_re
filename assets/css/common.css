@@ -306,3 +306,11 @@ form button,
 .count_cates .item .btn:focus-visible,
 .tab_nav li a:focus-visible,
 .btn_list .btn:focus-visible{outline: #00ADB2 dashed 2px;}
+
+
+.ui-dialog{border-radius: 0 !important;border:1px solid #E0E0E0 !important;padding: 0 !important;height: auto !important;}
+.ui-dialog iframe{height: auto !important;}
+.ui-dialog-content{padding:0 !important}
+@media screen and (max-width: 1100px) {
+  .ui-dialog{left:50% !important;top:50% !important;transform: translate(-50%, -50%) !important;}
+}
