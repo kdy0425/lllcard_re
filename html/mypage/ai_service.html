@@ -146,7 +146,8 @@
                 
                 <div class="section">
                     <div class="title_box">
-                        <h3 class="circle_title">사용기관</h3>
+                        <h3 class="circle_title">주변 사용기관</h3>
+                        <p class="desc">나와 같은 성별·연령대 이용자들이 많이 찾은 가까운 오프라인 사용 기관을 소개해드려요.</p>
                     </div>
                     <div class="ai_service">
                         <div class="search_box">
@@ -1150,6 +1151,9 @@ nearby_section_slide();
 						</thead>
 						<tbody>
 							${courses.map(TMPL_PC_TABLE_ROW).join('')}
+                            <tr>
+                                <td colspan="99" class="list_empty">검색된 데이터가 없습니다.</td>
+                            </tr>
 						</tbody>
 					</table>
 				</div>
