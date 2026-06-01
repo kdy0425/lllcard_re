@@ -1710,7 +1710,7 @@ ol .terms_image{margin-left:-28px}
 .nearby_institutions .nearby_section_splide.empty{visibility:visible;}
 .nearby_institutions .title{display: flex;align-items: center;gap:12px;margin-bottom:4px;min-height: 48px;}
 .nearby_institutions .title h4{color:#0E2B5E;font-size:2.4rem;font-weight: 700;font-family: 'Paperlogy';}
-.nearby_institutions .title span{color:#2D2D2D;font-size:2rem;}
+.nearby_institutions .title span{color:#2D2D2D;font-size:2.2rem;}
 .nearby_institutions .title span strong{color:#2E6FE4;font-weight: 700;}
 
 .nearby_section_splide {padding:20px;overflow: hidden;margin:0 -20px;}
@@ -1827,7 +1827,7 @@ ol .terms_image{margin-left:-28px}
     .nearby_institutions{margin-top:32px;}
     .nearby_institutions .title{min-height: 0;margin:0;}
     .nearby_institutions .title h4{font-size:2rem;}
-    .nearby_institutions .title span{}
+    .nearby_institutions .title span{font-size: 1.8rem;}
     .nearby_institutions .main_splide_arrow{position: relative;margin-top:0;margin-left: auto; }
     .nearby_institutions .main_splide_arrow .pagenation{margin-right: auto;font-size:1.8rem;}
     .nearby_institutions .main_splide_arrow button{width: 32px;height: 32px;}
