@@ -1971,3 +1971,36 @@ ol .terms_image{margin-left:-28px}
     .section_desc span{font-size:1.6rem;}
     .top_course_list{grid-template-columns: repeat(1, 1fr);gap:8px;}
 }
+
+/* 전남광주 선택 팝업 */
+.jg_popup.popup_wrap{padding:24px 16px;}
+.jg_popup .popup_box{max-width:800px;}
+.jg_popup .jg_popup_notice{margin-bottom:40px; display:flex;align-items:center;justify-content:center;min-height:108px;padding:20px 26px;border-radius:15px;background-color:#F4F6F9;color:#2D2D2D;font-size:2rem;text-align:center;word-break:keep-all;}
+.jg_popup .jg_popup_guide{margin-bottom:24px;color:#2D2D2D;font-size:2.6rem;line-height:1.35;font-weight:700;text-align:center;word-break:keep-all;font-family:'Paperlogy';}
+.jg_popup .jg_popup_cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.jg_popup .jg_popup_card{min-height:302px;padding:32px 40px;border:2px solid #E4E8EF;border-radius:20px;background-color:#fff;color:#2D2D2D;text-align:center;font-family:'Paperlogy';text-decoration:none;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:border-color .2s, background-color .2s, box-shadow .2s;}
+.jg_popup .jg_popup_logo{display:flex;align-items:center;justify-content:center;height:32px;margin-bottom:24px;}
+.jg_popup .jg_popup_logo img{display:block;max-width:116px;height:32px;}
+.jg_popup .jg_popup_text{display:block;font-size:2.4rem;word-break:keep-all;}
+.jg_popup .jg_popup_text strong{display:block;font-weight:700;}
+.jg_popup .jg_popup_text em{display:block;color:#0E2B5E;font-style:normal;font-weight:700;}
+.jg_popup .jg_popup_text span{display:block;font-weight:500;}
+.jg_popup .jg_popup_link{display:flex;align-items:center;justify-content:center;height:56px;line-height:1;margin-top:24px;padding:0 24px;border-radius: 10px; background: rgba(94, 116, 142, 0.8); color:#fff;font-size:2rem;font-weight:700;transition:background-color .2s;}
+.jg_popup .jg_popup_card:focus-visible{outline:3px solid #2E6FE4;outline-offset:3px;}
+@media screen and (min-width: 1100px) {
+    .jg_popup .jg_popup_card:hover{border-color:#2E6FE4;background-color:#F3F9FE;}
+    .jg_popup .jg_popup_card:hover .jg_popup_link{background-color:#2E6FE4;}
+}
+@media screen and (max-width: 1099px) {
+    .jg_popup .jg_popup_notice{padding:24px 16px;border-radius:10px;font-size:1.8rem;margin-bottom:24px;}
+    .jg_popup .jg_popup_guide{margin-bottom:16px;font-size:2.2rem;}
+    .jg_popup .jg_popup_card{min-height:200px;padding:30px 20px 20px;border-radius:10px;}
+    .jg_popup .jg_popup_logo{margin-bottom:12px;height:24px}
+    .jg_popup .jg_popup_text{font-size:1.8rem;}
+    .jg_popup .jg_popup_text em,
+    .jg_popup .jg_popup_text span{display:inline;}
+    .jg_popup .jg_popup_link{height:48px;margin-top:16px;border-radius:5px;font-size:1.8rem;}
+}
+@media screen and (max-width: 667px) {
+    .jg_popup .jg_popup_cards{grid-template-columns:1fr;gap:10px;}
+}

@@ -33,6 +33,7 @@
 <link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
 <link rel="stylesheet" type="text/css" href="../../assets/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
 <link rel="stylesheet" type="text/css" href="../../assets/css/main.css" />
 <link rel="stylesheet" href="../../assets/css/splide.min.css">
 <script src="../../assets/js/jquery-3.7.1.js"></script>
@@ -877,6 +878,45 @@
 	</div>
 </div>
 
+<div id="jeonnam_gwangju_modal" class="popup_wrap modal jg_popup" role="dialog" aria-modal="true" aria-labelledby="jeonnam_gwangju_title" aria-describedby="jeonnam_gwangju_desc" hidden>
+	<div class="modal__backdrop popup_bg" data-close="true"></div>
+	<div class="modal__dialog popup_box" role="document">
+		<div class="popup_inner">
+			<header class="modal__header popup_header">
+				<h2 id="jeonnam_gwangju_title" class="popup_title">전남광주통합특별시 안내</h2>
+				<button type="button" class="js_close_modal popup_close" aria-label="팝업 닫기">닫기</button>
+			</header>
+			<div id="jeonnam_gwangju_desc" class="modal__body popup_body">
+				<div class="jg_popup_notice">
+					전남광주통합특별시 출범(2026년 7월 1일)에 따라 행정체계 개편으로 통합되지만,
+					2026년은 한시적으로 종전의 전라남도/광주광역시로 분리하여 운영됩니다.
+				</div>
+				<p class="jg_popup_guide">종전의 지자체 구분에 따라 페이지를 선택하여 주시기 바랍니다.</p>
+				<div class="jg_popup_cards">
+					<a href="#" class="jg_popup_card">
+						<span class="jg_popup_logo"><img src="../../assets/images/content/logo_local_jeonnam.svg" alt="전라남도"></span>
+						<span class="jg_popup_text">
+							<strong>전남광주통합특별시</strong>
+							<em>(구)전라남도</em>
+							<span>페이지로 이동합니다.</span>
+						</span>
+						<span class="jg_popup_link">바로가기</span>
+					</a>
+					<a href="#" class="jg_popup_card">
+						<span class="jg_popup_logo"><img src="../../assets/images/content/logo_local_gwangju.svg" alt="광주광역시"></span>
+						<span class="jg_popup_text">
+							<strong>전남광주통합특별시</strong>
+							<em>(구)광주광역시</em>
+							<span>페이지로 이동합니다.</span>
+						</span>
+						<span class="jg_popup_link">바로가기</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script src="../../assets/js/common.js"></script>
 <script>
 function setArrowDisabled(splide, sectionSelector) {
@@ -1213,6 +1253,44 @@ function consult_section_slide(){
 
 consult_section_slide();
 
+
+function openJeonnamGwangjuPopup(trigger) {
+  const modal = document.getElementById('jeonnam_gwangju_modal');
+  if (!modal) return;
+  if (typeof lastTrigger !== 'undefined') {
+    lastTrigger = trigger || null;
+  }
+  if (typeof openModal === 'function') {
+    openModal(modal);
+  } else {
+    modal.hidden = false;
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const mainRegionSelect = document.getElementById('main_region_select');
+  const mainRegionButton = document.querySelector('.mt_area .area_select .select_submit button');
+
+  if (mainRegionSelect && mainRegionButton) {
+    mainRegionButton.addEventListener('click', function (e) {
+      if (mainRegionSelect.value !== 'jeonnamgwangju') return;
+      e.preventDefault();
+      openJeonnamGwangjuPopup(mainRegionButton);
+    });
+
+    mainRegionSelect.addEventListener('keyup', function (e) {
+      if (e.key !== 'Enter' || mainRegionSelect.value !== 'jeonnamgwangju') return;
+      openJeonnamGwangjuPopup(mainRegionSelect);
+    });
+  }
+
+  document.querySelectorAll('.mt_area .region_title[data-target="jeonnamgwangju"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      openJeonnamGwangjuPopup(link);
+    });
+  });
+});
 
 
 document.addEventListener('DOMContentLoaded', async () => {
